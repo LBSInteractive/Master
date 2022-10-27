@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Devolución Realizada no Indemnización</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Devolución Realizada no Indemnización</name>
+    <style>freeForm</style>
+    <subject>Devolución Realizada no Indemnización</subject>
+    <textOnly>Bogotá D.C., día de mes del año
+
+
+Señor
+
+XXXXXXXXXX
+
+
+Referencia: Respuesta a Reclamación xxxxxxxx
+
+Producto: xxxxxxxx
+
+Factura: xxxxxxxx
+
+
+Estimado {!Case.Account}:
+
+Dando respuesta a su solicitud radicada del producto XXXXXXXXXXXX marca XXXXX adquirido con la factura XXXXXXXXX
+
+
+Nos permitimos informarle que, con la devolución realizada se dio cumplimiento a la obligación de cara a la efectividad de la garantía legal en los términos de la Ley 1480 de 2011 – Estatuto de Protección al Consumidor
+
+
+“La ley 1480 de 2011 de protección al consumidor establece: ARTÍCULO 11. ASPECTOS INCLUIDOS EN LA GARANTÍA LEGAL. Corresponden a la garantía legal las siguientes obligaciones: “Como regla general, reparación totalmente gratuita de los defectos del bien, así como su transporte, de ser necesario, y el suministro oportuno de los repuestos. Si el bien no admite reparación, se procederá a su reposición o a la devolución del dinero”.
+
+Respecto de las obligaciones contenidas en la norma, dentro de la relación de consumo se dio cumplimiento, como se indicó anteriormente. El trámite realizado se ajusta a lo allí determinado.
+
+Tomando como referencia la información anterior nos permitimos confirmar que no es procedente su solicitud.
+
+Estamos atentos a escucharlo a través de nuestra línea de servicio al cliente número XXXXXXXXX en Bogotá y 018000111448 en el resto del país, o a través de nuestro correo sugerencias@alkosto.com.co.
+
+
+Cordialmente,
+
+Auxiliar Administrativo Posventa</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

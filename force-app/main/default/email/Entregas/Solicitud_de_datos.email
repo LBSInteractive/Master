@@ -1,0 +1,89 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style=""><font face="Arial, sans-serif" style="" size="4"><br></font></div><div style=""><span style="background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif" style="" size="4">Hola {!Case.Contact},</font></span></div><div style=""><span style="text-align: justify;"><font face="Arial, sans-serif" size="4"><br></font></span></div><div style=""><span style="text-align: justify;"><font face="Arial, sans-serif" size="4">Queremos contarte que tu solicitud de
+cancelación de tu compra de @producto, con código de producto @ean y factura @factura,
+fue tramitada según tu solicitud.</font></span></div><div style=""><span style="text-align: justify;"><font face="Arial, sans-serif" size="4"><br></font></span></div><div style=""><span style="text-align: justify;"><font face="Arial, sans-serif" size="4">Para iniciar tu proceso de devolución
+de dinero, es necesario que nos compartas la siguiente información:</font></span></div><div style="">
+
+<p class="MsoNormal" style="text-align:justify"><font face="Arial, sans-serif" size="4"><b>Pagos por</b> <b>tarjeta
+débito, PSE, Efecty, Baloto o Consignación</b>.<o:p></o:p></font></p><p class="MsoNormal" style="text-align:justify"><font face="Arial, sans-serif" size="4"><br></font></p><table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm">
+ <tbody><tr>
+  <td width="294" valign="top" style="width:220.7pt;border:solid windowtext 1.0pt;
+  background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b><span style="color: white;">Titular de la cuenta</span></b><o:p></o:p></font></p>
+  </td>
+  <td width="294" valign="top" style="width:220.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b>&nbsp;</b><o:p></o:p></font></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="294" valign="top" style="width:220.7pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b><span style="color: white;">N</span></b><b><span lang="ES-MX" style="color: white;">°</span></b><b><span style="color: white;"> de cedula</span></b><o:p></o:p></font></p>
+  </td>
+  <td width="294" valign="top" style="width:220.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b>&nbsp;</b><o:p></o:p></font></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="294" valign="top" style="width:220.7pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b><span style="color: white;">N</span></b><b><span lang="ES-MX" style="color: white;">°</span></b><b><span style="color: white;"> de cuenta</span></b><o:p></o:p></font></p>
+  </td>
+  <td width="294" valign="top" style="width:220.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b>&nbsp;</b><o:p></o:p></font></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="294" valign="top" style="width:220.7pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b><span style="color: white;">Tipo de cuenta</span></b><o:p></o:p></font></p>
+  </td>
+  <td width="294" valign="top" style="width:220.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b>&nbsp;</b><o:p></o:p></font></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="294" valign="top" style="width:220.7pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b><span style="color: white;">Banco</span></b><o:p></o:p></font></p>
+  </td>
+  <td width="294" valign="top" style="width:220.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b>&nbsp;</b><o:p></o:p></font></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="294" valign="top" style="width:220.7pt;border:solid windowtext 1.0pt;
+  border-top:none;background:#ED7D31;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b><span style="color: white;">Ciudad</span></b><o:p></o:p></font></p>
+  </td>
+  <td width="294" valign="top" style="width:220.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal"><font face="Arial, sans-serif" size="4"><b>&nbsp;</b><o:p></o:p></font></p>
+  </td>
+ </tr>
+</tbody></table><p class="MsoNormal" style="text-align:justify"><font face="Arial, sans-serif" size="4"><br></font></p><p class="MsoNormal" style="text-align:justify"><font face="Arial, sans-serif" size="4">Realizaremos una consignación a la
+cuenta que nos indiques en los próximos 8 días hábiles.</font></p><p class="MsoNormal" style="text-align:justify"><b style=""><font face="Arial, sans-serif" size="4"><br></font></b></p><p class="MsoNormal" style="text-align:justify"><b style=""><font face="Arial, sans-serif" size="4">Debes tener en cuenta que por el
+momento no realizamos devoluciones a cuentas Nequi o Daviplata.</font></b></p><p class="MsoNormal" style="text-align:justify"><span style="color: rgb(32, 31, 30);"><font face="Arial, sans-serif" size="4"><br></font></span></p><p class="MsoNormal" style="text-align:justify"><span style="color: rgb(32, 31, 30);"><font face="Arial, sans-serif" size="4">Si la compra corresponde a una
+empresa, por favor adjuntar certificación bancaria, la cuenta debe estar a
+nombre de la misma empresa, en caso contrario debes adjuntarnos una carta de
+autorización firmada por representante legal y cámara de comercio.</font></span></p><p class="MsoNormal" style="text-align:justify"><font face="Arial, sans-serif" size="4"><br></font></p><p class="MsoNormal" style="text-align:justify"><font face="Arial, sans-serif" size="4">Queremos
+recordarte que estamos siempre a tu disposición para escucharte en los canales
+que hemos dispuesto para ti.</font></p></div><div style=""><p class="MsoNormal" style="text-align: justify;"><font face="Arial, sans-serif" size="4"><br></font></p><p class="MsoNormal" style="text-align: justify;"></p><p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal; vertical-align: baseline;"><font face="Arial, sans-serif" size="4">Equipo de Entregas<o:p></o:p></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 0cm; line-height: normal; vertical-align: baseline;"><b style=""><font face="Arial, sans-serif" style="" size="4">ALKOSTO - K-TRONIX&nbsp;<o:p></o:p></font></b></p>
+
+<p class="MsoNormal" style=""><span lang="ES" style=""><font face="Arial, sans-serif" style="" size="4">&nbsp;&nbsp;</font></span><span style="font-size: 12pt; font-family: Arial, sans-serif;"><o:p></o:p></span></p><span style="font-family: Arial, sans-serif; font-size: 11pt; font-size: 11pt;"></span><p style="font-size: 12pt; font-family: arial;"></p></div>]]></td>
+</tr>
+</table>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Transacciones Fraudulentas</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Transacciones Fraudulentas</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+
+Apreciamos que te hayas tomado el tiempo para contarnos tu caso de la compra efectuada en nuestras tiendas (posible fraude), te informamos que por política de privacidad y manejo de la información de conformidad con la Ley 1581 de 2012, no estamos autorizados a compartirte los datos del tercero.
+
+Por lo anterior, te invitamos a que remitas tu solicitud a la entidad financiera que emitió tu tarjeta o transacción. Ellos son quienes te podrán ayudar para procesar tu caso.
+
+Así mismo te sugerimos instaurar la denuncia ante la Fiscalía General de la Nación entidad competente a quien también, en caso de ser necesario le aportaremos la información que requiera.
+
+Queremos recordarte que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti.
+
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

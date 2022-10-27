@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Motorola</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 4) AND 5 AND 6</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>ALK_Clase__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>ALK_Provider__c</columns>
+    <columns>ALK_Brand__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.ALK_QUEJA,Case.ALK_SOLICITUD</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>POSVENTA,PRODUCTOS INTANGIBLES</value>
+    </filters>
+    <filters>
+        <field>ALK_Clase__c</field>
+        <operation>equals</operation>
+        <value>ALKOSTO- INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA,APROBACIÓN PAK,DETERIORADO,FALLA TECNICA/CALIDAD MENOR A 30 DÍAS,INCOMPLETO,INGRESO PARA TRÁMITE DE GARANTÍA,INSATISFACCIÓN</value>
+    </filters>
+    <filters>
+        <field>ALK_Clase__c</field>
+        <operation>equals</operation>
+        <value>FALLA DEL OBSEQUIO,GARANTÍA POR PRIMERA VEZ,INCONVENIENTES CON LA INSTALACIÓN MARCA,INCONVENIENTES CON OTRAS ACTIVACIONES,INCONVENIENTES IMEI,MARCA INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA,RECHAZO CAMBIO,YA ESTUVO EN GARANTÍA</value>
+    </filters>
+    <filters>
+        <field>ALK_Provider__c</field>
+        <operation>equals</operation>
+        <value>Motorola Mobility LLC</value>
+    </filters>
+    <filters>
+        <field>ALK_Brand__c</field>
+        <operation>equals</operation>
+        <value>MOTOROLA</value>
+    </filters>
+    <label>Motorola</label>
+    <queue>ALK_Posventa</queue>
+    <sharedTo>
+        <group>ALK_Motorola</group>
+    </sharedTo>
+</ListView>

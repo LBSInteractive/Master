@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Negativa Asesoría a Mayor a 30 días</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Negativa Asesoría a Mayor a 30 días</name>
+    <style>freeForm</style>
+    <subject>Negativa Asesoría a Mayor a 30 días</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Para Alkosto lo más importante es la experiencia de nuestros clientes en cada visita a nuestros almacenes, por esto te informamos que se generaran las validaciones respecto de las manifestaciones hechas por ti para aplicar los procesos de mejora que haya lugar.
+
+En respuesta a tu reclamación, te informamos que en nuestra política de cambios y devoluciones, tu como cliente cuentas con treinta días calendario a partir de la entrega de tu producto para realizar la devolución por insatisfacción siempre y cuando este se encuentre en perfecto estado, sin usar, en su empaque original e icopores, con todos sus accesorios, su manual y póliza de garantía completos, cabe aclarar que este procedimiento solo aplica para los productos que tienen cambio, infortunadamente en tu caso el artículo con el que no te encuentras a gusto está dentro de los productos que no tienen cambio por insatisfacción.
+
+Teniendo en cuenta que tu producto no cumple con las condiciones mencionadas anteriormente tu solicitud no es procedente.
+
+Cualquier duda adicional podrás consultarla en nuestra política de cambios y devoluciones en el siguiente link www.Alkosto.com/politica-cambios
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

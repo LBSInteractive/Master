@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Motivo__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Sub_Estado__c</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cliente desiste</fullName>
+                <default>false</default>
+                <label>Cliente desiste</label>
+            </value>
+            <value>
+                <fullName>Deteriorado</fullName>
+                <default>false</default>
+                <label>Deteriorado</label>
+            </value>
+            <value>
+                <fullName>Falla confirmad</fullName>
+                <default>false</default>
+                <label>Falla confirmada</label>
+            </value>
+            <value>
+                <fullName>Incompleto</fullName>
+                <default>false</default>
+                <label>Incompleto</label>
+            </value>
+            <value>
+                <fullName>Proceso garantía</fullName>
+                <default>false</default>
+                <label>Proceso garantía</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>En recolección marca</controllingFieldValue>
+            <controllingFieldValue>En Recolección</controllingFieldValue>
+            <valueName>Cliente desiste</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En recolección marca</controllingFieldValue>
+            <controllingFieldValue>En Recolección</controllingFieldValue>
+            <valueName>Deteriorado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En recolección marca</controllingFieldValue>
+            <controllingFieldValue>En Recolección</controllingFieldValue>
+            <valueName>Falla confirmad</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En recolección marca</controllingFieldValue>
+            <controllingFieldValue>En Recolección</controllingFieldValue>
+            <valueName>Incompleto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En recolección marca</controllingFieldValue>
+            <controllingFieldValue>En Recolección</controllingFieldValue>
+            <valueName>Proceso garantía</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

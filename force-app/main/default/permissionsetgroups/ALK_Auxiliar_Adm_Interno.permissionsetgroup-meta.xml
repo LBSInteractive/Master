@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grupo de conjunto de permisos para Auxiliares Administrativos Internos</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Grupo Auxiliar Administrativo Interno</label>
+    <permissionSets>ALK_Auxiliar_Administrativo_Interno</permissionSets>
+    <permissionSets>FSL_Dispatcher_License</permissionSets>
+    <permissionSets>FSL_Dispatcher_Permissions</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>När det kontrolleras, jämför fältet minsta besättningsstorlek på arbetsorder till de faktiska tillgängliga servicebesättningsmedlemmarna.
+Annars, jämför minsta besättningsstorlek med fältet besättningsstorlek på servicebesättningen.</help>
+    <label></label>
+    <name>FSL__Crew_Resources_Availability__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grupo de conjuntos de permisos para usuarios que necesitan solamente la permiso para agendar Orden de Trabajo.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Grupo de Permiso para Agendar Orden de Trabajo</label>
+    <permissionSets>FSL_Agent_Permissions</permissionSets>
+    <permissionSets>FSL_Dispatcher_Permissions</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

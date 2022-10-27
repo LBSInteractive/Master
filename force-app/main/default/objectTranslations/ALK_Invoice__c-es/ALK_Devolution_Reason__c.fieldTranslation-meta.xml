@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>ALK_Devolution_Reason__c</name>
+    <picklistValues>
+        <masterLabel>Deteriorado</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Falla tecnica/Calidad menos a 30 dias</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Incompleto</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Insatisfaccio</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

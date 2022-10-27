@@ -1,0 +1,12 @@
+Hola {!ServiceAppointment.ALK_Customer_Name__c} 
+
+Te confirmamos que el servicio de {!ServiceAppointment.ALK_Work_Type_Name__c} fue agendado para el {!ServiceAppointment.ALK_Service_Date__c} {!ServiceAppointment.ALK_Time_Window__c}, registrado con la orden {!ServiceAppointment.ALK_Work_Order_Number__c}. Las recomendaciones para tu instalación son: 
+
+{!ServiceAppointment.ALK_General_Recommendations__c}
+
+
+Te estaremos confirmando cuando nuestro técnico esté camino al lugar de instalación.
+
+Cordialmente,
+Equipo de instalaciones  
+ALKOSTO - K-TRONIX

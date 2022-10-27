@@ -1,0 +1,31 @@
+<template>
+    <lightning-card > 
+        <!--Change Date 29/06/2022
+            Change by By Daniel Guillermo Murcia Suarez .DGMS. daniel.murcia@globant.com
+        -->
+        <!--<lightning-record-edit-form object-api-name="Case"  onload={handleOnLoad}>-->
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+                </lightning-spinner>
+            </template>   
+            <template if:true={productListFnl}>
+                <lightning-datatable key-field="brandDescription" 
+                    data={productListFnl}
+                    columns={productDetailsColumns}
+                    hide-checkbox-column="true" > 
+                </lightning-datatable>  
+            </template> 
+            <template if:true={productListFnl}>
+                <div class="slds-align_absolute-center slds-col slds-var-p-top_large">
+                    <lightning-button variant="Success" label="Agregar la factura" title="Agregar la factura" onclick={handleOnClick} ></lightning-button>
+                </div>  
+            </template>   
+            <template if:true={errorOnInvoiceListSearch}>
+                <div>
+                    <lightning-formatted-text value={errorOnInvoiceListSearch.body.message} ></lightning-formatted-text>                       
+                </div>    
+            </template>                         
+            <br/>        
+      <!--  </lightning-record-edit-form> -->
+    </lightning-card>    
+</template>

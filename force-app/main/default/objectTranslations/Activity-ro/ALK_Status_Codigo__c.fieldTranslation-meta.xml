@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label></label>
+    <name>ALK_Status_Codigo__c</name>
+    <picklistValues>
+        <masterLabel>Efectivo</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Fallido</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Se Cayo La Llamada</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

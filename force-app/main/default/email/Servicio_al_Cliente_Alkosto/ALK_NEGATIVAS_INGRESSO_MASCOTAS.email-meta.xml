@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Negativa Ingreso de Mascotas</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+
+Dando respuesta a tu reclamación, sobre el no ingreso de su xxxx al almacén, te informamos que por disposición legal se impide el ingreso de animales domésticos a nuestras instalaciones, teniendo en cuenta lo dispuesto en la RESOLUCIÓN 2674 DE 2013 del El Ministro de Salud y Protección Social, en el Título II CONDICIONES BÁSICAS DE HIGIENE EN LA FABRICACIÓN DE ALIMENTOS:
+
+Artículo 5. Buenas Prácticas de Manufactura. Las actividades de fabricación, procesamiento, preparación, envase, almacenamiento, transporte, distribución y comercialización de alimentos, se ceñirán a los principios de las Buenas Prácticas de Manufactura contempladas en la presente resolución. Y en el CAPÍTULO I, EDIFICACIÓN E INSTALACIONES, numeral 2. DISEÑO Y CONSTRUCCIÓN: 2.1. La edificación debe estar diseñada y construida de manera que proteja los ambientes de producción e impida la entrada de polvo, lluvia, suciedades u otros contaminantes, así como del ingreso y refugio de plagas y animales domésticos (subrayado propio). Y en el numeral 2.7. No se permite la presencia de animales en los establecimientos objeto de la presente resolución, específicamente en las áreas destinadas a la fabricación, procesamiento, preparación, envase, almacenamiento y expendio.
+
+De igual forma lo dispuesto en el parágrafo del artículo 265 de la Ley 9 de 1979. Título V. ALIMENTOS, De las operaciones de elaboración, proceso y expendio, en el “Artículo 265º.- En los establecimientos a que se refiere este título se prohíbe la entrada de personas desprovistas de los implementos de protección adecuados a las áreas de procesamiento, para evitar la contaminación de los alimentos o bebidas.
+
+Parágrafo. - No se deberá permitir la presencia de animales en las áreas donde se realice alguna de las actividades a que se refiere este título.”
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

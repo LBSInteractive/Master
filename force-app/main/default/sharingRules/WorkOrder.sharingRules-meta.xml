@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>ALK_Gerentes</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>ALK Gerentes</label>
+        <sharedTo>
+            <roleAndSubordinatesInternal>ALK_GERENTES_DIRECTORES_Y_JEFES</roleAndSubordinatesInternal>
+        </sharedTo>
+        <sharedFrom>
+            <roleAndSubordinatesInternal>ALK_GERENTES_DIRECTORES_Y_JEFES</roleAndSubordinatesInternal>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

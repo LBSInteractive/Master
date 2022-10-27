@@ -1,0 +1,81 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div><span style="box-sizing: border-box; font-family: Arial; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box;"><br></span></span></span></span></span></span></div><span style="box-sizing: border-box; font-family: Arial; font-size: 14px; background-color: rgb(255, 255, 255);"><span style="box-sizing: border-box;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box;"><div><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 16px;">Hola&nbsp;{!Case.Contact},</span></div><div><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 16px;"><br></span></div><div><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 16px; text-align: justify;">Agradecemos el tiempo que te has tomado para informarnos tu caso acerca de xxxxxxxxxxx xx xxxxxxx, ya lo hemos gestionado, y en consecuencia hemos enviado la solicitud de ajuste de reversión a la red bancaria&nbsp;</span><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 16px; text-align: justify; box-sizing: border-box;"><span style="box-sizing: border-box;">XXXXXXX&nbsp;<span style="box-sizing: border-box;">&nbsp;</span></span></span><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 16px; text-align: justify;">el día (dia) de (mes) de 20XX; te compartimos los datos de la transacción:</span></div><div><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 16px; text-align: justify;"><br></span></div><div><div align="center">
+
+</div></div><div align="center">
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" width="416" style="width:311.7pt;border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:1184;mso-padding-alt:0cm 0cm 0cm 0cm;mso-border-insideh:.5pt solid windowtext;
+ mso-border-insidev:.5pt solid windowtext">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:15.95pt">
+  <td width="81" style="width:60.55pt;border:solid windowtext 1.0pt;mso-border-alt:
+  solid windowtext .5pt;padding:0cm 0cm 0cm 0cm;height:15.95pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal;vertical-align:baseline"><b><span style="font-size:9.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ES-CO">FECHA<o:p></o:p></span></b></p>
+  </td>
+  <td width="80" style="width:59.65pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 0cm 0cm 0cm;height:15.95pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal;vertical-align:baseline"><b><span style="font-size:9.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ES-CO">VALOR<o:p></o:p></span></b></p>
+  </td>
+  <td width="112" style="width:84.05pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 0cm 0cm 0cm;height:15.95pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal;vertical-align:baseline"><b><span style="font-size:9.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ES-CO">AUTORIZACIÓN<o:p></o:p></span></b></p>
+  </td>
+  <td width="143" style="width:107.45pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 0cm 0cm 0cm;height:15.95pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal;vertical-align:baseline"><b><span style="font-size:9.0pt;
+  font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:&quot;Times New Roman&quot;;
+  mso-fareast-language:ES-CO">ESTABLECIMIENTO<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1;mso-yfti-lastrow:yes;height:14.1pt">
+  <td width="81" style="width:60.55pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0cm 0cm 0cm 0cm;height:14.1pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal;vertical-align:baseline"><span style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ES-CO">Diligenciar<o:p></o:p></span></p>
+  </td>
+  <td width="80" style="width:59.65pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 0cm 0cm 0cm;height:14.1pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal;vertical-align:baseline"><span style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ES-CO">Diligenciar<o:p></o:p></span></p>
+  </td>
+  <td width="112" style="width:84.05pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 0cm 0cm 0cm;height:14.1pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal;vertical-align:baseline"><span style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ES-CO">Diligenciar<o:p></o:p></span></p>
+  </td>
+  <td width="143" style="width:107.45pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0cm 0cm 0cm 0cm;height:14.1pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal;vertical-align:baseline"><span style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-fareast-language:ES-CO">Diligenciar<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+</div><p style="box-sizing: border-box; margin: 0cm 0cm 8pt; line-height: 15.6933px; font-size: 11pt; font-family: Calibri, sans-serif; text-align: justify;"><span lang="ES-CO" style="box-sizing: border-box; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;"><br></span></p><p style="box-sizing: border-box; margin: 0cm 0cm 8pt; line-height: 15.6933px; font-size: 11pt; font-family: Calibri, sans-serif; text-align: justify;"><span lang="ES-CO" style="box-sizing: border-box; font-size: 12pt; font-family: &quot;Times New Roman&quot;, serif;">Ten en cuenta que a partir de la fecha de solicitud, las entidades financieras toman entre 8 y 15 días hábiles para aplicar el ajuste en la cuenta bancaria o tarjeta.</span></p><p style="box-sizing: border-box; margin: 0cm 0cm 8pt; line-height: 15.6933px; font-size: 11pt; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;">Si en algún momento presentas alguna inconsistencia, el titular de la tarjeta o la cuenta, deberá comunicarse directamente con la entidad financiera indicando los datos de la transacción&nbsp; que se encuentran en el cuadro anterior.</span></p><p style="box-sizing: border-box; margin: 0cm 0cm 8pt; line-height: 15.6933px; font-size: 11pt; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;">Recuerda que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti.</span></p><p style="box-sizing: border-box; margin: 0cm 0cm 8pt; line-height: 15.6933px; font-size: 11pt; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;">Cordialmente,</span></p><p style="box-sizing: border-box; margin: 0cm 0cm 8pt; line-height: 15.6933px; font-size: 11pt; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt; font-weight: bold;"><br></span></p><p style="box-sizing: border-box; margin: 0cm 0cm 8pt; line-height: 15.6933px; font-size: 11pt; font-family: Calibri, sans-serif; text-align: justify;"><span style="font-family: &quot;Times New Roman&quot;, serif; font-size: 12pt;">Equipo Servicio al cliente</span></p><p style="box-sizing: border-box; margin: 0cm 0cm 8pt; line-height: 15.6933px; font-size: 11pt; font-family: Calibri, sans-serif; text-align: justify;"><strong style="font-size: 11pt; box-sizing: border-box;"><span lang="ES-CO" style="box-sizing: border-box; font-size: 12pt;">ALKOSTO - K-TRONIX</span></strong></p></span></span></span></span></span></span>]]></td>
+</tr>
+</table>

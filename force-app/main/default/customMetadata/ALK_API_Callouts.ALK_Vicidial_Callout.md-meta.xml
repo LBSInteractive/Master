@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Vicidial Callout</label>
+    <protected>false</protected>
+    <values>
+        <field>ALK_Client_ID__c</field>
+        <value xsi:type="xsd:string">09a6cc0e0d994165b96b36df0414c998</value>
+    </values>
+    <values>
+        <field>ALK_Client_Secret__c</field>
+        <value xsi:type="xsd:string">797A4083ed524c3bb8ac4E1F7A0add44</value>
+    </values>
+    <values>
+        <field>ALK_Method__c</field>
+        <value xsi:type="xsd:string">POST</value>
+    </values>
+    <values>
+        <field>ALK_Path__c</field>
+        <value xsi:type="xsd:string">ALK_Callout_Vicidial/api/call</value>
+    </values>
+</CustomMetadata>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "cee2c5ee-d7f1-4989-8ce7-4a542fae979f",
+  "appPageId" : "0301749a-1d44-41ec-b919-146234eef013",
+  "configurationTags" : [ ],
+  "id" : "81da6df9-0aa5-406c-8c17-1b6ec2600f08",
+  "label" : "Field Service",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-dispatcher",
+  "type" : "route",
+  "urlPrefix" : "dispatcher"
+}

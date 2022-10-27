@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Closed_Case</fullName>
+    <active>true</active>
+    <description>Valida que el status de un caso sea igual a &quot;Cerrado&quot;</description>
+    <errorConditionFormula>AND(ISPICKVAL( Status , &apos;Closed&apos;), ISBLANK( TEXT(ALK_Motivo_de_Cierre__c)))</errorConditionFormula>
+    <errorMessage>Es necesario llenar el campo Motivo de Cierre para Cerrar el caso</errorMessage>
+</ValidationRule>

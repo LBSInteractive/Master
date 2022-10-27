@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>При установке данного флажка поле &quot;Минимальный размер рабочей группы&quot; рабочего заказа подлежит сравнению с фактически доступным количеством участников сервисной рабочей группы.
+В противном случае, поле &quot;Минимальный размер рабочей группы&quot; подлежит сравнению с полем &quot;Размер рабочей группы&quot; сервисной рабочей группы.</help>
+    <label></label>
+    <name>FSL__Crew_Resources_Availability__c</name>
+</CustomFieldTranslation>

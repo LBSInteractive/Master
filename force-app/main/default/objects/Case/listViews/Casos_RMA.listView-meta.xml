@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Casos_RMA</fullName>
+    <booleanFilter>1 OR 2</booleanFilter>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>ALK_Approval_Number__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>ALK_Flag_SLA__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>ALK_RMA_Automatic__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <filters>
+        <field>ALK_RMA_Manual__c</field>
+        <operation>notEqual</operation>
+    </filters>
+    <label>Casos RMA</label>
+    <sharedTo>
+        <role>ALK_COORDINADORES</role>
+        <role>ALK_GERENTES_DIRECTORES_Y_JEFES</role>
+        <role>ALK_GESTOR_POSVENTA</role>
+    </sharedTo>
+</ListView>

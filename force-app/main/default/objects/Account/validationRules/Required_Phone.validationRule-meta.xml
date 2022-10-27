@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Phone</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;PersonAccount&apos;,
+ ISBLANK( Phone ), 
+OR (
+ ALK_SMS__c = TRUE,
+ ALK_Whatsapp__c = TRUE
+)
+)</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Por favor complete el teléfono.</errorMessage>
+</ValidationRule>

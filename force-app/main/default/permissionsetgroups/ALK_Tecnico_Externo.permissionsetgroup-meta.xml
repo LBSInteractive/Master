@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grupo de conjunto de permisos para técnicos de campo externos</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Grupo Técnico de Campo Externo</label>
+    <permissionSets>ALK_Tecnico_Campo_Externo</permissionSets>
+    <permissionSets>FSL_Mobile_License</permissionSets>
+    <permissionSets>FSL_Resource_License</permissionSets>
+    <permissionSets>FSL_Resource_Permissions</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

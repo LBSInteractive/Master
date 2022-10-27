@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Carta Exoneración de Garantia</name>
+    <style>freeForm</style>
+    <subject>Carta Exoneración de Garantia</subject>
+    <textOnly>Bogotá D.C., día de mes del año
+
+Señor (a)
+
+XXXXXXXXX
+
+Referencia: Respuesta a Reclamación XXXXXXXXX
+
+Producto: XXXXXXXXXXXXXXXX
+
+Factura: XXXXXXXXXXXXXXXXXXXXXXXX
+
+Estimado(a) {!Case.Account}:
+
+Por medio de la presente nos permitimos dar respuesta a su reclamación. Analizando la trazabilidad de su garantía con la marca nos informa:
+
+“Diagnóstico del CSA Orden de servicio BC-PG-149969 : se revisa equipo y se evidencia que la pantalla presenta una fisura desde la esquina inferior izquierda de la pantalla hacia la parte superior, no se evidencia anomalías en el funcionamiento de la bisagra ni con la apertura del screenpad que se encuentra en el teclado, no se evidencia ruido anormal al abrir o cerrar la pantalla, tampoco que el screenpad este haciendo contacto con la pantalla. Se detiene el diagnóstico y se escala caso con el fabricante ASUS para validar si procede a garantía. De acuerdo a lo evidenciado se determina por el Fabricante ASUS que los daños son generados por golpes o presión en exceso, causados por el Consumidor y no por un defecto de fábrica. Se invalida garantía ya que según políticas de garantía del fabricante ASUS todo daño inducido por el usuario (CID) es causa de la invalidación de Garantía. La Política de Garantía del Fabricante ASUS, es entregada a cada uno de los Consumidores al momento de la compra de los equipos; Igualmente, las puede encontrar en la página de internet o también se encuentran impresas en los manuales del equipo dentro de la caja proporcionada al momento de la compra”.
+
+De acuerdo a lo anterior la garantía ha sido rechazada, se constituye como una exoneración de responsabilidades de la garantía legal, ya que se evidencia que no se atendió las instrucciones de uso dispuestas en el certificado de garantía de acuerdo a lo estipulado en el artículo 16 del estatuto del consumidor ley 1480.
+
+“Artículo 16. Exoneración de responsabilidad de la garantía. El productor o proveedor se exonerará de la responsabilidad que se deriva de la garantía, cuando demuestre que el defecto proviene de:
+
+1. Fuerza mayor o caso fortuito;
+
+2. El hecho de un tercero;
+
+3. El uso indebido del bien por parte del consumidor,
+
+4. Que el consumidor no atendió las instrucciones de instalación, uso o mantenimiento indicadas en el manual del producto y en la garantía”
+
+Tomando como referencia la información anterior nos permitimos confirmar que no es procedente su solicitud.
+
+Anexo respuesta de la marca
+
+Estamos atentos a escucharlo a través de nuestra línea de servicio al cliente número 4073033 en Bogotá y 018000111448 en el resto del país, o a través de nuestro correo sugerencias@alkosto.com.co.
+
+
+
+
+Cordialmente,
+
+Auxiliar Administrativo Posventa</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

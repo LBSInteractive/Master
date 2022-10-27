@@ -1,0 +1,1595 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Assigne_to_Queue</name>
+        <label>Assigne to Queue</label>
+        <locationX>710</locationX>
+        <locationY>551</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>ABONDONO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formAbondonoCliente</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_ABANDONO</targetReference>
+            </connector>
+            <label>ABONDONO</label>
+        </rules>
+        <rules>
+            <name>TIENDAS</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>formTiendas1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>formTiendas2</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>formTiendas3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_TIENDAS</targetReference>
+            </connector>
+            <label>TIENDAS</label>
+        </rules>
+        <rules>
+            <name>NO_HAY_FILA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formNoHayFila</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Owner_NO_HAY_FILA</targetReference>
+            </connector>
+            <label>NO HAY FILA</label>
+        </rules>
+        <rules>
+            <name>POSVENTA_ODS</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>fromPosventaODS</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_POSVENTA_ODS</targetReference>
+            </connector>
+            <label>POSVENTA ODS</label>
+        </rules>
+        <rules>
+            <name>REPARACIONES</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formReparaciones</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_REPARACIONES</targetReference>
+            </connector>
+            <label>REPARACIONES</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>is_RT</name>
+        <label>is RT</label>
+        <locationX>3119</locationX>
+        <locationY>311</locationY>
+        <defaultConnector>
+            <targetReference>Should_Case_Assignment_Run</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>OTHER</defaultConnectorLabel>
+        <rules>
+            <name>ODS</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ALK_ODS</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Should_we_assign_to_QUEUE_ODS</targetReference>
+            </connector>
+            <label>ODS</label>
+        </rules>
+        <rules>
+            <name>PAK</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ALK_PAK</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_PAK</targetReference>
+            </connector>
+            <label>PAK</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Queue_to_Assign</name>
+        <label>Queue to Assign</label>
+        <locationX>4010</locationX>
+        <locationY>551</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>COLA_GENERAL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Origin</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Portal</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_COLA_GENERAL</targetReference>
+            </connector>
+            <label>COLA GENERAL</label>
+        </rules>
+        <rules>
+            <name>PUNTOS_DE_VENTA</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>formPuntosDeVentaSolicitud</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>formPuntosDeVentaQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_PUNTOS_DE_VENTA</targetReference>
+            </connector>
+            <label>PUNTOS DE VENTA</label>
+        </rules>
+        <rules>
+            <name>POSVENTA</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>formPosventaSolicitud</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>formPosventaQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_POSVENTA</targetReference>
+            </connector>
+            <label>POSVENTA</label>
+        </rules>
+        <rules>
+            <name>ENTREGAS</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>formEntregasSolicitud</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>formEntregasQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_ENTREGAS</targetReference>
+            </connector>
+            <label>ENTREGAS</label>
+        </rules>
+        <rules>
+            <name>CONCESIONES</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formConcesionesQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_CONCESIONES</targetReference>
+            </connector>
+            <label>CONCESIONES</label>
+        </rules>
+        <rules>
+            <name>INTANGIBLES</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>formIntangiblesQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>formIntangiblesSolicitud</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_INTANGIBLES</targetReference>
+            </connector>
+            <label>INTANGIBLES</label>
+        </rules>
+        <rules>
+            <name>MEDIOS_DE_PAGO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formMediosDePagoQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_MEDIOS_DE_PAGO</targetReference>
+            </connector>
+            <label>MEDIOS DE PAGO</label>
+        </rules>
+        <rules>
+            <name>TARJETA_ALKOSTO</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formTarjetaAlkostoQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_TARJETA_ALKOSTO</targetReference>
+            </connector>
+            <label>TARJETA ALKOSTO</label>
+        </rules>
+        <rules>
+            <name>CARTERA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formCarteraQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_CARTERA</targetReference>
+            </connector>
+            <label>CARTERA</label>
+        </rules>
+        <rules>
+            <name>ALKOMPRAR</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formAlkomprarQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_ALKOMPRAR</targetReference>
+            </connector>
+            <label>ALKOMPRAR</label>
+        </rules>
+        <rules>
+            <name>AKT</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formAktQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_AKT</targetReference>
+            </connector>
+            <label>AKT</label>
+        </rules>
+        <rules>
+            <name>SEGURIDAD</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formSeguridadQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_SEGURIDAD</targetReference>
+            </connector>
+            <label>SEGURIDAD</label>
+        </rules>
+        <rules>
+            <name>TRANSPORTES</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>formTransportesQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_TRANSPORTES</targetReference>
+            </connector>
+            <label>TRANSPORTES</label>
+        </rules>
+        <rules>
+            <name>CAJA_GENERAL</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>formCajaGeneralQueja</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>formCajaGeneralSolicitud</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Get_Queue_Caja_General</targetReference>
+            </connector>
+            <label>CAJA GENERAL</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Should_Case_Assignment_Run</name>
+        <label>Should Case Assignment Run?</label>
+        <locationX>5066</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>NO</defaultConnectorLabel>
+        <rules>
+            <name>YES_Run_Case_Assignment</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>isNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.RecordTypeId</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ALK_Clase__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Queue_to_Assign</targetReference>
+            </connector>
+            <label>YES</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Should_we_assign_to_QUEUE_ODS</name>
+        <label>Should we assign to QUEUE ODS</label>
+        <locationX>1172</locationX>
+        <locationY>431</locationY>
+        <defaultConnectorLabel>Not Assign</defaultConnectorLabel>
+        <rules>
+            <name>Assign_Queue</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sub_Estado__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>isNew</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assigne_to_Queue</targetReference>
+            </connector>
+            <label>Assign Queue</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>formAbondonoCliente</name>
+        <dataType>Boolean</dataType>
+        <expression>TEXT({!$Record.Status}) = &apos;Abandono Cliente&apos; &amp;&amp;  
+(
+TEXT({!$Record.Sub_Estado__c}) = &apos;Almacenado en tienda&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Carta enviada&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Carta no entregada&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Cliente no contactado&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Cliente no recibe&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Cliente no recoge&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Cte Contactado Pte Recogida&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Destrucción&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Entregado Cliente&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Enviado a CENTR&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Enviado a Cliente&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Recibido en CENTR&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Pendiente envío a CENTR&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Caso SIC&apos;
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formAktQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;POSVENTA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;FALLA EN LA MOTO&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formAlkomprarQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;PROCESO PAGO&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;COBRO DE INTERESES CRÉDITO 20 MINUTOS&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONFORMIDAD PAGO ( FECHA-CUOTAS-MONTO-VALOR) CRÉDITO 20 MINUTOS&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES CON EL TRÁMITE CRÉDITO 20 MINUTOS&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;REPORTE EN CENTRALES DE RIESGO CRÉDITO 20 MINUTOS&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formCajaGeneralQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;PROCESO PAGO&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;ERROR EN VUELTAS&apos;  || TEXT({!$Record.ALK_Clase__c}) = &apos;DOBLE COBRO DE TRANSACCIÓN&apos;  || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES AVANCES&apos;  || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES RECAUDOS&apos; ))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formCajaGeneralSolicitud</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_SOLICITUD&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;PROCESO PAGO&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;REVERSIÓN CUPO&apos; ))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formCarteraQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;PROCESO PAGO&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;DEVOLUCIÓN DE CHEQUE&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formConcesionesQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;CONCESIONES&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;CALIDAD PRODUCTO&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;DEMORA EN SERVICIO&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formEntregasQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;ENTREGA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;DEMORA EN LA RECOGIDA DEL PRODUCTO&apos;  || TEXT({!$Record.ALK_Clase__c}) = &apos;DOBLE ENTREGA&apos;  || TEXT({!$Record.ALK_Clase__c}) = &apos;PRODUCTO TROCADO&apos;  || TEXT({!$Record.ALK_Clase__c}) = &apos;FALSA ENTREGA&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;MERCANCÍA NO HAY&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;TRANSPORTADOR NO ALCANZA A TERMINAR RUTA&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;NO SALIÓ A RUTA&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;ENTREGA INCOMPLETA&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCUMPLIMIENTO&apos;))
+|| 
+(TEXT({!$Record.Type}) = &apos;PROCESO PAGO&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;TRANSACCIONES FRAUDULENTAS&apos; ))
+|| 
+(TEXT({!$Record.Type}) = &apos;RECOGE EN TIENDA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;NO LLEGO CORREO O MENSAJE DE CONFIRMACIÓN&apos; ))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formEntregasSolicitud</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_SOLICITUD&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;ENTREGA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;CAMBIO DE DIRECCIÓN DE DESPACHO&apos;  || TEXT({!$Record.ALK_Clase__c}) = &apos;CAMBIO DE PRODUCTO NO ENTREGADO&apos;  || TEXT({!$Record.ALK_Clase__c}) = &apos;CAMBIO FECHA DE DESPACHO&apos;  || TEXT({!$Record.ALK_Clase__c}) = &apos;CANCELACIÓN DEL DESPACHO&apos; ))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formIntangiblesQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;PRODUCTOS INTANGIBLES&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES CON LA INSTALACIÓN PROPIO&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES ENTREGAS SIM CARD&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;CANCELACIÓN DEL SERVICIO&apos;))
+||
+(TEXT({!$Record.Type}) = &apos;POSVENTA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES CON LA ACTIVACIÓN POSSA/PIN/OFFICE&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formIntangiblesSolicitud</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_SOLICITUD&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;PRODUCTOS INTANGIBLES&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;INSTALACIÓN&apos; ))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formMediosDePagoQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;PROCESO PAGO&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;PROMOCIÓN NO APLICADA&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formNoHayFila</name>
+        <dataType>Boolean</dataType>
+        <expression>NOT({!isNew}) &amp;&amp; (TEXT({!$Record.Status}) = &apos;Cambio Evitado Gestión Técnico&apos;  || (TEXT({!$Record.Status}) = &apos;Solución al cliente&apos; &amp;&amp;  (TEXT({!$Record.Sub_Estado__c}) = &apos;Producto entregado&apos; ||TEXT({!$Record.Sub_Estado__c}) = &apos;Entregado Bono Cambio&apos; )))</expression>
+    </formulas>
+    <formulas>
+        <name>formPosventaQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;PRODUCTOS INTANGIBLES&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES SEGURO SOAT&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES CON LA INSTALACIÓN MARCA&apos; || 
+ TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES SEGURO PERSONAL&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES SEGURO CELULAR&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES SEGURO GARANTÍA EXTENDIDA&apos;))
+|| 
+(TEXT({!$Record.Type}) = &apos;POSVENTA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;DETERIORADO&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INSATISFACCIÓN&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;FALLA TECNICA/CALIDAD MENOR A 30 DÍAS&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCOMPLETO&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONSISTENCIA EN CARACTERÍSTICAS&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES CON OTRAS ACTIVACIONES&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;RECHAZO CAMBIO&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES IMEI&apos;|| TEXT({!$Record.ALK_Clase__c}) = &apos;APROBACIÓN PAK&apos;|| TEXT({!$Record.ALK_Clase__c}) = &apos;FALLA DEL OBSEQUIO&apos;|| TEXT({!$Record.ALK_Clase__c}) = &apos;GARANTÍA POR PRIMERA VEZ&apos;|| TEXT({!$Record.ALK_Clase__c}) = &apos;YA ESTUVO EN GARANTÍA&apos;|| TEXT({!$Record.ALK_Clase__c}) = &apos;ALKOSTO- INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA&apos;|| TEXT({!$Record.ALK_Clase__c}) = &apos;MARCA INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formPosventaSolicitud</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_SOLICITUD&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;RECOGIDA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;CAMBIO DE DIRECCIÓN DE LA RECOGIDA&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;CAMBIO DE FECHA DE LA RECOGIDA&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;CANCELACIÓN DE LA RECOGIDA&apos;))
+|| 
+(TEXT({!$Record.Type}) = &apos;POSVENTA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;INGRESO PARA TRÁMITE DE GARANTÍA&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;APROBACIÓN PAK&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formPuntosDeVentaQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;COMPAÑÍA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;ACCIDENTE CON PRODUCTO&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;ACCIDENTE EN LA TIENDA&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;ASESORÍA Y ATENCIÓN AL CLIENTE&apos;))
+||
+(TEXT({!$Record.Type}) = &apos;COMPRA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES EN EL PROCESO DE COMPRA INTERNET&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES EN EL PEDIDO INTERNET&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES REGISTRO EN LA PÁGINA&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONSISTENCIA EN PRECIOS&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;FACTURA DE COMPRA NO REALIZADA&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;FACTURA ELECTRONICA&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;FACTURA&apos;  || TEXT({!$Record.ALK_Clase__c}) = &apos;EXENCIÓN IVA NO APLICADO&apos;  )) 
+||
+(TEXT({!$Record.Type}) = &apos;PROCESO PAGO&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;EXENCIÓN IVA NO APLICADO&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formPuntosDeVentaSolicitud</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_SOLICITUD&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;COMPAÑÍA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;DOCUMENTOS&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;BENEFICIOS TRIBUTARIOS&apos;))
+||
+(TEXT({!$Record.Type}) = &apos;COMPRA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;ACTUALIZACIÓN DE DATOS&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;FACTURA&apos;))
+||
+(TEXT({!$Record.Type}) = &apos;PROCESO PAGO&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;TRÁMITE BONO CAMBIO&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;TRÁMITE BONO 50%&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;OTROS BONOS&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;CANCELACIÓN TRANSACCIÓN&apos;))
+||
+(TEXT({!$Record.Type}) = &apos;POSVENTA&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;CAMBIO POR INSATISFACCIÓN MERCADO&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formReparaciones</name>
+        <dataType>Boolean</dataType>
+        <expression>TEXT({!$Record.Status}) = &apos;En transporte&apos;  &amp;&amp;  (TEXT({!$Record.Sub_Estado__c}) = &apos;Enviado a CENTR&apos; ||TEXT({!$Record.Sub_Estado__c}) = &apos;Enviado a Cliente&apos; ||TEXT({!$Record.Sub_Estado__c}) = &apos;No entregado&apos; )
+ ||  TEXT({!$Record.Status}) = &apos;Pte. Recolección y/o Visita Marca&apos; || (
+TEXT({!$Record.Status}) = &apos;Recibido&apos; &amp;&amp;  (TEXT({!$Record.Sub_Estado__c}) = &apos;En CENTR de tienda&apos; ||TEXT({!$Record.Sub_Estado__c}) = &apos;En muelle CAS pte validacion&apos;  ||TEXT({!$Record.Sub_Estado__c}) = &apos;En muelle Tienda pte validacion&apos; ||TEXT({!$Record.Sub_Estado__c}) = &apos;Del CAS - No presenta Falla&apos; ||TEXT({!$Record.Sub_Estado__c}) = &apos;Del CAS - Producto Nuevo&apos; ||TEXT({!$Record.Sub_Estado__c}) = &apos;Del CAS - Rechazado&apos;  ||TEXT({!$Record.Sub_Estado__c}) = &apos;Del CAS - Reparado&apos; )
+|| TEXT({!$Record.Status}) = &apos;Novedad&apos;  &amp;&amp;  (TEXT({!$Record.Sub_Estado__c}) = &apos;Recibido en CENTR&apos; ))</expression>
+    </formulas>
+    <formulas>
+        <name>formSeguridadQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;SEGURIDAD&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;HURTO/DAÑO&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formTarjetaAlkostoQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;PROCESO PAGO&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;COBRO DE INTERESES TARJETA ALKOSTO&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;DEMORAS EN EXTRACTOS&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONFORMIDAD PAGO ( FECHA-CUOTAS-MONTO-VALOR) TARJETA ALKOSTO&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;INCONVENIENTES CON EL TRÁMITE TARJETA ALKOSTO&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;REPORTE EN CENTRALES DE RIESGO TARJETA ALKOSTO&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>formTiendas1</name>
+        <dataType>Boolean</dataType>
+        <expression>TEXT({!$Record.Status}) = &apos;Almacenado en tienda&apos; &amp;&amp;  TEXT({!$Record.Sub_Estado__c}) = &apos;En espera de Respuesta&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>formTiendas2</name>
+        <dataType>Boolean</dataType>
+        <expression>TEXT({!$Record.Status}) = &apos;Recolección Programada&apos; || TEXT({!$Record.Status}) = &apos;Recepción Tienda&apos;  ||  TEXT({!$Record.Status}) = &apos;Disponible en Tienda&apos; ||  (TEXT({!$Record.Status}) = &apos;Cambio Aprobado&apos; &amp;&amp;  (TEXT({!$Record.Sub_Estado__c}) = &apos;Cliente Informado&apos; || TEXT({!$Record.Sub_Estado__c}) = &apos;Alkosto&apos; ||  TEXT({!$Record.Sub_Estado__c}) = &apos;Marca&apos; ))</expression>
+    </formulas>
+    <formulas>
+        <name>formTiendas3</name>
+        <dataType>Boolean</dataType>
+        <expression>TEXT({!$Record.Status}) = &apos;En transporte&apos; &amp;&amp;  TEXT({!$Record.Sub_Estado__c}) = &apos;Enviado a Tienda&apos;</expression>
+    </formulas>
+    <formulas>
+        <name>formTransportesQueja</name>
+        <dataType>Boolean</dataType>
+        <expression>{!$Record.RecordType.DeveloperName}=&apos;ALK_QUEJA&apos; 
+&amp;&amp;
+(
+(TEXT({!$Record.Type}) = &apos;TRANSPORTES&apos; &amp;&amp;  (TEXT({!$Record.ALK_Clase__c}) = &apos;ENTREGA INADECUADA TRANSPORTADOR&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;HURTO/DAÑO TRANSPORTADOR&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;VENTA PROHIBIDA TRANSPORTADOR&apos; || TEXT({!$Record.ALK_Clase__c}) = &apos;DESMONTE DE PUERTAS&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>fromPosventaODS</name>
+        <dataType>Boolean</dataType>
+        <expression>TEXT({!$Record.Status}) = &apos;Entregado a proveedor&apos;  &amp;&amp;  (TEXT({!$Record.Sub_Estado__c}) = &apos;Entregado a Centro Servicio en tienda&apos; ||TEXT({!$Record.Sub_Estado__c}) = &apos;Entregado a Centro Servicio en CENTR&apos; )
+ || (
+TEXT({!$Record.Status}) = &apos;Novedad&apos; &amp;&amp;  (TEXT({!$Record.Sub_Estado__c}) = &apos;Recibo/Entrega - Falla&apos; ||TEXT({!$Record.Sub_Estado__c}) = &apos;Recibo/Entrega - Deteriorado/cosmetico&apos;  ||TEXT({!$Record.Sub_Estado__c}) = &apos;Recibo/Entrega - Incompleto&apos; ))
+ || (
+TEXT({!$Record.Status}) = &apos;Solicitud bono virtual&apos; )
+|| (
+TEXT({!$Record.Status}) = &apos;Escalado a proveedor&apos; &amp;&amp;  (TEXT({!$Record.Sub_Estado__c}) = &apos;Novedad en entrega&apos; ||TEXT({!$Record.Sub_Estado__c}) = &apos;Demoras en tiempo tramite de garantia&apos;  ||TEXT({!$Record.Sub_Estado__c}) = &apos;Tramite de garantia&apos; ))</expression>
+    </formulas>
+    <formulas>
+        <name>isNew</name>
+        <dataType>Boolean</dataType>
+        <expression>ISNEW()</expression>
+    </formulas>
+    <interviewLabel>ALK Case Assignment {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ALK Case Assignment</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordLookups>
+        <name>Get_Queue_ABANDONO</name>
+        <label>Get Queue - ABANDONO</label>
+        <locationX>50</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_ABANDONO</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ABANDONO</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_AKT</name>
+        <label>Get Queue - AKT</label>
+        <locationX>4802</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_AKT</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>AKT</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_ALKOMPRAR</name>
+        <label>Get Queue - ALKOMPRAR</label>
+        <locationX>4538</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_ALKOMPRAR</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ALKOMPRAR</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_Caja_General</name>
+        <label>Get Queue - Caja General</label>
+        <locationX>5594</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_Caja_General</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Caja General</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_CARTERA</name>
+        <label>Get Queue - CARTERA</label>
+        <locationX>4274</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_CARTERA</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>CARTERA</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_COLA_GENERAL</name>
+        <label>Get Queue - COLA GENERAL</label>
+        <locationX>2162</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Priority_Field</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>COLA GENERAL</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_CONCESIONES</name>
+        <label>Get Queue - CONCESIONES</label>
+        <locationX>3218</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_CONCESIONES</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>CONCESIONES</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_ENTREGAS</name>
+        <label>Get Queue - ENTREGAS</label>
+        <locationX>2954</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_ENTREGAS</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ENTREGAS</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_INTANGIBLES</name>
+        <label>Get Queue - INTANGIBLES</label>
+        <locationX>3482</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_INTANGIBLES</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>INTANGIBLES</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_MEDIOS_DE_PAGO</name>
+        <label>Get Queue - MEDIOS DE PAGO</label>
+        <locationX>3746</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_MEDIOS_DE_PAGO</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>MEDIOS DE PAGO</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_PAK</name>
+        <label>Get Queue - PAK</label>
+        <locationX>1898</locationX>
+        <locationY>431</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_PAK</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PAK</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_POSVENTA</name>
+        <label>Get Queue - POSVENTA</label>
+        <locationX>2690</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_POSVENTA</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>POSVENTA</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_POSVENTA_ODS</name>
+        <label>Get Queue - POSVENTA ODS</label>
+        <locationX>842</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_POSVENTA_ODS</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>POSVENTA</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_PUNTOS_DE_VENTA</name>
+        <label>Get Queue - PUNTOS DE VENTA</label>
+        <locationX>2426</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_PUNTOS_DE_VENTA</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>PUNTOS DE VENTA</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_REPARACIONES</name>
+        <label>Get Queue - REPARACIONES</label>
+        <locationX>1106</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_REPARACIONES</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>REPARACIONES</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_SEGURIDAD</name>
+        <label>Get Queue - SEGURIDAD</label>
+        <locationX>5066</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_SEGURIDAD</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SEGURIDAD</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_TARJETA_ALKOSTO</name>
+        <label>Get Queue - TARJETA ALKOSTO</label>
+        <locationX>4010</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_TARJETA_ALKOSTO</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>TARJETA ALKOSTO</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_TIENDAS</name>
+        <label>Get Queue - TIENDAS</label>
+        <locationX>314</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_TIENDAS</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>DeveloperName</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>ALK_Tiendas</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordLookups>
+        <name>Get_Queue_TRANSPORTES</name>
+        <label>Get Queue - TRANSPORTES</label>
+        <locationX>5330</locationX>
+        <locationY>671</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Update_Owner_TRANSPORTES</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Name</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>TRANSPORTES</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Queue</stringValue>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Group</object>
+        <queriedFields>Id</queriedFields>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <recordUpdates>
+        <name>Update_Owner_ABANDONO</name>
+        <label>Update Owner - ABANDONO</label>
+        <locationX>50</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_ABANDONO.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_AKT</name>
+        <label>Update Owner - AKT</label>
+        <locationX>4802</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_AKT.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_ALKOMPRAR</name>
+        <label>Update Owner - ALKOMPRAR</label>
+        <locationX>4538</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_ALKOMPRAR.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_Caja_General</name>
+        <label>Update Owner - Caja General</label>
+        <locationX>5594</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_Caja_General.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_CARTERA</name>
+        <label>Update Owner - CARTERA</label>
+        <locationX>4274</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_CARTERA.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_COLA_GENERAL</name>
+        <label>Update Owner - COLA GENERAL</label>
+        <locationX>2162</locationX>
+        <locationY>911</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_COLA_GENERAL.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_CONCESIONES</name>
+        <label>Update Owner - CONCESIONES</label>
+        <locationX>3218</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_CONCESIONES.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_ENTREGAS</name>
+        <label>Update Owner - ENTREGAS</label>
+        <locationX>2954</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_ENTREGAS.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_INTANGIBLES</name>
+        <label>Update Owner - INTANGIBLES</label>
+        <locationX>3482</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_INTANGIBLES.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_MEDIOS_DE_PAGO</name>
+        <label>Update Owner - MEDIOS DE PAGO</label>
+        <locationX>3746</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_MEDIOS_DE_PAGO.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_NO_HAY_FILA</name>
+        <label>Update Owner - NO HAY FILA</label>
+        <locationX>578</locationX>
+        <locationY>671</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>$Record.CreatedById</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_PAK</name>
+        <label>Update Owner - PAK</label>
+        <locationX>1898</locationX>
+        <locationY>551</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_PAK.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_POSVENTA</name>
+        <label>Update Owner - POSVENTA</label>
+        <locationX>2690</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_POSVENTA.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_POSVENTA_ODS</name>
+        <label>Update Owner - POSVENTA ODS</label>
+        <locationX>842</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_POSVENTA_ODS.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_PUNTOS_DE_VENTA</name>
+        <label>Update Owner - PUNTOS DE VENTA</label>
+        <locationX>2426</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_PUNTOS_DE_VENTA.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_REPARACIONES</name>
+        <label>Update Owner - REPARACIONES</label>
+        <locationX>1106</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_REPARACIONES.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_SEGURIDAD</name>
+        <label>Update Owner - SEGURIDAD</label>
+        <locationX>5066</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_SEGURIDAD.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_TARJETA_ALKOSTO</name>
+        <label>Update Owner - TARJETA ALKOSTO</label>
+        <locationX>4010</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_TARJETA_ALKOSTO.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_TIENDAS</name>
+        <label>Update Owner - TIENDAS</label>
+        <locationX>314</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_TIENDAS.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Owner_TRANSPORTES</name>
+        <label>Update Owner - TRANSPORTES</label>
+        <locationX>5330</locationX>
+        <locationY>791</locationY>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_TRANSPORTES.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Priority field if the case origin is PORTAL</description>
+        <name>Update_Priority_Field</name>
+        <label>Update Priority Field</label>
+        <locationX>2162</locationX>
+        <locationY>791</locationY>
+        <connector>
+            <targetReference>Update_Owner_COLA_GENERAL</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Origin</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Portal</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <elementReference>Get_Queue_COLA_GENERAL.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Priority</field>
+            <value>
+                <stringValue>Low</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>2993</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>is_RT</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

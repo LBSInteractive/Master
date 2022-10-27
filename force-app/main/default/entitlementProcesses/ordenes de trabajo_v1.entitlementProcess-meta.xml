@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntitlementProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <SObjectType>WorkOrder</SObjectType>
+    <active>true</active>
+    <businessHours>Alkosto Field Service</businessHours>
+    <entryStartDateField>WorkOrder.CreatedDate</entryStartDateField>
+    <exitCriteriaFilterItems>
+        <field>WorkOrder.IsClosed</field>
+        <operation>equals</operation>
+        <value>true</value>
+    </exitCriteriaFilterItems>
+    <isVersionDefault>true</isVersionDefault>
+    <milestones>
+        <businessHours>Alkosto Field Service</businessHours>
+        <milestoneCriteriaFormula>OR(RecordType.DeveloperName = &quot;ALK_Instalaciones&quot;,
+			RecordType.DeveloperName = &quot;ALK_Visita_Garantia_Instalacion&quot;,
+			RecordType.DeveloperName = &quot;ALK_Visita_Garantia_Producto&quot;) &amp;&amp;
+			ISPICKVAL(Status,&quot;No Asignada&quot;) &amp;&amp;
+			 OR(ServiceTerritory.Name = &quot;Medellin - Video - Audio&quot;,
+							ServiceTerritory.Name = &quot;Medellin - Lav-Gas-Air-Nev&quot;)</milestoneCriteriaFormula>
+        <milestoneName>Programar el Servicio</milestoneName>
+        <minutesToComplete>840</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <milestones>
+        <businessHours>Alkosto Field Service Domingo</businessHours>
+        <milestoneCriteriaFormula>OR(RecordType.DeveloperName = &quot;ALK_Instalaciones&quot;,
+			RecordType.DeveloperName = &quot;ALK_Visita_Garantia_Instalacion&quot;,
+			RecordType.DeveloperName = &quot;ALK_Visita_Garantia_Producto&quot;) &amp;&amp;
+			ISPICKVAL(Status,&quot;No Asignada&quot;) &amp;&amp;
+			 NOT(OR(ServiceTerritory.Name = &quot;Medellin - Video - Audio&quot;,
+							ServiceTerritory.Name = &quot;Medellin - Lav-Gas-Air-Nev&quot;))</milestoneCriteriaFormula>
+        <milestoneName>Programar el Servicio</milestoneName>
+        <minutesToComplete>840</minutesToComplete>
+        <useCriteriaStartTime>true</useCriteriaStartTime>
+    </milestones>
+    <name>Ordenes de Trabajo</name>
+    <versionMaster>552010000004DH3</versionMaster>
+    <versionNumber>1</versionNumber>
+</EntitlementProcess>

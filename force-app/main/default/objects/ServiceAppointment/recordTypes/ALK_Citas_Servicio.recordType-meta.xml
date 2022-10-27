@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Citas_Servicio</fullName>
+    <active>true</active>
+    <label>Cita de Servicio</label>
+    <picklistValues>
+        <picklist>ALK_Motivo_Incompletud__c</picklist>
+        <values>
+            <fullName>Adecuaciones</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Daño estético</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falla de producto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incumpolimiento de Horario</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otro</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Producto incompleto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicitud Cliente</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Notificaction_Status__c</picklist>
+        <values>
+            <fullName>Envío de notificación fallido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ninguno</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Notificación Enviada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSL__InJeopardyReason__c</picklist>
+        <values>
+            <fullName>Delayed Finish</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Delayed Start</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Due Date Approaching</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Response</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSL__Schedule_Mode__c</picklist>
+        <values>
+            <fullName>Automatic</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>None</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Optimization</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>FSL__Time_Dependency__c</picklist>
+        <values>
+            <fullName>Finish Before Start</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Same Start</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Start After Finish</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Status</picklist>
+        <values>
+            <fullName>Agendada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cancelada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Dispatched</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Ejecutada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En Sitio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En Viaje</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incompleta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Asignada</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>No Contactada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendiente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retrasada</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

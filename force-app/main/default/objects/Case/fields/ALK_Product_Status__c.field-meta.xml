@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Product_Status__c</fullName>
+    <externalId>false</externalId>
+    <label>Estados del Producto</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Rayado</fullName>
+                <default>false</default>
+                <label>Rayado</label>
+            </value>
+            <value>
+                <fullName>Pelado</fullName>
+                <default>false</default>
+                <label>Pelado</label>
+            </value>
+            <value>
+                <fullName>Roto</fullName>
+                <default>false</default>
+                <label>Roto</label>
+            </value>
+            <value>
+                <fullName>Golpeado</fullName>
+                <default>false</default>
+                <label>Golpeado</label>
+            </value>
+            <value>
+                <fullName>Oxidado</fullName>
+                <default>false</default>
+                <label>Oxidado</label>
+            </value>
+            <value>
+                <fullName>Sucio</fullName>
+                <default>false</default>
+                <label>Sucio</label>
+            </value>
+            <value>
+                <fullName>Partes Sueltas</fullName>
+                <default>false</default>
+                <label>Partes Sueltas</label>
+            </value>
+            <value>
+                <fullName>Pantalla Rota</fullName>
+                <default>false</default>
+                <label>Pantalla Rota</label>
+            </value>
+            <value>
+                <fullName>Fisurado</fullName>
+                <default>false</default>
+                <label>Fisurado</label>
+            </value>
+            <value>
+                <fullName>Usado</fullName>
+                <default>false</default>
+                <label>Usado</label>
+            </value>
+            <value>
+                <fullName>Normal - Usado</fullName>
+                <default>false</default>
+                <label>Normal - Usado</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>8</visibleLines>
+</CustomField>

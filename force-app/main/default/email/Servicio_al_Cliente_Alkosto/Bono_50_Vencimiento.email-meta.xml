@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Bono 50% Vencimiento</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+Agradecemos el tiempo que te tomaste para contarnos tu caso, con respecto al inconveniente del billete falso en el proceso del avance que realizaste en nuestras cajas, lamentamos informarte que no podremos realizarte la devolución del dinero, puesto que estas reclamaciones solo son procedentes si nos lo informas en el momento que ocurre, una vez salgas de nuestras tiendas no es posible ayudarte con tu solicitud.
+
+Lamentamos que esto te haya ocasionado malestar en nuestra tienda.
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+Cordialmente,
+
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

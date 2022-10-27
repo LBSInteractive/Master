@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Division_List__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF (  ALK_Division__c = &apos;Grandes Electrodomesticos&apos;  || ALK_Division__c = &apos;Pequenos Electrodomesticos&apos;, 
+ TRUE,
+ IF ( ALK_Division__c = &apos;Informática&apos; || ALK_Division__c = &apos;Telefonía&apos;,
+ TRUE,
+ IF ( ALK_Division__c = &apos;Muebles y colchones&apos;,
+ TRUE,
+ FALSE
+)
+)
+)</formula>
+    <label>Listado División</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Trabajo_Complejo__c</fullName>
+    <externalId>false</externalId>
+    <formula>WorkType.ALK_Complex_Work__c</formula>
+    <label>Trabajo Complejo</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

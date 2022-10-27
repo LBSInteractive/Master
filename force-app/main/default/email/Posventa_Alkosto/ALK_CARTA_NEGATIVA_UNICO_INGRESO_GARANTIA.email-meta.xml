@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Carta Negativa Único Ingreso en Garantía</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Carta Negativa único ingreso en garantía</name>
+    <style>freeForm</style>
+    <subject>Carta Negativa Único Ingreso en Garantía</subject>
+    <textOnly>Bogotá D.C., día de mes del año
+
+Señor (a)
+
+XXXXXXXXX
+
+Referencia: Respuesta a Reclamación XXXXXXXXX
+
+Producto: XXXXXXXXXXXXXXXX
+
+Factura: XXXXXXXXXXXXXXXXXXXXXXXX
+
+Estimado(a) {!Case.Account}:
+
+Por medio de la presente nos permitimos dar respuesta a su reclamación. Analizando la trazabilidad de su garantía con la marca encontramos  el siguiente historial:
+
+“Ingresa bajo la orden de servicio BRXC1248 -01 .
+
+Comentarios del cliente: cliente informa que la unidad presenta falla sistema operativo + ocasionalmente no enciende aparece en error en el sistema + falla de almacenamiento +no permite hacer búsquedas en google”
+
+Acción correctiva: se reinstala sistema operativo Win 11, 21H2, se actualiza Win update, actualización de controladores, actualización de BIOS de F.18 a F.20 monitoreo de porcentajes de dispositivos en los cuales son estables ,optimización de sistema, optimización de navegadores, Hard disk sentinel sin problemas, para finalizar se realizan pruebas de navegación en YouTube con varias pestañas abiertas sin problemas , grabador de voz, audio , cámara , la pruebas tienen una duración de 24 horas en la cuales equipo no presenta anomalías de apagados la maquina queda operativa.”
+
+
+Se confirma que el proceso de garantía de su equipo fue realizado bajo los parámetros de ley, dando cumplimiento a lo establecido en los términos de la garantía del Estatuto de protección al consumidor ley 1480 de 2011.
+
+Teniendo en cuenta lo anterior su  pretensión de devolución de dinero y/o cambio no fue aprobada. Es evidente que la garantía ha sido atendida en debida y oportuna forma, al amparo de la normatividad vigente.
+
+Es así que lo requerimos para que se acerque al almacén (Alkosto Villavicencio) a retirar su artículo, para esto cuenta con 60 días de acuerdo a lo establecido en: “ARTÍCULO 18. PRESTACIÓN DE SERVICIOS QUE SUPONEN LA ENTREGA DE UN BIEN. PARÁGRAFO. Pasado un (1) mes a partir de la fecha prevista para la devolución o a la fecha en que el consumidor debía aceptar o rechazar expresamente el servicio, de conformidad con lo previsto en el numeral 1 anterior sin que el consumidor acuda a retirar el bien, el prestador del servicio lo requerirá para que lo retire dentro de los dos (2) meses siguientes a la remisión de la comunicación. Si el consumidor no lo retira se entenderá por ley que abandona el bien y el prestador del servicio deberá disponer del mismo conforme con la reglamentación que expida el Gobierno Nacional para el efecto.”
+
+Anexo respuesta de la marca
+
+Estamos atentos a escucharlo a través de nuestra línea de servicio al cliente número  4073033 en Bogotá y 018000111448  en el resto del país, o a través de nuestro correo sugerencias@alkosto.com.co.
+
+
+Cordialmente,
+
+
+Auxiliar Administrativo Posventa</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

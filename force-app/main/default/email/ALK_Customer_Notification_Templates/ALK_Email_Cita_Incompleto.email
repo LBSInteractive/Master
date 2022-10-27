@@ -1,0 +1,9 @@
+Hola {!ServiceAppointment.ALK_Customer_Name__c}
+
+Te confirmamos que la {!ServiceAppointment.ALK_Work_Type_Name__c}, registrada con el número de orden {!ServiceAppointment.ALK_Work_Order_Number__c} queda en el estado de servicio incompleto por {!ServiceAppointment.ALK_Email_Incomplete_Reason__c}.
+
+En un plazo máximo de 24 horas te estaremos contactando para indicarte el proceso a seguir.
+
+Cordialmente, 
+Equipo de instalaciones
+ALKOSTO - K-TRONIX

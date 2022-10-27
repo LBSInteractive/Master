@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Negativa Cambio por Insatisfacción</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Negativa Cambio por Insatisfacción</name>
+    <style>freeForm</style>
+    <subject>Negativa Cambio por Insatisfacción</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dando respuesta a tu solicitud de cambio de tu xxxxx, adquirido el día (xx) de enero de (xxxx), te informamos que nuestra política de cambios y devoluciones, tu como cliente cuentas con treinta días calendario a partir de la entrega de tu producto para realizar la devolución por insatisfacción siempre y cuando este se encuentre en perfecto estado, sin usar, en su empaque original e icopores, con todos sus accesorios, su manual y póliza de garantía completos, información que encuentra en la parte inferior de tu factura, o podrás consultar en nuestra política de cambios y devoluciones en el siguiente link www.Alkosto.com/politica-cambios, cabe aclarar que este procedimiento solo aplica para los productos que tienen cambio.
+
+
+Por lo anterior y teniendo en cuenta que tu producto no cumple con las condiciones mencionadas, tu solicitud no podrá ser procesada.
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

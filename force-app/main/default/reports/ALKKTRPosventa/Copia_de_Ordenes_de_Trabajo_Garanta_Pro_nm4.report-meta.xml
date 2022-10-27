@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_92545071</developerName>
+        <masterLabel>Aliado</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.WorkOrders$ServiceTerritory</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>B/quilla Vid-Nev-LV-LP-Mue-Air</sourceValue>
+            </sourceValues>
+            <value>Intersys</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bog Lavaplatos-Gaso</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fusa/Girardot Vid-Nev-LV-LP-Gas</sourceValue>
+            </sourceValues>
+            <value>Gas Planet</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bog Vid-Nev-LV-Mue</sourceValue>
+            </sourceValues>
+            <value>Dinamik</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cali Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <value>Fast Service</value>
+        </values>
+        <values>
+            <value>Vip</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Medellin LV-LP-Gas-Air-Nev</sourceValue>
+            </sourceValues>
+            <value>Uran Gas</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sicel Vid-Nev-LV-LP-Mue-Air</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yopal Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Villa Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <value>LCDR</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bucarm Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <value>CSTB</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Medellin Video - Audio</sourceValue>
+            </sourceValues>
+            <value>Compuspar Colombia SA</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Manizales Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pereira Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <value>Enlace Digital</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <aggregate>Sum</aggregate>
+            <axisBinding>y</axisBinding>
+            <column>Account.WorkOrders$ALK_Cantidad__c</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_92545071</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Account.WorkOrders$Name</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders$Status</field>
+    </columns>
+    <columns>
+        <field>Account$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders.Citas_de_servicios_1__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders.Citas_de_servicios_1__r$Status</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders.Citas_de_servicios_1__r$ALK_Motivo_Incompletud__c</field>
+    </columns>
+    <columns>
+        <field>Account$ALK_Identification_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders$ServiceTerritory</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders.Citas_de_servicios_1__r$WorkType</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders$ALK_Numero_Factura__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.WorkOrders$ALK_Cantidad__c</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders$ALK_Tienda_Compra__c</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders.Citas_de_servicios_1__r$ALK_Service_Resource__c</field>
+    </columns>
+    <description>Informe para ver las ordenes de trabajo de garantía de producto</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.WorkOrders$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,No Asignada,Agendada,No Contactada,Pendiente,En Viaje,En Sitio,Cancelada,Incompleta,Ejecutada,Reprogramada,Conciliada,Retrasada</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.WorkOrders$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>WorkOrder.ALK_Visita_Garantia_Producto</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_92545071</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Ordenes Garantía Producto</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cuentas_Ordenes_Citas__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

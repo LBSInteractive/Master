@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Daño Positivo Seguridad</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+Agradecemos que te tomes el tiempo de contarnos tu experiencia, lo más importante para nosotros es la experiencia que vivas en nuestras tiendas, por esta razón es de suma importancia la información que nos brindas.
+
+Respecto a la reclamación que nos presentas, relacionada con el daño ocasionado a tu vehículo, te contamos que la compañía no presta el servicio de parqueadero, únicamente permite el ingreso a la zona de estacionamiento, tal como se indica en los avisos ubicados dentro de nuestras instalaciones.
+
+Sin embargo, la compañía ha decidido ofrecerte una solución a tu reclamación; para esto, es necesario que llames a la línea 3152117553, taller autorizado “Fernando Quiroz” y agendes una cita para llevar tu vehículo, generar una cotización y posterior arreglo.
+
+Hoy nuestro compromiso hacia ti continúa más firme que nunca ya que queremos contar contigo siempre.
+
+Queremos recordarte que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti.
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+
+ALKOSTO - K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

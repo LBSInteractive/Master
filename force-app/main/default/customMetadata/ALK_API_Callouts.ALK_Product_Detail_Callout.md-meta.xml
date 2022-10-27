@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Product Detail Callout</label>
+    <protected>false</protected>
+    <values>
+        <field>ALK_Client_ID__c</field>
+        <value xsi:type="xsd:string">14826dba73a44d8cb1bb0c62c9a554d5</value>
+    </values>
+    <values>
+        <field>ALK_Client_Secret__c</field>
+        <value xsi:type="xsd:string">Bb1583aD8ED74354B8287b451D217F4E</value>
+    </values>
+    <values>
+        <field>ALK_Method__c</field>
+        <value xsi:type="xsd:string">GET</value>
+    </values>
+    <values>
+        <field>ALK_Path__c</field>
+        <value xsi:type="xsd:string">ALK_Callout_invoice/api/v1/invoice/{0}/products</value>
+    </values>
+</CustomMetadata>

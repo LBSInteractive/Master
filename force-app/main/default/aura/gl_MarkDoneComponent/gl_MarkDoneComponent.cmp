@@ -1,0 +1,13 @@
+<aura:component controller="gl_WorkspaceConnectorController" implements="flexipage:availableForAllPageTypes,force:hasRecordId,force:lightningQuickAction" access="global">
+    <lightning:messageChannel type="ctiAuraMessageChannel__c" aura:id="ctiAuraMessageChannel" scope="APPLICATION"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <aura:attribute name="CallObject" type="string" default="" />
+    <aura:attribute name="Disposition" type="string" default="" />
+    <aura:attribute name="Description" type="string" default="" />
+    <aura:attribute name="fieldsToShow" type="String" description="The comma separated field values" />
+    <aura:attribute name="recordId" type="String" description="The Id of the record" />
+    <aura:attribute name="detailRecord" type="SObject" description="The detail record to display values" />
+    <aura:attribute name="fieldList" type="String[]" description="the list of fields to show" />
+    <h1><ui:outputText value="{!v.detailRecord.Name}"/></h1> {!v.body}
+    <ui:button label="Mark Done" press="{!c.markDone}" />
+</aura:component>

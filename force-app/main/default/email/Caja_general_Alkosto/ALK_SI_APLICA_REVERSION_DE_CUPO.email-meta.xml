@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Si Aplica Reversión de Cupo</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Si Aplica Reversión de Cupo</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+Agradecemos el tiempo que te has tomado para informarnos tu caso acerca de xxxxxxxxxxx xx xxxxxxx, ya lo hemos gestionado, y en consecuencia hemos enviado la solicitud de ajuste de reversión a la red bancaria XXXXXXX  el día (dia) de (mes) de 20XX; te compartimos los datos de la transacción:
+
+
+FECHA
+
+VALOR
+
+AUTORIZACIÓN
+
+ESTABLECIMIENTO
+
+xxxx
+
+xxxxx
+
+xxxxx
+
+xxxxxx
+
+
+
+Ten en cuenta que a partir de la fecha de solicitud, las entidades financieras toman entre 8 y 15 dias hábiles para aplicar el ajuste en la cuenta bancaria o tarjeta.
+
+Si en algún momento presentas alguna inconsistencia, el titular de la tarjeta o la cuenta, deberá comunicarse directamente con la entidad financiera indicando los datos de la transacción  que se encuentran en el cuadro anterior.
+
+Recuerda que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti.
+
+
+Cordialmente,
+
+
+Equipo Servicio al cliente
+
+ALKOSTO - K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

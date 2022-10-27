@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Factura</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Facturas</value>
+    </caseValues>
+    <gender>Feminine</gender>
+    <layouts>
+        <layout>ALK_DESPACHO</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de la Entrega</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos del Cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_Factura_Hybris</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos del Cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_Factura_PAK</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos del Cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_ODS</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de la Factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos del Cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informaciones del Sistema</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_POSVENTA</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos del Cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_RMA</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos del Cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>Factura Layout</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <recordTypes>
+        <label></label>
+        <name>ALK_Factura_ODS</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ALK_Hybris</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ALK_POSVENTA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ALK_RMA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>DESPACHO</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>PAK</name>
+    </recordTypes>
+</CustomObjectTranslation>

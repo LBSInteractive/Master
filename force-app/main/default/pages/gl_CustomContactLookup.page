@@ -1,0 +1,117 @@
+<apex:page controller="gl_CustomContactLookupController"
+  title="Search" 
+  showHeader="true" 
+  sideBar="true" 
+  id="pg">
+  
+    <apex:includeScript value="/support/console/44.0/integration.js"/>
+    <script type="text/javascript" src="{!URLFOR($Resource.gl_jquery, 'jquery-1.12.4.min.js')}"></script>
+  
+    <script type="text/javascript"
+        src="/soap/ajax/26.0/connection.js"></script> 
+        
+   <script type="text/javascript">
+
+      
+    function ctiMessage() {
+            this.action = 'ObjectSelected',
+            this.id = '',
+            this.interactionId = ''
+    }
+
+    function refreshPage(objId)
+    {
+        //Commented a single line for avoiding Reflected XSS warning on checkmarx on 15/04/20 -- var iD = '{ ! ixnId}' ;
+        //console.log("refreshPage for objId="+objId+" and ixnId="+iD);
+        
+            if(typeof(Storage) !== "undefined" && window!=null && window.sessionStorage!=null){
+				//window.sessionStorage.setItem("Genesys_sfdc_interactionId", iD);
+				//window.sessionStorage.setItem("Genesys_sfdc_objectId", objId);
+				window.sessionStorage.setItem("Genesys_search_completed", "true");
+				sforce.one.navigateToSObject(objId, "related"); 		
+			}              
+    }
+    
+     //do search on pressing enter on search key text boxes -- EASFP-49
+     function handlerKeyPress(ev) {
+        if (window.event && window.event.keyCode == 13 || ev.which == 13) {
+          jQuery('[id*=btnGo]').trigger('click');
+            return false;
+        } else {
+            return true;
+        }
+    } 
+    
+   </script>    
+      <apex:pageBlock title="Contact Search" id="block">    
+  <apex:form >
+  <apex:outputPanel id="page" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+              
+            <apex:actionRegion >  
+                  <apex:outputPanel id="top" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+                    <apex:outputLabel value="Phone Number" style="font-weight:Bold;padding-right:10px;" for="txtSearch"/>
+                    <apex:inputText id="txtSearch" value="{!phoneNumber}"  onkeypress="return handlerKeyPress(event);"/>
+                    <apex:outputLabel value="First Name" style="font-weight:Bold;padding-right:10px;" for="txtFirstName"/>
+                    <apex:inputText id="txtFirstName" value="{!firstName}"  onkeypress="return handlerKeyPress(event);"/>
+                    <apex:outputLabel value="Last Name" style="font-weight:Bold;padding-right:10px;" for="txtLastName"/>
+                    <apex:inputText id="txtLastName" value="{!lastName}"  onkeypress="return handlerKeyPress(event);"/>
+                    <apex:outputLabel value="Email" style="font-weight:Bold;padding-right:10px;" for="txtEmail"/>
+                    <apex:inputText id="txtEmail" value="{!email}"  onkeypress="return handlerKeyPress(event);"/>
+                      <span style="padding-left:5px"><apex:commandButton id="btnGo" value="Search" action="{!Search}" rerender="pnlSearchResults"></apex:commandButton></span>
+                  </apex:outputPanel>
+
+                <apex:outputPanel id="pnlSearchResults" style="margin:10px;height:350px;overflow-Y:auto;" layout="block"> 
+                    <apex:pageBlock id="searchResultsC">  
+                      <apex:pageBlockTable value="{!contact_results}" var="c" id="c_tblResults">
+                        <apex:column >
+                          <apex:facet name="header">
+                            <apex:outputPanel >Contact Phone</apex:outputPanel>
+                          </apex:facet>
+						<apex:outputLink value="" onclick="refreshPage('{!c.Id}');" rendered="{!NOT(ISNULL(c.Id))}">{!c.Phone}</apex:outputLink>
+                        </apex:column>
+                        <apex:column >
+                          <apex:facet name="header">
+                            <apex:outputPanel >Contact First Name</apex:outputPanel>
+                          </apex:facet>
+						<apex:outputLink value="" onclick="refreshPage('{!c.Id}');" rendered="{!NOT(ISNULL(c.Id))}">{!c.FirstName}</apex:outputLink>
+                        </apex:column>
+                        <apex:column >
+                          <apex:facet name="header">
+                            <apex:outputPanel >Contact Last Name</apex:outputPanel>
+                          </apex:facet>
+						<apex:outputLink value="" onclick="refreshPage('{!c.Id}');" rendered="{!NOT(ISNULL(c.Id))}">{!c.LastName}</apex:outputLink>
+                        </apex:column>
+                        <apex:column >
+                          <apex:facet name="header">
+                            <apex:outputPanel >Contact Address</apex:outputPanel>
+                          </apex:facet>
+						<apex:outputLink value="" onclick="refreshPage('{!c.Id}');" rendered="{!NOT(ISNULL(c.Id))}">{!c.MailingStreet}</apex:outputLink>
+                        </apex:column>
+                        <apex:column >
+                          <apex:facet name="header">
+                            <apex:outputPanel >Contact Email</apex:outputPanel>
+                          </apex:facet>
+						<apex:outputLink value="" onclick="refreshPage('{!c.Id}');" rendered="{!NOT(ISNULL(c.Id))}">{!c.Email}</apex:outputLink>
+                        </apex:column>
+                        <apex:column >
+                          <apex:facet name="header">
+                            <apex:outputPanel >Account</apex:outputPanel>
+                          </apex:facet>
+						<apex:outputLink value="" onclick="refreshPage('{!c.Id}');" rendered="{!NOT(ISNULL(c.Id))}">{!c.Account.Name}</apex:outputLink>
+                        </apex:column>
+                        <apex:column >
+                          <apex:facet name="header">
+                            <apex:outputPanel >Account Postal Code</apex:outputPanel>
+                          </apex:facet>
+						<apex:outputLink value="" onclick="refreshPage('{!c.Id}');" rendered="{!NOT(ISNULL(c.Id))}">{!c.Account.BillingPostalCode}</apex:outputLink>
+                        </apex:column>                        
+                      </apex:pageBlockTable>    
+                    </apex:pageBlock>                      
+                </apex:outputPanel>
+            </apex:actionRegion>
+
+    
+  </apex:outputPanel>
+  </apex:form>
+      </apex:pageblock>
+</apex:page>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+	<types>
+		<members>Case.ALK_Last_Comment__c</members>
+		<name>CustomField</name>
+	</types>
+	<types>
+		<members>ALK_Actualizar_Ultimo_Comentario</members>
+		<name>Flow</name>
+	</types>
+	<types>
+		<members>Case.ALK_Block_Closed_Case</members>
+		<name>ValidationRule</name>
+	</types>
+	<version>54.0</version>
+</Package>

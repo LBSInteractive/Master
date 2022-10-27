@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Block_Closed_Case</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Not(ISNEW()),  Not(ISCHANGED(ALK_Pak_Batch_Status__c)), PRIORVALUE(ALK_Closed_Case__c) = true, ALK_Closed_Case__c = true, OR(
+$Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;, $Profile.Name &lt;&gt; &quot;System Administrator&quot;), Not(ISCHANGED(ALK_Factura__c)))</errorConditionFormula>
+    <errorMessage>No se puede hacer cambios en un caso ya cerrado.</errorMessage>
+</ValidationRule>

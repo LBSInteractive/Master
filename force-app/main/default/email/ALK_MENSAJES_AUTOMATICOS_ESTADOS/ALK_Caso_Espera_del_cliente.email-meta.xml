@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Caso En Espera del Cliente</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto-K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Contact}
+
+El día de hoy te hemos solicitado información adicional para el trámite de tu caso {!Case.CaseNumber}, por favor remítenos dicha información lo más rápido que puedas, estamos atentos para continuar con la gestión de tu solicitud.
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente: Bogotá (601)4073033, nacional 018000111448.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

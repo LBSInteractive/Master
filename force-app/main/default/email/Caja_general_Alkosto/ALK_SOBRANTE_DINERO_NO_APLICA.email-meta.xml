@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sobrante Dinero no Aplica</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Sobrante Dinero no Aplica</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+Agradecemos que te hayas tomado el tiempo de contarnos tu caso sobre el xxxxxxx , hemos realizado la verificación y te confirmamos que para la transacción del 5 de febrero de 2021 por valor de $500.000 realizada en la tienda Alkosto 68, no se presentan sobrantes ni dobles abonos por este valor.
+
+En caso de que continues presentando la novedad, te sugerimos contactarte con la entidad financiera que emitió tu tarjeta.
+
+Queremos recordarte que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti. Para nosotros es muy importante seguir contando contigo.
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO - K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

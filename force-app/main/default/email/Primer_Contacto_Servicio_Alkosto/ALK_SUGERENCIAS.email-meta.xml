@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sugerencias</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Sugerencias</name>
+    <style>freeForm</style>
+    <subject>Sugerencias</subject>
+    <textOnly>Hola {!Case.Contact}
+
+Agradecemos que te hayas tomado el tiempo para contarnos tu sugerencia acerca XXXXXXXXX nuestro punto de venta, la cual será remitida al área de puntos de pago para su respectiva evaluación. Continuamente estamos trabajando para entregarte el mejor servicio y tus comentarios son fuente importante para el mejoramiento continuo
+
+Queremos recordarte que estamos siempre a tu disposición para escucharte en nuestra línea de servicio al cliente número 4073033 en Bogotá y 018000111448 en el resto del país para nosotros es muy importante seguir contando contigo siempre.
+
+Cordialmente,
+
+Equipo Servicio al cliente
+ALKOSTO - K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Work_Type_Category__c</fullName>
+    <externalId>false</externalId>
+    <label>Categoría</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Video</fullName>
+                <default>false</default>
+                <label>Video</label>
+            </value>
+            <value>
+                <fullName>Muebles</fullName>
+                <default>false</default>
+                <label>Muebles</label>
+            </value>
+            <value>
+                <fullName>Lavadoras</fullName>
+                <default>false</default>
+                <label>Lavadoras</label>
+            </value>
+            <value>
+                <fullName>Nevecones</fullName>
+                <default>false</default>
+                <label>Nevecones</label>
+            </value>
+            <value>
+                <fullName>Lavaplatos</fullName>
+                <default>false</default>
+                <label>Lavaplatos</label>
+            </value>
+            <value>
+                <fullName>Aires Acondicionados</fullName>
+                <default>false</default>
+                <label>Aires Acondicionados</label>
+            </value>
+            <value>
+                <fullName>Visitas Aires Acondicionados</fullName>
+                <default>false</default>
+                <label>Visitas Aires Acondicionados</label>
+            </value>
+            <value>
+                <fullName>Horno</fullName>
+                <default>false</default>
+                <label>Horno</label>
+            </value>
+            <value>
+                <fullName>Secadora</fullName>
+                <default>false</default>
+                <label>Secadora</label>
+            </value>
+            <value>
+                <fullName>Estufa + Corte</fullName>
+                <default>false</default>
+                <label>Estufa + Corte</label>
+            </value>
+            <value>
+                <fullName>Estufa</fullName>
+                <default>false</default>
+                <label>Estufa</label>
+            </value>
+            <value>
+                <fullName>Calentadores</fullName>
+                <default>false</default>
+                <label>Calentadores</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Duplicate_Account</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND( Duplicate_Account__c  = TRUE,  
+NOT(ISBLANK( ALK_Identification_Number__c ))
+)</errorConditionFormula>
+    <errorDisplayField>ALK_Identification_Number__c</errorDisplayField>
+    <errorMessage>Duplicate value found for this account</errorMessage>
+</ValidationRule>

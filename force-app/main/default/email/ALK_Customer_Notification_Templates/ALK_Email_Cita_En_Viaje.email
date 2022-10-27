@@ -1,0 +1,11 @@
+Hola {!ServiceAppointment.ALK_Customer_Name__c}
+
+Te recordamos que el día de hoy realizaremos tu instalación, nuestro(s) técnico(s) {!ServiceAppointment.ALK_Resource_Names__c} se acercará(n) {!ServiceAppointment.ALK_Time_Window__c} según la orden {!ServiceAppointment.ALK_Work_Order_Number__c}.
+
+Si tenemos alguna novedad te estaremos informando.
+
+ 
+Cordialmente,   
+
+Equipo de instalaciones  
+ALKOSTO - K-TRONIX

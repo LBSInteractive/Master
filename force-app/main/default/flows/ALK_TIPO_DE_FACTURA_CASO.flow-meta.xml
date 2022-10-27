@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <assignments>
+        <name>Assign_INFORMACION_RMA</name>
+        <label>Assign INFORMACION RMA</label>
+        <locationX>578</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ALK_INVOICE_TYPE__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>RMA</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Sollicitud_Despatchos</name>
+        <label>Assign Sollicitud Despatchos</label>
+        <locationX>1282</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ALK_INVOICE_TYPE__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>DESPACHOS</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Sollicitud_Producto</name>
+        <label>Assign Sollicitud Producto</label>
+        <locationX>1018</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ALK_INVOICE_TYPE__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>PRODUCTO</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assign_Sollicitud_RMA</name>
+        <label>Assign Sollicitud RMA</label>
+        <locationX>1546</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ALK_INVOICE_TYPE__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>RMA</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assigne_QUEJA_Decpatchos</name>
+        <label>Assigne QUEJA Decpatchos</label>
+        <locationX>2250</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ALK_INVOICE_TYPE__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>DESPACHOS</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assigne_QUEJA_Producto</name>
+        <label>Assigne QUEJA Producto</label>
+        <locationX>1986</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ALK_INVOICE_TYPE__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>PRODUCTO</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>Assigne_QUEJA_RMA</name>
+        <label>Assigne QUEJA RMA</label>
+        <locationX>2514</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ALK_INVOICE_TYPE__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>RMA</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>UPDATE_TIPO_DESPATCHOS</name>
+        <label>UPDATE TIPO DESPACHOS</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ALK_INVOICE_TYPE__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>Despachos</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Record</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>UPDATE_TIPO_PRODUCTO</name>
+        <label>UPDATE TIPO PRODUCTO</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.ALK_INVOICE_TYPE__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <stringValue>PRODUCTO</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Record</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Is_Case_Record_Type</name>
+        <label>Is Case Record Type</label>
+        <locationX>1700</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>INFORMACION</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ALK_INFORMACION</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_Tipo_Informa</targetReference>
+            </connector>
+            <label>INFORMACION</label>
+        </rules>
+        <rules>
+            <name>SOLICITUD</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ALK_SOLICITUD</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>is_Tipo</targetReference>
+            </connector>
+            <label>SOLICITUD</label>
+        </rules>
+        <rules>
+            <name>QUEJA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ALK_QUEJA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>is_Tipo_1</targetReference>
+            </connector>
+            <label>QUEJA</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>is_Tipo</name>
+        <label>is Tipo</label>
+        <locationX>1414</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Update_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Other</defaultConnectorLabel>
+        <rules>
+            <name>Producto_Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Is_Valid_SOLICITUD_Producto</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Sollicitud_Producto</targetReference>
+            </connector>
+            <label>Producto Valid</label>
+        </rules>
+        <rules>
+            <name>Despachos_Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Is_Valid_SOLICITUD_DESPACHOS</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Sollicitud_Despatchos</targetReference>
+            </connector>
+            <label>Despachos Valid</label>
+        </rules>
+        <rules>
+            <name>RMA_Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Is_Valid_SOLICITUD_RMA</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Sollicitud_RMA</targetReference>
+            </connector>
+            <label>RMA Valid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>is_Tipo_1</name>
+        <label>is Tipo</label>
+        <locationX>2382</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Update_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Producto_Queja_Valid</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>Is_Valid_QUEJA_Producto_1</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Is_Valid_QUEJA_Producto_2</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>Is_Valid_QUEJA_Producto_3</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assigne_QUEJA_Producto</targetReference>
+            </connector>
+            <label>Producto Queja Valid</label>
+        </rules>
+        <rules>
+            <name>DESPATCHOS_Queja_Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Is_QUEJA_Despatchos</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assigne_QUEJA_Decpatchos</targetReference>
+            </connector>
+            <label>DESPATCHOS Queja Valid</label>
+        </rules>
+        <rules>
+            <name>RMA_Queja_Valid</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Is_Valid_QUEJA_RMA</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assigne_QUEJA_RMA</targetReference>
+            </connector>
+            <label>RMA Queja Valid</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Tipo_Informa</name>
+        <label>Is TIPO</label>
+        <locationX>446</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Update_Record</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>PRODUCTO_VALID_INFORMA</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>COMPAÑÍA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PRODUCTO</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>COMPRA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>SERVICIO</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>POSVENTA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PROCESO PAGO</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>PRODUCTOS INTANGIBLES</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UPDATE_TIPO_PRODUCTO</targetReference>
+            </connector>
+            <label>PRODUCTO VALID</label>
+        </rules>
+        <rules>
+            <name>DESPACHOS_VALID_INFORMA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>ENTREGA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>UPDATE_TIPO_DESPATCHOS</targetReference>
+            </connector>
+            <label>DESPACHOS VALID</label>
+        </rules>
+        <rules>
+            <name>RMA_VALID_Informa</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Type</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>RECOGIDA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_INFORMACION_RMA</targetReference>
+            </connector>
+            <label>RMA VALID</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>Is_QUEJA_Despatchos</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+ISPICKVAL({!$Record.Type},&apos;COMPAÑÍA&apos;) &amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;ACCIDENTE&apos;) )
+|| (ISPICKVAL({!$Record.Type},&apos;ENTREGA&apos;)&amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;PRODUCTO TROCADO&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;FALSA ENTREGA&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;MERCANCÍA NO HAY&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;TRANSPORTADOR NO ALCANZA A TERMINAR RUTA&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;NO SALIÓ A RUTA&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;ENTREGA INCOMPLETA&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCUMPLIMIENTO&apos;))) 
+
+|| (ISPICKVAL({!$Record.Type},&apos;PRODUCTOS INTANGIBLES&apos;)&amp;&amp; ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES CON LA INSTALACIÓN PROPIO&apos;))
+
+|| (ISPICKVAL({!$Record.Type},&apos;PROCESO PAGO&apos;)&amp;&amp; ISPICKVAL({!$Record.ALK_Clase__c},&apos;TRANSACCIONES FRAUDULENTAS&apos;))
+|| (ISPICKVAL({!$Record.Type},&apos;ENTREGA&apos;) &amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;DOBLE ENTREGA&apos;) ))
+|| (ISPICKVAL({!$Record.Type},&apos;RECOGE EN TIENDA&apos;)&amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;NO LLEGO CORREO O MENSAJE DE CONFIRMACIÓN&apos;)))
+|| (ISPICKVAL({!$Record.Type},&apos;TRANSPORTES&apos;)&amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;ENTREGA INADECUADA TRANSPORTADOR&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;HURTO/DAÑO TRANSPORTADOR&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;VENTA PROHIBIDA TRANSPORTADOR&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;DESMONTE DE PUERTAS&apos;)))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Is_Valid_QUEJA_Producto_1</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+(ISPICKVAL({!$Record.Type},&apos;COMPAÑÍA&apos;) &amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;ASESORÍA Y ATENCIÓN AL CLIENTE&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;ACCIDENTE CON PRODUCTO&apos;)))
+|| (ISPICKVAL({!$Record.Type},&apos;SERVICIO&apos;)&amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES CON LA INSTALACIÓN MARCA&apos;)
+                                                                                                                                        || ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES SEGURO SOAT&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES SEGURO PERSONAL&apos;) 
+                                                                                                                                        || ISPICKVAL({!$Record.ALK_Clase__c},&apos;CANCELACIÓN DEL SERVICIO&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES SEGURO CELULAR&apos;) 
+                                                                                                                                        || ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES SEGURO GARANTÍA EXTENDIDA&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES ENTREGAS SIM CARD&apos;)))
+|| (ISPICKVAL({!$Record.Type},&apos;COMPRA&apos;)&amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES EN EL PROCESO DE COMPRA INTERNET&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;FACTURA&apos;) || 
+ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES EN EL PEDIDO INTERNET&apos;)|| 
+ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONSISTENCIA EN PRECIOS&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;FACTURA DE COMPRA NO REALIZADA&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;FACTURA ELECTRONICA&apos;) ))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Is_Valid_QUEJA_Producto_2</name>
+        <dataType>Boolean</dataType>
+        <expression>((ISPICKVAL({!$Record.Type},&apos;PROCESO PAGO&apos;)&amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;ERROR EN VUELTAS&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;PROMOCIÓN NO APLICADA&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;COBRO DE INTERESES TARJETA ALKOSTO&apos;)  
+                                                             || ISPICKVAL({!$Record.ALK_Clase__c},&apos;COBRO DE INTERESES CRÉDITO 20 MINUTOS&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;DEMORAS EN EXTRACTOS&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;DEVOLUCIÓN DE CHEQUE&apos;)  
+                                                             || ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONFORMIDAD PAGO ( FECHA-CUOTAS-MONTO-VALOR) TARJETA ALKOSTO&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONFORMIDAD PAGO ( FECHA-CUOTAS-MONTO-VALOR) CRÉDITO 20 MINUTOS&apos;) 
+                                                             || ISPICKVAL({!$Record.ALK_Clase__c},&apos;EXENCIÓN IVA NO APLICADO&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;REPORTE EN CENTRALES DE RIESGO CRÉDITO 20 MINUTOS&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;REPORTE EN CENTRALES DE RIESGO TARJETA ALKOSTO&apos;) 
+                                                             || ISPICKVAL({!$Record.ALK_Clase__c},&apos;DOBLE COBRO DE TRANSACCIÓN&apos;)))
+|| (ISPICKVAL({!$Record.Type},&apos;SEGURIDAD&apos;)&amp;&amp; ISPICKVAL({!$Record.ALK_Clase__c},&apos;HURTO/DAÑO&apos;))
+|| (ISPICKVAL({!$Record.Type},&apos;POSVENTA&apos;) ))</expression>
+    </formulas>
+    <formulas>
+        <name>Is_Valid_QUEJA_Producto_3</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+(ISPICKVAL({!$Record.Type},&apos;PRODUCTOS INTANGIBLES&apos;) &amp;&amp; 
+(ISPICKVAL({!$Record.ALK_Clase__c},&apos;CANCELACIÓN DEL SERVICIO&apos;)
+|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES CON LA INSTALACIÓN PROPIO&apos;)
+|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES CON LA INSTALACIÓN MARCA&apos;)
+|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES SEGURO PERSONAL&apos;)
+|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES SEGURO CELULAR&apos;)
+|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES SEGURO GARANTÍA EXTENDIDA&apos;)
+|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;INCONVENIENTES ENTREGAS SIM CARD&apos;)))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Is_Valid_QUEJA_RMA</name>
+        <dataType>Boolean</dataType>
+        <expression>(ISPICKVAL({!$Record.Type},&apos;ENTREGA&apos;) &amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;DEMORA EN LA RECOGIDA DEL PRODUCTO&apos;) ))</expression>
+    </formulas>
+    <formulas>
+        <name>Is_Valid_SOLICITUD_DESPACHOS</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+ISPICKVAL({!$Record.Type},&apos;ENTREGA&apos;) &amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;CAMBIO DE PRODUCTO NO ENTREGADO&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;CAMBIO FECHA DE DESPACHO&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;CAMBIO DE DIRECCIÓN DE DESPACHO&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;CANCELACIÓN DEL DESPACHO&apos;))
+|| (ISPICKVAL({!$Record.Type},&apos;PRODUCTOS INTANGIBLES&apos;) &amp;&amp; ISPICKVAL({!$Record.ALK_Clase__c},&apos;INSTALACIÓN&apos;))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Is_Valid_SOLICITUD_Producto</name>
+        <dataType>Boolean</dataType>
+        <expression>(
+ISPICKVAL({!$Record.Type},&apos;COMPAÑÍA&apos;) &amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;DOCUMENTOS&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;BENEFICIOS TRIBUTARIOS&apos;))
+
+|| (ISPICKVAL({!$Record.Type},&apos;COMPRA&apos;)&amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;ACTUALIZACIÓN DE DATOS&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;FACTURA&apos;)))
+|| (ISPICKVAL({!$Record.Type},&apos;PROCESO PAGO&apos;)&amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;TRÁMITE BONO CAMBIO&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;TRÁMITE BONO 50%&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;OTROS BONOS&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;REVERSIÓN CUPO&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;CANCELACIÓN TRANSACCIÓN&apos;)))
+|| (ISPICKVAL({!$Record.Type},&apos;POSVENTA&apos;)&amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;GARANTÍA POR PRIMERA VEZ&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;CAMBIO POR INSATISFACCIÓN MERCADO&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;ESTADO DE LA ORDEN DE SERVICIO&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;INGRESO PARA TRÁMITE DE GARANTÍA&apos;) || ISPICKVAL({!$Record.ALK_Clase__c},&apos;APROBACIÓN PAK&apos;)))
+)</expression>
+    </formulas>
+    <formulas>
+        <name>Is_Valid_SOLICITUD_RMA</name>
+        <dataType>Boolean</dataType>
+        <expression>(ISPICKVAL({!$Record.Type},&apos;RECOGIDA&apos;)&amp;&amp; (ISPICKVAL({!$Record.ALK_Clase__c},&apos;CAMBIO DE DIRECCIÓN DE LA RECOGIDA&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;CAMBIO DE FECHA DE LA RECOGIDA&apos;)|| ISPICKVAL({!$Record.ALK_Clase__c},&apos;CANCELACIÓN DE LA RECOGIDA&apos;)))</expression>
+    </formulas>
+    <interviewLabel>ALK_TIPO_DE_FACTURA_CASO {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ALK_TIPO_DE_FACTURA_CASO</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Record</name>
+        <label>Update Record</label>
+        <locationX>1700</locationX>
+        <locationY>887</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>1574</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Case_Record_Type</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>NotEqualTo</operator>
+            <value>
+                <stringValue>Closed</stringValue>
+            </value>
+        </filters>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

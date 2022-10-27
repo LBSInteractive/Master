@@ -1,0 +1,9 @@
+<apex:page showHeader="false" sidebar="false" >
+<script>
+   //Commented a single line for avoiding Reflected XSS warning on checkmarx on 15/04/20 -- var url = "{ ! $ CurrentPage.URL }" ;
+   var url = "{!JSENCODE($CurrentPage.URL)}";
+   sessionStorage.setItem('refUrl',url);
+   //alert('redirect ' + url);
+   location.replace('/lightning');
+</script>
+</apex:page>

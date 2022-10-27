@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Informe de servicio de la Orden de Trabajo</name>
+    <style>none</style>
+    <subject>Alkosto: Tu informe de servicio de la Orden de Trabajo {!WorkOrder.WorkOrderNumber}</subject>
+    <textOnly>Estimado cliente,
+
+Adjunto, informe de servicio de la orden de trabajo {!WorkOrder.WorkOrderNumber}.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

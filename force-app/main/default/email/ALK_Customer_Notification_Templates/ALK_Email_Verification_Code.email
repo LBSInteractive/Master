@@ -1,0 +1,5 @@
+Hola {!Nombre}
+
+El código que debes confirmar para continuar con tu proceso es: {!Codigo} 
+
+Valido solo {!Data}

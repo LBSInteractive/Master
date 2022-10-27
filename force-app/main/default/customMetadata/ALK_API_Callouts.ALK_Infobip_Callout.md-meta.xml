@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Infobip Callout</label>
+    <protected>false</protected>
+    <values>
+        <field>ALK_Client_ID__c</field>
+        <value xsi:type="xsd:string">6d6e697f9e0542e7913a2f4f90fb59bf</value>
+    </values>
+    <values>
+        <field>ALK_Client_Secret__c</field>
+        <value xsi:type="xsd:string">5E83b28F37Ed49e0AF98fe9390C633F8</value>
+    </values>
+    <values>
+        <field>ALK_Method__c</field>
+        <value xsi:type="xsd:string">POST</value>
+    </values>
+    <values>
+        <field>ALK_Path__c</field>
+        <value xsi:type="xsd:string">ALK_Callout_infobip/api/v1/messages</value>
+    </values>
+</CustomMetadata>

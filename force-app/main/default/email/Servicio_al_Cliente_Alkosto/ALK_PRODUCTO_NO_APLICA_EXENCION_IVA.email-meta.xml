@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Producto no Aplica Exención IVA</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Producto no Aplica Exención IVA</name>
+    <style>freeForm</style>
+    <subject>Producto no Aplica Exención IVA</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+
+
+
+
+
+
+
+Dando respuesta a tu reclamación referente a la exención de Iva no aplicada en tu compra realizada el día (xx) de mes (xx) de (xxxx), te informamos que como lo específica ley 2155 del 2021 y se lee de manera restrictiva:
+
+“Artículo 38: Electrodomésticos, computadores y equipos de comunicaciones. Son los aparatos eléctricos que se utilizan en el hogar, que incluyen únicamente televisores, parlantes de uso doméstico, tabletas, refrigeradores, congeladores, lavaplatos eléctricos, máquinas de lavar y secar para el hogar, aspiradoras, estufas, enceradoras de piso, trituradores eléctricos de desperdicios, aparatos eléctricos para preparar y elaborar alimentos, máquinas de afeitar eléctricas, cepillos de dientes eléctricos, calentadores de agua eléctricos, secadores eléctricos, planchas eléctricas, calentadores de ambiente y ventiladores de uso doméstico, aires acondicionados, hornos eléctricos, hornos microondas, planchas para cocinar, tostadores, cafeteras o teteras eléctricas y resistencias eléctricas para calefacción, y computadores personales y equipos de comunicaciones. En esta  categoría se incluyen los bienes descritos en este numeral que utilizan el gas combustible o energía solar para su funcionamiento”.
+
+De acuerdo a lo anterior queremos contarte que el producto que tu adquiriste “xxxxxxxx” no se encuentra dentro de los productos con exención IVA motivo por el cual tu solicitud no es procedente.
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

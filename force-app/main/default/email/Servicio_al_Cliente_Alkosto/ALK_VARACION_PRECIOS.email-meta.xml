@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Variación de Precios</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Variación de Precios</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+
+
+
+
+
+En respuesta a tu reclamación referente a la diferencia de precio de los productos, nos permitimos informarte que esta categoría de productos es muy dinámica en el mercado, por tal razón se pueden producir variación en los precios, ofertas y promociones entre las diferentes (cadenas o fechas)  que los comercializan por la libre oferta y demanda de estos.
+
+Alkosto trabaja de manera continua con los proveedores para alcanzar unos precios competitivos para nuestros clientes, sin embargo, se pueden presentar situaciones como las que tú viviste, lamentamos que esta vez no hayamos podido cumplir con tus expectativas.
+
+Hoy nuestro compromiso hacia ti continúa más firme que nunca, seguiremos trabajando en la búsqueda constante de la mejora de tu experiencia y poder seguir contando contigo como nuestro cliente.
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+
+
+
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

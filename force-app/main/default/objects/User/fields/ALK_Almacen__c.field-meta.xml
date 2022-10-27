@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Almacen__c</fullName>
+    <externalId>false</externalId>
+    <label>Almacén</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>ALKOSTO VILLAVICENCIO</fullName>
+                <default>false</default>
+                <label>ALKOSTO VILLAVICENCIO</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO KR 30</fullName>
+                <default>false</default>
+                <label>ALKOSTO KR 30</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO 170</fullName>
+                <default>false</default>
+                <label>ALKOSTO 170</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO EDEN</fullName>
+                <default>false</default>
+                <label>ALKOSTO EDEN</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO 68</fullName>
+                <default>false</default>
+                <label>ALKOSTO 68</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO VENECIA</fullName>
+                <default>false</default>
+                <label>ALKOSTO VENECIA</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO CALI</fullName>
+                <default>false</default>
+                <label>ALKOSTO CALI</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO PEREIRA</fullName>
+                <default>false</default>
+                <label>ALKOSTO PEREIRA</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO BARRANQUILLA</fullName>
+                <default>false</default>
+                <label>ALKOSTO BARRANQUILLA</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO FLORIDA BLANCA</fullName>
+                <default>false</default>
+                <label>ALKOSTO FLORIDA BLANCA</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO SINCELEJO</fullName>
+                <default>false</default>
+                <label>ALKOSTO SINCELEJO</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO YOPAL</fullName>
+                <default>false</default>
+                <label>ALKOSTO YOPAL</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX 20 JULIO</fullName>
+                <default>false</default>
+                <label>K-TRONIX 20 JULIO</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX AMERICAS</fullName>
+                <default>false</default>
+                <label>K-TRONIX AMERICAS</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX SALITRE</fullName>
+                <default>false</default>
+                <label>K-TRONIX SALITRE</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX SUBA</fullName>
+                <default>false</default>
+                <label>K-TRONIX SUBA</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX UNICENTRO</fullName>
+                <default>false</default>
+                <label>K-TRONIX UNICENTRO</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX TITAN</fullName>
+                <default>false</default>
+                <label>K-TRONIX TITAN</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX 94</fullName>
+                <default>false</default>
+                <label>K-TRONIX 94</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX CENTRO MAYOR</fullName>
+                <default>false</default>
+                <label>K-TRONIX CENTRO MAYOR</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX MOSQUERA</fullName>
+                <default>false</default>
+                <label>K-TRONIX MOSQUERA</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX SOACHA</fullName>
+                <default>false</default>
+                <label>K-TRONIX SOACHA</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX CHIA</fullName>
+                <default>false</default>
+                <label>K-TRONIX CHIA</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX FUSA</fullName>
+                <default>false</default>
+                <label>K-TRONIX FUSA</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX GIRARDOT</fullName>
+                <default>false</default>
+                <label>K-TRONIX GIRARDOT</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX MANIZALES</fullName>
+                <default>false</default>
+                <label>K-TRONIX MANIZALES</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX VILLAVICENCIO</fullName>
+                <default>false</default>
+                <label>K-TRONIX VILLAVICENCIO</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX CALI</fullName>
+                <default>false</default>
+                <label>K-TRONIX CALI</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX TUNJA</fullName>
+                <default>false</default>
+                <label>K-TRONIX TUNJA</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX BUCARAMANGA</fullName>
+                <default>false</default>
+                <label>K-TRONIX BUCARAMANGA</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX ARKADIA</fullName>
+                <default>false</default>
+                <label>K-TRONIX ARKADIA</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX POBLADO</fullName>
+                <default>false</default>
+                <label>K-TRONIX POBLADO</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX TESORO</fullName>
+                <default>false</default>
+                <label>K-TRONIX TESORO</label>
+            </value>
+            <value>
+                <fullName>PAGINA INTERNET</fullName>
+                <default>false</default>
+                <label>PAGINA INTERNET</label>
+            </value>
+            <value>
+                <fullName>K-TRONIX BARRANQUILLA</fullName>
+                <default>false</default>
+                <label>K-TRONIX BARRANQUILLA</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

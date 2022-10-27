@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Hurto Positivo Seguridad Direccionado a la Tienda</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Hurto Positivo Seguridad Direccionado a la Tienda</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+Agradecemos que te tomes el tiempo de contarnos tu caso, lo más importante para nosotros es la experiencia que vivas en nuestras tiendas, por esta razón es de suma importancia la información que nos brindas.
+
+Respecto a tu queja, relacionada con el (hurto/daño) ocasionado en tu XXXXX, nos permitimos recordarte que nuestra compañía no presta el servicio de parqueadero, únicamente permite el ingreso a la zona de estacionamiento, tal como te indicamos en los avisos ubicados dentro de las instalaciones.
+
+Sin embargo, la compañía ha decidido ofrecerte una solución a tu reclamación; para esto es necesario que te acerques con esta comunicación al punto de venta donde ocurrió el hecho y preguntes por el supervisor o administrador quien te informara el proceso a seguir.
+
+Queremos recordarte que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti.
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO - K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

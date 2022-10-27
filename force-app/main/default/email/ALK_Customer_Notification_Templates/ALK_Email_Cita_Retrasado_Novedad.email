@@ -1,0 +1,9 @@
+Hola {!ServiceAppointment.ALK_Customer_Name__c}
+
+Te queremos contar que se nos presentó un imprevisto con tu servicio de {!ServiceAppointment.ALK_Work_Type_Name__c}, por lo tanto, te informamos que nuestro técnico presenta un retraso de 30 a 60 minutos aproximadamente.
+
+Te confirmaremos en el momento que nuestro técnico esté en camino al lugar acordado. 
+
+Cordialmente,   
+Equipo de instalaciones  
+ALKOSTO - K-TRONIX

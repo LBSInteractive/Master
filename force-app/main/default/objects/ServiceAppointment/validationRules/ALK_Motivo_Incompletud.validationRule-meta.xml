@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Motivo_Incompletud</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(ISPICKVAL(Status,&apos;Incompleto&apos;),OR(ISPICKVAL(ALK_Motivo_Incompletud__c, &apos;&apos;),AND(ISPICKVAL(ALK_Motivo_Incompletud__c, &apos;Otros&apos;),ISNULL(ALK_Motivo_Incompletud_otros__c)))
+)</errorConditionFormula>
+    <errorMessage>Please fill in the field Motivo de incompletud/Motivo de incompletud (otros</errorMessage>
+</ValidationRule>

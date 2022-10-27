@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK</fullName>
+    <columns>Name</columns>
+    <columns>CreatedDate</columns>
+    <columns>Account</columns>
+    <columns>Status</columns>
+    <columns>RecordType</columns>
+    <columns>WorkType</columns>
+    <columns>ALK_Numero_Factura__c</columns>
+    <columns>ServiceTerritory</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>WorkType</field>
+        <operation>contains</operation>
+        <value>60</value>
+    </filters>
+    <label>[ALK/KTR] Todas las Ordenes de Trabajo</label>
+</ListView>

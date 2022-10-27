@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Felicitaciones</name>
+    <style>freeForm</style>
+    <subject>Felicitaciones</subject>
+    <textOnly>Hola {!Case.Contact}
+
+Realmente apreciamos que te hayas tomado el tiempo para reconocer a nuestro colaborador (Nombre del asesor), por la excelente atención y apoyo que te brindo, tu grata experiencia es el resultado del esfuerzo y trabajo en equipo que hemos venido construyendo en la compañía para que tu visita sea cada vez mejor.
+
+Te contamos que tu experiencia fue remitida a nuestro colaborador quien será reconocido por su excelente trabajo.
+
+Queremos agradecerte y recordarte que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti.
+
+Cordialmente,
+
+Equipo Servicio al cliente
+ALKOSTO - K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

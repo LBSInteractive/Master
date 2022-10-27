@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Inconvenientes con el Pedido Internet</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Inconvenientes con el Pedido Internet</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+Agradecemos que te tomes el tiempo de contarnos sobre el inconveniente que tuviste con tu pedido, lo hemos validado y te confirmamos que para la siguiente transacción:
+
+FECHA
+
+VALOR
+
+ESTABLECIMIENTO
+
+XXXXX
+
+XXXXX
+
+XXXXXX
+
+Encontramos que el soporte que nos enviaste, por valor de $1.200.000, no corresponde a la referencia de pago que te enviamos cuando realizaste el pedido en nuestra página web. Por lo cual el pago quedo efectuado a una compañía diferente a Alkosto o Ktronix.
+
+Por lo anterior, te invitamos a que remitas tu solicitud de devolución de dinero al correo bancolombia.com.co o puedes comunicarte a la línea de atención al cliente de la entidad financiera a los teléfonos 22222222. Ellos son quienes te podrán ayudar para procesar tu devolución.
+
+Queremos recordarte que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti.
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+
+ALKOSTO - K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

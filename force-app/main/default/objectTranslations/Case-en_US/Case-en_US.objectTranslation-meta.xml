@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <layouts>
+        <layout>ALK_CASOS_FELICITACIONES</layout>
+        <sections>
+            <label></label>
+            <section>Casos del Sítio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de SLA</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del caso</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_CASOS_INFORMACIONES</layout>
+        <sections>
+            <label></label>
+            <section>Casos del Sítio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de SLA</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del caso</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_CASOS_ODS</layout>
+        <sections>
+            <label></label>
+            <section>Casos del Sítio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de SLA</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos del Entregador</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de ODS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del caso</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones de ODS</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_CASOS_ODS_READ_ONLY</layout>
+        <sections>
+            <label></label>
+            <section>Casos del Sítio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de SLA</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos del Entregador</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de ODS</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del caso</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Observaciones de ODS</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_CASOS_PAK</layout>
+        <sections>
+            <label></label>
+            <section>Casos del Sítio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de la Aprobación</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del caso</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_CASOS_QUEJAS</layout>
+        <sections>
+            <label></label>
+            <section>Casos del Sítio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de SLA</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del caso</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_CASOS_QUEJAS_Required</layout>
+        <sections>
+            <label></label>
+            <section>Casos del Sítio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de SLA</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del caso</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_CASOS_SOLICITUDES</layout>
+        <sections>
+            <label></label>
+            <section>Casos del Sítio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de SLA</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del caso</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_CASOS_SOLICITUDES_Required</layout>
+        <sections>
+            <label></label>
+            <section>Casos del Sítio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de SLA</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del caso</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_CASOS_SUGERENCIAS</layout>
+        <sections>
+            <label></label>
+            <section>Casos del Sítio</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Datos de SLA</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Desciprición</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del caso</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>ALK_Case_Closed</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>ALK_Case_Retipification</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>ALK_Invoice_Search</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>ALK_Invoice_Search_Despacho</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>ALK_Invoice_Search_RMA</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>ALK_Reapertura_de_Casos</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>ALK_Search_Account</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Change_Priority</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Close_the_Case</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>Imprimir_ODS</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>NewChildCase</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SocialPublisher</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>alk_createRMA</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>ALK_FELICITACIONES</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ALK_INFORMACION</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ALK_ODS</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ALK_PAK</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ALK_QUEJA</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ALK_SOLICITUD</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ALK_SUGERENCIAS</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ALK_Avoid_Change_PAK_RT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ALK_Block_Closed_Case</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ALK_Case_Reopen</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ALK_Check_Case_Closed_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ALK_Check_RecordType_Area_Clase_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ALK_Closed_Case</name>
+    </validationRules>
+</CustomObjectTranslation>

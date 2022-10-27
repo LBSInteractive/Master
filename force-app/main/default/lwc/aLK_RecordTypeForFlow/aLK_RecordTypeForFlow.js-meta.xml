@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <description>RecordType Picklist Values</description>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__FlowScreen</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage" >
+            <property name="objectName" type="String" label="Object Name" required="true" />
+            <property name="recordTypeId" type="String" label="RecordTypeId" required="true" />
+            <property name="fieldName" type="String" label="Field to show picklist values for" required="true" />
+            <property name="secondFieldName" type="String" label="Dependent Picklist Field" required="true" />
+        </targetConfig>
+        <targetConfig targets="lightning__FlowScreen" >
+            <property name="objectName" type="String" label="1) Object API Name" role="inputOnly" />
+            <property name="fieldName" type="String" label="2) Picklist Field API Name" role="inputOnly" />
+            <property name="secondFieldName" type="String" label="3) Dependent Picklist Field API Name" role="inputOnly" />
+            <property name="recordTypeId" type="String" label="4) RecordTypeId" role="inputOnly" description="Id of RecordType Id, fetch from record {!sObj_Account.RecordTypeId} or from Get {!Get_RecordType.Id}" />
+            <property name="isRequired" type="Boolean" label="5) Required input" role="inputOnly" default="false" />
+            <property name="errorMessage" type="String" label="6) Error message" role="inputOnly" description="Error message shown to customer when input required, but not populated" default="Please select a picklist value"/>
+            <property name="fieldValue" type="String" label="Selected value by user" description="The API value of the selected Picklist value" />
+            <property name="secondFieldValue" type="String" label="Dependent Selected value by user" description="The API value of the selected Picklist value" />
+        </targetConfig>
+    </targetConfigs>
+    <masterLabel>RecordType Picklist Values</masterLabel>
+</LightningComponentBundle>

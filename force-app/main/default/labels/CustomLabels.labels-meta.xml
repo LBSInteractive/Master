@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>ALK_Code_Incorrect</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Codigo incorrect</shortDescription>
+        <value>¡Código incorrecto!</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Code_Invalid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Codigo invalid</shortDescription>
+        <value>¡Código no válido!</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Code_Option_Selector</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Codigo opcion selectio,</shortDescription>
+        <value>¡Es necesario selecionar al menos una opción de comunicación!</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Code_Sent</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Código de Seguridad enviado</shortDescription>
+        <value>¡Código generado y enviado por {0} al cliente!</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Code_Valid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Codigo de Seguridad valid</shortDescription>
+        <value>¡Validación de código con éxito!</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Code_sent_Email</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Code sent Email</shortDescription>
+        <value>¡Código generado y enviado por Correo al cliente!</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Code_sent_SMS</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Code sent SMS</shortDescription>
+        <value>¡Código generado y enviado por SMS al cliente!</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Code_sent_whatsap</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Code sent whatsap</shortDescription>
+        <value>¡Código generado y enviado por whatsapp al cliente!</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Error_Message_RMA_Bdy</fullName>
+        <categories>RMA Creation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Message Body</shortDescription>
+        <value>Por favor confirme todos los datos ingresados, tiene datos requeridos pendientes por diligenciar.</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Error_Message_RMA_Hd</fullName>
+        <categories>RMA Creation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Message Header</shortDescription>
+        <value>Error, datos requeridos Pendientes!</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Error_Message_dt</fullName>
+        <categories>Search Invoice</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error Message dates</shortDescription>
+        <value>Las fecha inicial no puede ser mayor a la fecha final</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_Code_Sent_Fail</fullName>
+        <language>es_MX</language>
+        <protected>false</protected>
+        <shortDescription>Infobip Codigo Enviado Falido</shortDescription>
+        <value>Favor contactar el administrador, hay un error de conectividad de la integración.</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_SMS_Cita_Agendado</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip SMS Cita Agendado</shortDescription>
+        <value>Hola, Alkosto te confirma que tu servicio de instalación quedó agendado para el {0} entre las {1}.</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_SMS_Cita_Cancelada</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip SMS Cita Cancelada</shortDescription>
+        <value>Hola, Alkosto te confirma que tu orden de instalación {0}, fue cancelada. En un plazo de 24 horas nos comunicaremos para informarte el proceso a seguir.</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_SMS_Cita_Ejecutado</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip SMS Cita Ejecutado</shortDescription>
+        <value>Hola, Nos alegra saber que hemos finalizado tu servicio de instalación, te invitamos a calificar nuestro servicio en el siguiente link. https://ak-kt.typeform.com/to/NS4sshzm</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_SMS_Cita_En_Viaje</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip SMS Cita En viaje</shortDescription>
+        <value>Hola, Alkosto te confirma que hoy realizaremos tu instalación, nuestro técnico se acercará de {0}. Si tenemos alguna novedad te estaremos confirmando.</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_SMS_Cita_Incompleto</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip SMS Cita Incompleto</shortDescription>
+        <value>Hola, tu instalación número {0} queda incompleta debido a {1}. En máximo 24 horas te contactaremos para informarte el proceso a seguir.</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_SMS_Cita_No_Contactado</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip SMS Cita No Contactado</shortDescription>
+        <value>Hola, Te contamos que no hemos logrado programar tu servicio de instalación. Comunícate con nosotros a la línea Alkosto en Bogotá (601) 4073033 o Nacional 018000111448</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_SMS_Cita_Retrasado_Novedad</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip SMS Cita Retrasado por novedad</shortDescription>
+        <value>Hola, Alkosto se disculpa por que el técnico tiene un retraso de 30 a 60 minutos aproximadamente para realizar tu instalación.</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_SMS_Verification_Code</fullName>
+        <language>es_MX</language>
+        <protected>false</protected>
+        <shortDescription>Infobip SMS Codigo de Seguridad</shortDescription>
+        <value>Hola,
+
+El código que debes confirmar para continuar con tu proceso es:  {0}
+
+Valido solo {1}.</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_WhatsApp_Cita_Agendado</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip WhatsApp Cita Agendado</shortDescription>
+        <value>ods_agendado_010820221</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_WhatsApp_Cita_Cancelada</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip WhatsApp Cita Cancelada</shortDescription>
+        <value>ods_cancelado_wsap_13072022</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_WhatsApp_Cita_Ejecutado</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip WhatsApp Cita Ejecutado</shortDescription>
+        <value>ods_ejecutada_wsap_13072022</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_WhatsApp_Cita_En_Viaje</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip WhatsApp Cita En viaje</shortDescription>
+        <value>ods_en_viaje_wsap_13072022</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_WhatsApp_Cita_Incompleto</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip WhatsApp Cita Incompleto</shortDescription>
+        <value>ods_ser_incompleto_wsap_30062022</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_WhatsApp_Cita_No_Contactado</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip WhatsApp Cita No Contactado</shortDescription>
+        <value>ods_no_contactado_wsap_13072022</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_WhatsApp_Cita_Retrasado_Novedad</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Infobip WhatsApp Cita Retrasado por novedad</shortDescription>
+        <value>ods_retrasado_wsap_30062022</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_WhatsApp_Verification_Code</fullName>
+        <language>es_MX</language>
+        <protected>false</protected>
+        <shortDescription>Infobip WhatsApp Codigo de Seguridad</shortDescription>
+        <value>cod_sol_29032022</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Infobip_no_Factura</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ALK_Infobip_no_Factura</shortDescription>
+        <value>Para enviar Código de Seguridad el Caso debe tener factura relacionada</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Invoice_Despacho_Type</fullName>
+        <categories>RMA Creation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invoice Despacho Type</shortDescription>
+        <value>DESPACHO</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Invoice_PosVent_Type</fullName>
+        <categories>RMA Creation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invoice PosVent Type</shortDescription>
+        <value>ALK_POSVENTA</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Invoice_RMA_Type</fullName>
+        <categories>RMA Creation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Invoice RMA Type</shortDescription>
+        <value>ALK_RMA</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Permission_ErrMsg</fullName>
+        <categories>Search Invoice</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ALK _Permission_ErrMsg</shortDescription>
+        <value>Error, El usuario actual no tiene permisos para crear una factura</value>
+    </labels>
+    <labels>
+        <fullName>ALK_RMA_final_case_sStatus</fullName>
+        <categories>RMA Creation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Case RMA Final sub status</shortDescription>
+        <value>En Recolección</value>
+    </labels>
+    <labels>
+        <fullName>ALK_RMA_final_case_status</fullName>
+        <categories>RMA Creation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RMA final case status</shortDescription>
+        <value>En Proceso</value>
+    </labels>
+    <labels>
+        <fullName>ALK_Related_Pak_Closed_Reason</fullName>
+        <language>es</language>
+        <protected>false</protected>
+        <shortDescription>Encerramiento Automático Pak</shortDescription>
+        <value>Cerrado automáticamente por Solicitud Finalizada con devolución de acuerdo con el PAK {0}</value>
+    </labels>
+    <labels>
+        <fullName>ALK_desVal</fullName>
+        <categories>RMA Creation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Despacho Value</shortDescription>
+        <value>DES</value>
+    </labels>
+    <labels>
+        <fullName>ALK_endVal</fullName>
+        <categories>RMA Creation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Davolución</shortDescription>
+        <value>END</value>
+    </labels>
+    <labels>
+        <fullName>ALK_typeMngmt</fullName>
+        <categories>RMA Creation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>type of management</shortDescription>
+        <value>Devolución Aprobada</value>
+    </labels>
+    <labels>
+        <fullName>ALK_venVal</fullName>
+        <categories>RMA Creation</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Valor Venta</shortDescription>
+        <value>VEN</value>
+    </labels>
+    <labels>
+        <fullName>alk_Case_Closed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>alk_Case_Closed</shortDescription>
+        <value>No se puede validar factura de un caso cerrado.</value>
+    </labels>
+</CustomLabels>

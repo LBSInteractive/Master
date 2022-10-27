@@ -1,0 +1,138 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="font-size: 12pt; font-family: arial;"><span style="font-family: &quot;Times New Roman&quot;, serif; text-align: justify; background-color: rgb(255, 255, 255);"><br></span></div><span style="text-align: justify; background-color: rgb(255, 255, 255);"><font face="Arial, sans-serif" style="" size="4">Hola&nbsp;{!Case.Contact},</font></span><div style="font-size: 12pt; font-family: arial;"><span style="font-family: &quot;Times New Roman&quot;, serif; text-align: justify; background-color: rgb(255, 255, 255);"><br></span></div><div style="font-size: 12pt; font-family: arial;"><p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO">Agradecemos que te tomes el tiempo de contarnos sobre el inconveniente
+que tuviste con tu pedido, lo hemos validado y te confirmamos que para la
+siguiente transacción:<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO"></span></p><div align="center">
+
+<table class="MsoTableGrid" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid black .5pt;
+ mso-border-themecolor:text1;mso-yfti-tbllook:1696;mso-padding-alt:0cm 5.4pt 0cm 5.4pt">
+ <tbody><tr>
+  <td width="132" valign="top" style="width:99.0pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;background:#F7CAAC;mso-background-themecolor:accent2;mso-background-themetint:
+  102;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><b><span lang="ES" style="font-size: 10pt; font-family: Arial, sans-serif;">FECHA</span></b><b><span lang="ES" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:ES-CO"><o:p></o:p></span></b></p>
+  </td>
+  <td width="162" valign="top" style="width:121.5pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
+  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;background:#F7CAAC;mso-background-themecolor:accent2;mso-background-themetint:
+  102;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><b><span lang="ES" style="font-size: 10pt; font-family: Arial, sans-serif;">VALOR</span></b><b><span lang="ES" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:ES-CO"><o:p></o:p></span></b></p>
+  </td>
+  <td width="151" valign="top" style="width:113.25pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;border-left:none;mso-border-left-alt:solid black .5pt;
+  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;background:#F7CAAC;mso-background-themecolor:accent2;mso-background-themetint:
+  102;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><b><span lang="ES" style="font-size: 10pt; font-family: Arial, sans-serif;">ESTABLECIMIENTO</span></b><b><span lang="ES" style="font-size:10.0pt;font-family:&quot;Arial&quot;,sans-serif;mso-fareast-font-family:
+  &quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:ES-CO"><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width="132" valign="top" style="width:99.0pt;border:solid black 1.0pt;
+  mso-border-themecolor:text1;border-top:none;mso-border-top-alt:solid black .5pt;
+  mso-border-top-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+  ES-CO">Diligenciar<o:p></o:p></span></p>
+  </td>
+  <td width="162" valign="top" style="width:121.5pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+  ES-CO">Diligenciar<o:p></o:p></span></p>
+  </td>
+  <td width="151" valign="top" style="width:113.25pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;mso-border-bottom-themecolor:text1;
+  border-right:solid black 1.0pt;mso-border-right-themecolor:text1;mso-border-top-alt:
+  solid black .5pt;mso-border-top-themecolor:text1;mso-border-left-alt:solid black .5pt;
+  mso-border-left-themecolor:text1;mso-border-alt:solid black .5pt;mso-border-themecolor:
+  text1;padding:0cm 5.4pt 0cm 5.4pt">
+  <p class="MsoNormal" align="center" style="margin-bottom:0cm;text-align:center;
+  line-height:normal"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+  mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+  ES-CO">Diligenciar<o:p></o:p></span></p>
+  </td>
+ </tr>
+</tbody></table><br>
+
+</div><div align="center"><p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO">Encontramos que el soporte que nos enviaste, por valor de (XXXXcolocar
+el valor), no corresponde a la referencia de pago que te enviamos cuando realizaste
+el pedido en nuestra página web. Por lo cual el pago quedó efectuado a una
+compañía diferente a Alkosto o Ktronix.&nbsp;&nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO">Por lo anterior, te invitamos a que remitas tu solicitud de devolución
+de dinero al correo bancolombia.com.co o puedes comunicarte a la línea de
+atención al cliente de la entidad financiera al teléfono (XXXXXXX). Ellos son quienes te
+podrán ayudar para procesar tu devolución. &nbsp;<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO">&nbsp;</span></p>
+
+<p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO">Queremos recordarte que estamos siempre a tu disposición para escucharte
+en los canales que hemos dispuesto para ti. &nbsp;<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO"><br></span></p><p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO">Cordialmente,&nbsp;<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO">&nbsp;<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO">Equipo Servicio al cliente&nbsp;&nbsp;<o:p></o:p></span></p><p class="MsoNormal" style="margin-bottom:0cm;text-align:justify;line-height:
+normal;vertical-align:baseline"><span lang="ES" style="font-family:&quot;Arial&quot;,sans-serif;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:ES;mso-fareast-language:
+ES-CO">
+
+
+
+
+
+<b><span lang="ES" style="font-size: 11pt; line-height: 107%;">ALKOSTO - K-TRONIX&nbsp;</span></b></span></p></div><span style="font-family: &quot;Times New Roman&quot;, serif; text-align: justify; background-color: rgb(255, 255, 255);"></span></div>]]></td>
+</tr>
+</table>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <email>vozcliente@alkosto.com.co</email>
+    <name>ALKOMPRAR</name>
+    <queueMembers>
+        <publicGroups>
+            <publicGroup>ALK_ALKOMPRAR</publicGroup>
+        </publicGroups>
+        <users>
+            <user>43927535@colcomercio.com.co</user>
+            <user>1128452210@colcomercio.com.co</user>
+            <user>1214722005@colcomercio.com.co</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Case</sobjectType>
+    </queueSobject>
+</Queue>

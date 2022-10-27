@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Caso Cerrado</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto-K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Contact}
+
+Queremos contarte que tu solicitud fue resuelta y tu caso {!Case.CaseNumber} ha sido cerrado.
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente: Bogotá (601)4073033, nacional 018000111448.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

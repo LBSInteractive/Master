@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Case_Reopen</fullName>
+    <active>true</active>
+    <errorConditionFormula>( ISPICKVAL( ALK_Case_Reopen_Reason__c , &apos;&apos;) )
+&amp;&amp;
+(
+((RecordType.DeveloperName = &apos;ALK_QUEJA&apos;) &amp;&amp; (NOW() - ClosedDate &lt;= 1) &amp;&amp;
+(ISPICKVAL(PRIORVALUE( Status ), &apos;Closed&apos;) ) &amp;&amp; (ISPICKVAL(Status, &apos;New&apos;) || 
+ISPICKVAL(Status, &apos;En espera del cliente&apos;) || ISPICKVAL(Status, &apos;En Progreso&apos;) 
+|| ISPICKVAL(Status, &apos;En espera del Proveedor&apos;)))
+
+||
+
+((RecordType.DeveloperName = &apos;ALK_INFORMACION&apos;)  &amp;&amp; (NOW() -ClosedDate &lt;= 15) &amp;&amp;
+(ISPICKVAL(PRIORVALUE( Status ), &apos;Closed&apos;) ) &amp;&amp; (ISPICKVAL(Status, &apos;New&apos;) 
+|| ISPICKVAL(Status, &apos;En espera del cliente&apos;) || ISPICKVAL(Status, &apos;En Progreso&apos;) 
+|| ISPICKVAL(Status, &apos;En espera del Proveedor&apos;)))
+
+||
+
+( RecordType.DeveloperName = &apos;ALK_SOLICITUD&apos; &amp;&amp; (ISPICKVAL(PRIORVALUE( Status ), &apos;Closed&apos;))
+ &amp;&amp;(ISPICKVAL(Status, &apos;New&apos;) || ISPICKVAL(Status, &apos;En espera del cliente&apos;) 
+ || ISPICKVAL(Status, &apos;En Progreso&apos;) || ISPICKVAL(Status, &apos;En espera del Proveedor&apos;)) ))
+	
+	
+	||
+
+( RecordType.DeveloperName = &apos;ALK_ODS&apos; &amp;&amp; (PRIORVALUE(ALK_Closed_Case__c) = true))
+ &amp;&amp; (ALK_Closed_Case__c) = false &amp;&amp; 
+	NOT(OR($Profile.Name = &quot;Administrador del sistema&quot;, $Profile.Name = &quot;System Administrator&quot;, $Permission.ALK_Allow_Reopen_ODS ))</errorConditionFormula>
+    <errorDisplayField>ALK_Case_Reopen_Reason__c</errorDisplayField>
+    <errorMessage>Para reabrir el caso es necesario llenar el campo Motivo de Reapertura o no tiene el permiso necesario</errorMessage>
+</ValidationRule>

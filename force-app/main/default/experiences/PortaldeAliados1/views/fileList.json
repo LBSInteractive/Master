@@ -1,0 +1,32 @@
+{
+  "appPageId" : "0301749a-1d44-41ec-b919-146234eef013",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "77f6ca58-6a4e-4d88-a732-be04d4dde57c",
+  "label" : "File List",
+  "regions" : [ {
+    "id" : "cc6e4c83-a79f-4bbc-bf0e-c90581afe7af",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "pageSize" : 25
+      },
+      "componentName" : "forceCommunity:filesList",
+      "id" : "bd64214f-ab70-46be-9390-c9f537a5d388",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "9b715316-5bb0-4808-948a-57a9362c5865",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8f5cdf08-6a41-4137-91b1-847254aa7dd9",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-069"
+}

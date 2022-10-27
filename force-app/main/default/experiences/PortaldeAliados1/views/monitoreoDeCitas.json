@@ -1,0 +1,70 @@
+{
+  "appPageId" : "0301749a-1d44-41ec-b919-146234eef013",
+  "componentName" : "siteforce:dynamicLayout",
+  "id" : "810a2a46-a2da-43c0-a58a-fd3fce5e413c",
+  "label" : "Monitoreo de Citas",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "3581b082-6c69-49f3-88d5-1228c3c4b911",
+          "columns" : [ {
+            "UUID" : "3142428f-6be3-44d1-a4d6-0ff064776c41",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "3581b082-6c69-49f3-88d5-1228c3c4b911",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "600",
+            "recordId" : "01Z8c0000016PKMEA2"
+          },
+          "componentName" : "forceCommunity:dashboard",
+          "id" : "99584314-3f77-4e16-867f-677771f84247",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "3142428f-6be3-44d1-a4d6-0ff064776c41",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ece71f7c-7ed7-4916-8858-2018c761949c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Monitoreo de Citas"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "6cf7c8b6-3da1-4bbf-a33f-98e35b99baef",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e44de11f-8045-428e-94b9-5cb9c332391a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-monitoreo-de-citas"
+}

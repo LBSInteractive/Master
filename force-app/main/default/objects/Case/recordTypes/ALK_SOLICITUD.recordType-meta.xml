@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_SOLICITUD</fullName>
+    <active>true</active>
+    <businessProcess>SOLICITUDES</businessProcess>
+    <compactLayoutAssignment>ALK_CASOS_CL</compactLayoutAssignment>
+    <label>SOLICITUD</label>
+    <picklistValues>
+        <picklist>ALK_Accessories_Packaging__c</picklist>
+        <values>
+            <fullName>Adaptador Corriente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audifonos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bateria%2FPilas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CD Driver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cable Poder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cable USB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cartuchos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control Remoto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paquetes Tornillos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teclado inalámbrico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USB Receptor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Case_Reopen_Reason__c</picklist>
+        <values>
+            <fullName>Caso mal cerrado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caso sin Factura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No esta deacuerdo con la respuesta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Producto vuelve a presentar falla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicita la misma informacion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Clase__c</picklist>
+        <values>
+            <fullName>ACTUALIZACIÓN DE DATOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APROBACIÓN PAK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENEFICIOS TRIBUTARIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO DE DIRECCIÓN DE DESPACHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO DE DIRECCIÓN DE LA RECOGIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO DE FECHA DE LA RECOGIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO DE PRODUCTO NO ENTREGADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO FECHA DE DESPACHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO POR INSATISFACCIÓN MERCADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANCELACIÓN DE LA RECOGIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANCELACIÓN DEL DESPACHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANCELACIÓN TRANSACCIÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOCUMENTOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESTADO DE LA ORDEN DE SERVICIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACTURA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GARANTÍA POR PRIMERA VEZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INGRESO PARA TRÁMITE DE GARANTÍA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INSTALACIÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTROS BONOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REVERSIÓN CUPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRÁMITE BONO 50%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRÁMITE BONO CAMBIO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_INVOICE_TYPE__c</picklist>
+        <values>
+            <fullName>Despachos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Producto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Motivo__c</picklist>
+        <values>
+            <fullName>Cliente desiste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deteriorado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falla confirmad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incompleto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proceso garantía</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Motivo_de_Cierre__c</picklist>
+        <values>
+            <fullName>A FAVOR DE CLIENTE ASUME ALKOSTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A FAVOR DE CLIENTE ASUME MARCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIENTE DESISTE DE RECLAMACIÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEGATIVA SOLICITUD DE CLIENTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRODUCTO FUNCIONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIN CONTACTO CON CLIENTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOLUCION CLIENTE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Pak_Batch_Status__c</picklist>
+        <values>
+            <fullName>No procesado</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>ODS%2FPQR Cerrados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODS%2FPQR relacionados</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Product_Status__c</picklist>
+        <values>
+            <fullName>Fisurado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golpeado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal - Usado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oxidado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pantalla Rota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partes Sueltas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pelado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rayado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sucio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Traffic_Lights__c</picklist>
+        <values>
+            <fullName>Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yellow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Devuelve tu pedido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escrito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presencial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redes Sociales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIC Demanda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIC Facilita</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whatsapp</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Estado__c</picklist>
+        <values>
+            <fullName>Contacto fallido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En Recolección</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En devolución dinero%2Fcupo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En gestión %28predeterminado%29 o vació</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En instalación %2F desinstalación por servicio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En proceso de compra y entrega de accesorio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En recolección marca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En reparación marca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En visita evaluativa csa aliado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Envió de bono virtual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalado jefatura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escalado otras áreas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendiente autorización cambio-devolución marca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendiente envió de evidencias</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendiente respuesta formal marca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Respuesta formal</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>COMPAÑÍA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMPRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENTREGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POSVENTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROCESO PAGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRODUCTOS INTANGIBLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RECOGIDA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

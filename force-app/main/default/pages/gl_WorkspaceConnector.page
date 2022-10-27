@@ -1,0 +1,121 @@
+<!--
+    Interaction Workspace Connector implementation Visual Force page
+    Genesys Telecommunication Labs, Inc, Professional Services
+-->
+
+<apex:page docType="html-5.0" controller="gl_WorkspaceConnectorController" showHeader="false" title="WorkspaceConnector Page">
+    <apex:includeScript value="/support/console/44.0/integration.js"/>
+	<apex:includeScript value="/support/api/44.0/interaction.js"/> 
+    <script type="text/javascript" src="{!URLFOR($Resource.gl_jquery, 'jquery-1.12.4.min.js')}"></script>
+	<script type="text/javascript" src="/support/api/48.0/lightning/opencti_min.js"></script>
+	
+	<!-- Read Session Id -->
+    <script src="/soap/ajax/44.0/connection.js" type="text/javascript"></script>
+    <script src="/soap/ajax/44.0/apex.js" type="text/javascript"></script>
+    <script src="/support/console/44.0/integration.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        var __sfdcSessionId = '{!GETSESSIONID()}';
+    </script>
+   
+<style>
+td img { 
+  vertical-align: top;
+}
+</style>
+
+<link rel="stylesheet" href="{!URLFOR($Resource.gl_datapanel_css)}"/>
+
+<script type="text/javascript">
+	var gl_resources = {
+		"logo": "{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_logo.png')}",
+		"minus_green": "{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_green_minus.png')}",
+		"minus_red": "{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_red_minus.png')}",
+		"minus_blue": "{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_blue_minus.png')}",
+		"plus_green": "{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_green_plus.png')}",
+		"plus_red": "{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_red_plus.png')}",
+		"plus_blue": "{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_blue_plus.png')}"
+	};
+</script>
+
+
+
+<script type="text/javascript" src="{!URLFOR($Resource.gl_jquery_subscribe_js)}"></script>
+<script type="text/javascript" src="{!URLFOR($Resource.gl_log_js)}"></script>
+<script type="text/javascript" src="{!URLFOR($Resource.gl_datapanel_js)}"></script>
+<script type="text/javascript" src="{!URLFOR($Resource.gl_version_js)}"></script>
+<script type="text/javascript" src="{!URLFOR($Resource.gl_misc_js)}"></script>
+
+<script type="text/javascript" src="{!URLFOR($Resource.gl_globals_js)}"></script>
+<script type="text/javascript" src="{!URLFOR($Resource.gl_workspace_js)}"></script>
+<script type="text/javascript" src="{!URLFOR($Resource.gl_salesforce_js)}"></script>
+<script type="text/javascript" src="{!URLFOR($Resource.gl_connector_js)}"></script>
+<script type="text/javascript" src="{!URLFOR($Resource.gl_default_js)}"></script>
+
+
+    <div style="background-color: #DCF3FA; width:100%">
+
+        <!-- these divs will store paths to images that will be manipulated by jquery-->
+<!--
+        <div id="logo" style="display:none;">{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_logo.png')}</div>
+        <div id="minus_green" style="display:none;">{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_green_minus.png')}</div>
+        <div id="minus_red" style="display:none;">{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_red_minus.png')}</div>
+        <div id="minus_blue" style="display:none;">{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_blue_minus.png')}</div>
+        <div id="plus_green" style="display:none;">{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_green_plus.png')}</div>
+        <div id="plus_red" style="display:none;">{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_red_plus.png')}</div> 
+        <div id="plus_blue" style="display:none;">{!URLFOR($Resource.gl_wsc_icons, 'wsc_icons/wsc_blue_plus.png')}</div> 
+-->
+        <!-- end of divs -->            
+        
+        <div id="title">
+            <table>
+                <tr>
+                	<td id="port" style="padding-left:10px;width:70%;">
+                    	<b>Port: </b>
+                    </td>  
+                    <td id="logoTd" vertical-align="top" >
+                        <!-- these cells will be filled by jquery -->
+                    </td> 
+                </tr>              
+            </table>
+        </div> 
+        <div id="attDataPanel" style="display:none; width:100%;">
+        	<div id="attDataHeader" style="padding:5px;">
+        		<b>Attached Data</b>&nbsp;
+        		<button onClick="Connector.hideAttachedData();">Dismiss</button>
+        	</div>
+        	<div id="attDataContent"></div>
+        </div>
+        <div id="debug" style="display:none; width:100%;">
+            <div id="portStatus" style="padding:5px;"></div>
+        	<div id="logHeader" style="padding-left:5px;">
+        		<table>
+	        		<tr>
+		        		<td>
+		        			<div style="cursor:pointer; display:inline-block;" id="logSwitchIcon" onClick="Connector.switchLog();">[-]</div>
+		        		</td>
+		        		<td>
+		        			<div style="padding-left:15px;"><b>Logging</b></div>  
+		        		</td>
+	        		</tr>        		
+        		</table>
+        	</div>
+            <table width="97%" id="logContainer" cellspacing="0" cellpadding="0" style="margin: 5px" border="0">
+                <tr>
+                    <td><input style="width:20px; box-shadow: none;" id="saveLog" type="checkbox" onClick="Log.setStoreLog(jQuery('#saveLog').prop('checked'));">Save Log</input></td>
+                    <td><button onClick="Log.downloadLog();">Download</button></td>
+                    <td><button onClick="Log.clearStoredLog();">Reset</button></td>
+                    <td align="right"><div align="right"><button onClick="Log.clearLogElement();">Clear View</button></div></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <table width="100%" height="98%" style="border: 1px solid dimgray; background-color: white; ">
+                            <tr>
+                                <td><div height="100%" id="log" style="overflow: auto; word-break: break-all;"></div></td>
+                            </tr>
+                        </table> 
+                    </td>
+                </tr>
+            </table> 
+        </div>
+    </div>         
+</apex:page>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Check_Case_Closed_Date</fullName>
+    <active>true</active>
+    <errorConditionFormula>((RecordType.DeveloperName = &apos;ALK_QUEJA&apos;) &amp;&amp; (NOW() - Priorvalue(ClosedDate) &gt; 90) &amp;&amp;
+(ISPICKVAL(PRIORVALUE( Status ), &apos;Closed&apos;) ) &amp;&amp; (ISPICKVAL(Status, &apos;New&apos;) || ISPICKVAL(Status, &apos;En espera del cliente&apos;) || ISPICKVAL(Status, &apos;En Progreso&apos;) || ISPICKVAL(Status, &apos;En espera del Proveedor&apos;)
+))
+
+||
+
+((RecordType.DeveloperName = &apos;ALK_INFORMACION&apos;) &amp;&amp; (NOW() - Priorvalue(ClosedDate) &gt; 15) &amp;&amp;
+(ISPICKVAL(PRIORVALUE( Status ), &apos;Closed&apos;) ) &amp;&amp; (ISPICKVAL(Status, &apos;New&apos;) || ISPICKVAL(Status, &apos;En espera del cliente&apos;) || ISPICKVAL(Status, &apos;En Progreso&apos;) || ISPICKVAL(Status, &apos;En espera del Proveedor&apos;) ))
+
+|| 
+
+(((RecordType.DeveloperName = &apos;ALK_FELICITACIONES&apos;) || (RecordType.DeveloperName = &apos;ALK_SUGERENCIAS&apos;))  &amp;&amp; (ISPICKVAL(PRIORVALUE( Status ), &apos;Closed&apos;)) &amp;&amp; ISCHANGED(Status))</errorConditionFormula>
+    <errorDisplayField>Status</errorDisplayField>
+    <errorMessage>El caso no se puede reabrir, se debe crear un nuevo caso</errorMessage>
+</ValidationRule>

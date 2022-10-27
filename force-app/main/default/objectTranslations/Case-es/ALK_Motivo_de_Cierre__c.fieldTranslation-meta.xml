@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help></help>
+    <label></label>
+    <name>ALK_Motivo_de_Cierre__c</name>
+    <picklistValues>
+        <masterLabel>A FAVOR DE CLIENTE ASUME ALKOSTO</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>A FAVOR DE CLIENTE ASUME MARCA</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>CLIENTE DESISTE DE RECLAMACIÓN</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>NEGATIVA SOLICITUD DE CLIENTE</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>PRODUCTO FUNCIONAL</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SIN CONTACTO CON CLIENTE</masterLabel>
+        <translation></translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>SOLUCION CLIENTE</masterLabel>
+        <translation></translation>
+    </picklistValues>
+</CustomFieldTranslation>

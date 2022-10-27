@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>확인 시 작업 주문의 최소 크루 크기 필드를 실제 사용 가능한 서비스 크루 구성원과 비교합니다. 
+아니면 최소 크루 크기를 서비스 크루의 크루 크기 필드와 비교합니다.</help>
+    <label></label>
+    <name>FSL__Crew_Resources_Availability__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>選取時，請在「工作指示」中比較「最小工作人員大小」欄位及實際可用的「服務工作人員成員」。否則請在「服務工作人員」中比較「最小工作人員大小」及「工作人員大小」。</help>
+    <label></label>
+    <name>FSL__Crew_Resources_Availability__c</name>
+</CustomFieldTranslation>

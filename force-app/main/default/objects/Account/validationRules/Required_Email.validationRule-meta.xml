@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Email</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+ RecordType.DeveloperName = &apos;PersonAccount&apos;,
+ ALK_Email__c = TRUE,
+ ISBLANK(PersonEmail) 
+)</errorConditionFormula>
+    <errorDisplayField>PersonEmail</errorDisplayField>
+    <errorMessage>Por favor complete el correo electrónico.</errorMessage>
+</ValidationRule>

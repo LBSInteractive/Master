@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_92545071</developerName>
+        <masterLabel>Aliado</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.WorkOrders$ServiceTerritory</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>B/quilla Vid-Nev-LV-LP-Mue-Air</sourceValue>
+            </sourceValues>
+            <value>Intersys</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Fusa/Girardot Vid-Nev-LV-LP-Gas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bog Lavaplatos-Gaso-Aires</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Fusa/Girardot Vid-Nev-LV-LP-Gas-Aires</sourceValue>
+            </sourceValues>
+            <value>Gas Planet</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bog Vid-Nev-LV-Mue</sourceValue>
+            </sourceValues>
+            <value>Dinamik</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Cali Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <value>Fast Service</value>
+        </values>
+        <values>
+            <value>Uran Gas</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Sicel Vid-Nev-LV-LP-Mue-Air</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Yopal Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Villa Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <value>LCDR</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bucarm Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <value>CSTB</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Manizales Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Pereira Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <value>Enlace Digital</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Medellin Video - Audio</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Medellin Vid-Nev-LV-LP-Mue-Air-Gas</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Medellin LV-LP-Gas-Air-Nev</sourceValue>
+            </sourceValues>
+            <value>SERTEK</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account.WorkOrders$Name</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders$ALK_Fecha_hora_de_Creaci_n__c</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders$Status</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders.Citas_de_servicios_1__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders.Citas_de_servicios_1__r$Status</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders.Citas_de_servicios_1__r$ALK_Motivo_Incompletud__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders$LastModifiedDate</field>
+    </columns>
+    <columns>
+        <field>Account$ALK_Identification_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders$ServiceTerritory</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders.Citas_de_servicios_1__r$WorkType</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders$ALK_Numero_Factura__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.WorkOrders$ALK_Cantidad__c</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders$ALK_Tienda_Compra__c</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders.Citas_de_servicios_1__r$ALK_Service_Resource__c</field>
+    </columns>
+    <columns>
+        <field>BucketField_92545071</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders$RecordType</field>
+    </columns>
+    <columns>
+        <field>Account.WorkOrders.Citas_de_servicios_1__r$ALK_Facturing_Number__c</field>
+    </columns>
+    <description>Informe para ver todas las ordenes de trabajo que se han creado en Field service</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.WorkOrders$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,No Asignada,Agendada,No Contactada,Pendiente,En Viaje,En Sitio,Cancelada,Incompleta,Ejecutada,Reprogramada,Conciliada,Retrasada</value>
+        </criteriaItems>
+        <language>es</language>
+    </filter>
+    <format>Tabular</format>
+    <name>Ordenes de Trabajo Intangibles</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Cuentas_Ordenes_Citas__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.WorkOrders$ServiceTerritory</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

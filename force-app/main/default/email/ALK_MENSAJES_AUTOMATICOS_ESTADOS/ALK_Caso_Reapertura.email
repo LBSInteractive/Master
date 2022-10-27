@@ -1,0 +1,25 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style="box-sizing: border-box; color: rgba(0, 0, 0, 0.9); background-color: rgb(255, 255, 255); margin: 0px; clear: both;"><p style="font-size: 12pt; font-family: arial; font-weight: normal; box-sizing: border-box; margin-right: 0px; margin-left: 0px; color: windowtext;"></p><p style="margin: 0cm; text-align: justify;"><span style="font-size: 11.36px; font-family: Arial, Helvetica, sans-serif; background-color: rgb(248, 248, 248); color: rgb(0, 0, 0);">&nbsp;</span><font face="Arial, sans-serif" style="" size="4">Hola&nbsp;<o:p></o:p><span style="color: rgb(0, 0, 0);">{!Case.Contact}</span></font></p>
+
+<p style="margin: 0cm; text-align: justify;"><o:p><font face="Arial, sans-serif" size="4">&nbsp;</font></o:p></p>
+
+<p class="MsoNormal" style="text-align: justify;"><font face="Arial, sans-serif" size="4">Hemos
+recibido nuevamente tu solicitud, la cual fue remitida a nuestros especialistas
+para que sea revisada. Podrás hacerle seguimiento a tu caso con el número&nbsp;<span style="background-color: rgb(248, 248, 248); color: rgb(0, 0, 0);">&nbsp;</span><span style="background-color: rgb(248, 248, 248); color: rgb(0, 0, 0);">{!Case.CaseNumber}</span>.</font></p><p class="MsoNormal" style="text-align: justify;"><font face="Arial, sans-serif" size="4"><br></font></p>
+
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: justify; line-height: normal; vertical-align: baseline;"><font face="Arial, sans-serif" size="4"><span style="color: black;">Queremos recordarte que estamos siempre a tu
+disposición para escucharte en los </span>canales
+que hemos dispuesto para ti.</font></p><p class="MsoNormal" style="text-align: justify; line-height: 115%;"><span style="color: black;"><font face="Arial, sans-serif" size="4"><br></font></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: justify; line-height: normal; vertical-align: baseline;"><span style="color: black;"><font face="Arial, sans-serif" size="4">Cordialmente,&nbsp;<o:p></o:p></font></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: justify; line-height: normal; vertical-align: baseline;"><span style="color: black;"><o:p><font face="Arial, sans-serif" size="4">&nbsp;</font></o:p></span></p>
+
+<p class="MsoNormal" style="margin-bottom: 0cm; text-align: justify; line-height: normal; vertical-align: baseline;"><span style="color: black;"><font face="Arial, sans-serif" size="4" style="">Equipo Servicio al cliente <b>&nbsp;<o:p></o:p></b></font></span></p>
+
+<p class="MsoNormal" style="font-weight: bold; text-align: justify; line-height: 115%;"><b><span style="color: black;"><font face="Arial, sans-serif" size="4">ALKOSTO
+– K-TRONIX&nbsp;<o:p></o:p></font></span></b></p><br><p style="font-size: 12pt; font-family: arial; font-weight: bold;"></p></div>]]></td>
+</tr>
+</table>

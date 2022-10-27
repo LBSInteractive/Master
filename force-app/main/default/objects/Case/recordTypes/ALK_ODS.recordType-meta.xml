@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_ODS</fullName>
+    <active>true</active>
+    <businessProcess>ODS</businessProcess>
+    <compactLayoutAssignment>ALK_CASOS_CL</compactLayoutAssignment>
+    <label>ODS</label>
+    <picklistValues>
+        <picklist>ALK_Accessories_Packaging__c</picklist>
+        <values>
+            <fullName>Adaptador Corriente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Audifonos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bases</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bateria%2FPilas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CD Driver</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cable Poder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cable USB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cartuchos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Control Remoto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Manual</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Otros</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Paquetes Tornillos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Teclado inalámbrico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Toner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>USB Receptor</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Case_Reopen_Reason__c</picklist>
+        <values>
+            <fullName>Caso mal cerrado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caso sin Factura</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No esta deacuerdo con la respuesta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Producto vuelve a presentar falla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Solicita la misma informacion</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Clase__c</picklist>
+        <values>
+            <fullName>ACCIDENTE CON PRODUCTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACCIDENTE EN LA TIENDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ACTUALIZACIÓN DE DATOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ALKOSTO- INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>APROBACIÓN PAK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ASESORÍA Y ATENCIÓN AL CLIENTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>BENEFICIOS TRIBUTARIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CALIDAD PRODUCTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO DE DIRECCIÓN DE DESPACHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO DE DIRECCIÓN DE LA RECOGIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO DE FECHA DE LA RECOGIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO DE PRODUCTO NO ENTREGADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO FECHA DE DESPACHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CAMBIO POR INSATISFACCIÓN MERCADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANCELACIÓN DE LA RECOGIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANCELACIÓN DEL DESPACHO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANCELACIÓN DEL SERVICIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANCELACIÓN SUSCRIPCIÓN ENVIO PROMOCIONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CANCELACIÓN TRANSACCIÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COBRO DE INTERESES CRÉDITO 20 MINUTOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COBRO DE INTERESES TARJETA ALKOSTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEMORA EN LA RECOGIDA DEL PRODUCTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEMORA EN SERVICIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEMORAS EN EXTRACTOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DESMONTE DE PUERTAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DETERIORADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DEVOLUCIÓN DE CHEQUE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOBLE COBRO DE TRANSACCIÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOBLE ENTREGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DOCUMENTOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENTREGA INADECUADA TRANSPORTADOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENTREGA INCOMPLETA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ERROR EN VUELTAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ESTADO DE LA ORDEN DE SERVICIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>EXENCIÓN IVA NO APLICADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACTURA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACTURA DE COMPRA NO REALIZADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FACTURA ELECTRONICA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FALLA DEL OBSEQUIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FALLA EN LA MOTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FALLA TECNICA%2FCALIDAD MENOR A 30 DÍAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FALSA ENTREGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GARANTÍA POR PRIMERA VEZ</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HURTO%2FDAÑO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HURTO%2FDAÑO TRANSPORTADOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCOMPLETO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONFORMIDAD PAGO %28 FECHA-CUOTAS-MONTO-VALOR%29 CRÉDITO 20 MINUTOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONFORMIDAD PAGO %28 FECHA-CUOTAS-MONTO-VALOR%29 TARJETA ALKOSTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONSISTENCIA EN CARACTERÍSTICAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONSISTENCIA EN PRECIOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES AVANCES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES CON EL TRÁMITE CRÉDITO 20 MINUTOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES CON EL TRÁMITE TARJETA ALKOSTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES CON LA ACTIVACIÓN POSSA%2FPIN%2FOFFICE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES CON LA INSTALACIÓN MARCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES CON LA INSTALACIÓN PROPIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES CON OTRAS ACTIVACIONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES EN EL PEDIDO INTERNET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES EN EL PROCESO DE COMPRA INTERNET</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES ENTREGAS SIM CARD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES IMEI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES RECAUDOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES REGISTRO EN LA PÁGINA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES SEGURO CELULAR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES SEGURO GARANTÍA EXTENDIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES SEGURO PERSONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCONVENIENTES SEGURO SOAT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INCUMPLIMIENTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INGRESO PARA TRÁMITE DE GARANTÍA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INSATISFACCIÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>INSTALACIÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MARCA INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MERCANCÍA NO HAY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO LLEGO CORREO O MENSAJE DE CONFIRMACIÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NO SALIÓ A RUTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OTROS BONOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRODUCTO TROCADO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROMOCIÓN NO APLICADA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RECHAZO CAMBIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REPORTE EN CENTRALES DE RIESGO CRÉDITO 20 MINUTOS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REPORTE EN CENTRALES DE RIESGO TARJETA ALKOSTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>REVERSIÓN CUPO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSACCIONES FRAUDULENTAS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSPORTADOR NO ALCANZA A TERMINAR RUTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRÁMITE BONO 50%25</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRÁMITE BONO CAMBIO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>VENTA PROHIBIDA TRANSPORTADOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>YA ESTUVO EN GARANTÍA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_INVOICE_TYPE__c</picklist>
+        <values>
+            <fullName>Despachos</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Producto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RMA</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Motivo__c</picklist>
+        <values>
+            <fullName>Cliente desiste</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Deteriorado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Falla confirmad</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Incompleto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Proceso garantía</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Motivo_de_Cierre__c</picklist>
+        <values>
+            <fullName>A FAVOR DE CLIENTE ASUME ALKOSTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>A FAVOR DE CLIENTE ASUME MARCA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLIENTE DESISTE DE RECLAMACIÓN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>NEGATIVA SOLICITUD DE CLIENTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRODUCTO FUNCIONAL</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIN CONTACTO CON CLIENTE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SOLUCION CLIENTE</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Pak_Batch_Status__c</picklist>
+        <values>
+            <fullName>No procesado</fullName>
+            <default>true</default>
+        </values>
+        <values>
+            <fullName>ODS%2FPQR Cerrados</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ODS%2FPQR relacionados</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Product_Status__c</picklist>
+        <values>
+            <fullName>Fisurado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Golpeado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Normal - Usado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Oxidado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pantalla Rota</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partes Sueltas</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pelado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rayado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Roto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Sucio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Usado</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>ALK_Traffic_Lights__c</picklist>
+        <values>
+            <fullName>Green</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Red</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Yellow</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Origin</picklist>
+        <values>
+            <fullName>Devuelve tu pedido</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Email</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Escrito</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Outbound</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Phone</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Portal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Presencial</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Redes Sociales</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIC Demanda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SIC Facilita</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Twitter</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Whatsapp</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Priority</picklist>
+        <values>
+            <fullName>Critica</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>High</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Low</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Medium</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Reason</picklist>
+        <values>
+            <fullName>Complex functionality</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Existing problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Instructions not clear</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New problem</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>User didn%27t attend training</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Sub_Estado__c</picklist>
+        <values>
+            <fullName>Alkosto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Almacenado en tienda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carta enviada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Carta no entregada</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Caso SIC</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente Informado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente no contactado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente no recibe</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cliente no recoge</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Cte Contactado Pte Recogida</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Del CAS - No presenta Falla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Del CAS - Producto Nuevo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Del CAS - Rechazado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Del CAS - Reparado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Demoras en tiempo tramite de garantia</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Destrucción</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En CENTR de tienda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En espera de Respuesta</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En muelle CAS pte validacion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>En muelle Tienda pte validacion</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entregado Bono Cambio</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entregado Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entregado a Centro Servicio en CENTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Entregado a Centro Servicio en Tienda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enviado a CENTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enviado a Cliente</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Enviado a Tienda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Marca</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>No Entregado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novedad en Recibo</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Novedad en entrega</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pendiente envío a CENTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Producto Entregado</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recibido en CENTR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recibo%2FEntrega - Deteriorado%2Fcosmetico</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recibo%2FEntrega - Falla</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recibo%2FEntrega - Incompleto</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Retornado a Tienda</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tiempos proximos a vencer</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Tramite de garantia</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>COMPAÑÍA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>COMPRA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CONCESIONES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ENTREGA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POSVENTA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>POSVENTA INFORMACION</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PROCESO PAGO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRODUCTO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PRODUCTOS INTANGIBLES</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RECOGE EN TIENDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RECOGIDA</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RECOGIDA INFORM</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SEGURIDAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TRANSPORTES</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Producto agotado</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+Dando respuesta a tu reclamación, con respecto al obsequio que mencionas por la compra del xxxxxx, te informamos que se generó la respectiva verificación y se evidenció que dicha oferta se encontraba disponible del día (xx) hasta el día (xx) de mes (xx) del (xxxx), por la compra de dicha referencia mencionada.
+
+
+Revisando la fecha de compra de tu pedido es del día (xx) de mes (xx), motivo por el cual ya no aplicaba dicho descuento y registra en tu factura.
+
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+Para Alkosto es muy importante seguir contándote entre nuestros clientes.
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

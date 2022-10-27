@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Devolución de Dinero Permitir la Recolección</name>
+    <style>freeForm</style>
+    <subject>Devolución de Dinero Permitir la Recolección</subject>
+    <textOnly>Bogotá D.C., día de mes del año
+
+Señor (a)
+
+XXXXXXXXX
+
+Referencia: Respuesta a Reclamación XXXXXXXXX
+
+Producto: XXXXXXXXXXXXXXXX
+
+Factura: XXXXXXXXXXXXXXXXXXXXXXXX
+
+
+
+Estimado(a) {!Case.Account}:
+
+Dando respuesta a su solicitud radicada, del producto Sec WHIRL CF 21Kg 7MWGD214&quot;BBF marca WHIRLPOOL adquirido con la factura 82700010010059.
+
+
+
+Nos permitimos informarle que, con la devolución de dinero aprobada se dio cumplimiento a la obligación de cara a la efectividad de la garantía legal en los términos de la Ley 1480 de 2011 – Estatuto de Protección al Consumidor.
+
+La ley 1480 de 2011 de protección al consumidor establece: ARTÍCULO 11. ASPECTOS INCLUIDOS EN LA GARANTÍA LEGAL. Corresponden a la garantía legal las siguientes obligaciones: “Como regla general, reparación totalmente gratuita de los defectos del bien, así como su transporte, de ser necesario, y el suministro oportuno de los repuestos. Si el bien no admite reparación, se procederá a su reposición o a la devolución del dinero”.
+
+
+
+De conformidad con lo anteriormente señalado le presentamos requerimiento para la realización del trámite, para lo cual de acuerdo a lo establecido en la norma deberá poner el producto a disposición del productor o el proveedor ( Artículo 2 Decreto Reglamentario 735/2013).
+
+
+
+Al amparo de la normatividad vigente lo invitamos a realizar el proceso de garantía respectivo y permitir generar la recolección para poder dar solución a su caso.
+
+
+
+Para su mayor comodidad le ponemos de presente que el fabricante del producto puede realizar la recolección del artículo en su domicilio para lo cual se pondrán en contacto con usted. Una vez entregado el producto se dará trámite para la devolución de dinero
+
+
+
+Nos permitimos reiterar que no es posible atender a  su solicitud de cambio de producto, como quiera que el fabricante no cuenta con artículos de iguales o similares características y tampoco el almacén por lo que, en atención a la obligación contenida en la norma se procede con lo antes indicado.
+
+
+
+Respecto de las obligaciones contenidas en la norma, dentro de la relación de consumo se dio cumplimiento, como se indicó anteriormente. El trámite realizado se ajusta a lo allí determinado, por lo tanto su solicitud no es procedente.
+
+Estamos atentos a escucharlo a través de nuestra línea de servicio al cliente número  4073033 en Bogotá y 018000111448  en el resto del país, o a través de nuestro correo sugerencias@alkosto.com.co.
+
+
+
+Cordialmente,
+
+Auxiliar Administrativo Posventa</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

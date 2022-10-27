@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>ALK_Case_Share_All</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Casos Compartidos con todos</label>
+        <sharedTo>
+            <group>ALK_Share_All</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>INFORMACIÓN,QUEJA,FELICITACIONES,SOLICITUD,SUGERENCIAS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ALK_READ_ONLY_ODS</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Solo Lectura ODS</label>
+        <sharedTo>
+            <group>ALK_READ_ONLY_ODS</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ODS,PAK</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ALK_Share_ODS_Tecnico_Servicio</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir ODS con Tecnico de Servicio</label>
+        <sharedTo>
+            <group>ALK_Share_ODS_Tecnico_Servicio</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>ODS</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>ALK_Share_PQR_Tec_Cambio_Devoluciones</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Compartir PQR con Tec Cambio y Devoluciones</label>
+        <sharedTo>
+            <group>SHARE_TEC_CAMBIOS_DEVOLUCIONES</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>QUEJA,SOLICITUD</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+</SharingRules>

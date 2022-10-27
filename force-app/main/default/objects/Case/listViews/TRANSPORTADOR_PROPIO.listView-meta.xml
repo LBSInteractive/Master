@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>TRANSPORTADOR_PROPIO</fullName>
+    <booleanFilter>1 AND 2 AND 3 AND (4 OR 5)</booleanFilter>
+    <columns>ALK_Factura_Number__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>ALK_Clase__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>ALK_Almacen__c</columns>
+    <columns>ALK_Flag_SLA__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>ALK_Reapertura__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.ALK_QUEJA</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>TRANSPORTES</value>
+    </filters>
+    <filters>
+        <field>ALK_Clase__c</field>
+        <operation>equals</operation>
+        <value>ENTREGA INADECUADA TRANSPORTADOR,HURTO/DAÑO TRANSPORTADOR,VENTA PROHIBIDA TRANSPORTADOR</value>
+    </filters>
+    <filters>
+        <field>ALK_Transportador_Homologado__c</field>
+        <operation>equals</operation>
+        <value>PROPIO,TRANSPORTADOR GENERICO,MERCANCIA NO HAY,PREVENTA,VACIOS</value>
+    </filters>
+    <filters>
+        <field>ALK_Transportador_Homologado__c</field>
+        <operation>contains</operation>
+        <value>MU TEAM-001</value>
+    </filters>
+    <label>Transportador Propio</label>
+    <queue>ALK_Transportes</queue>
+    <sharedTo>
+        <group>TRANSPORTADOR_PROPIO</group>
+    </sharedTo>
+</ListView>

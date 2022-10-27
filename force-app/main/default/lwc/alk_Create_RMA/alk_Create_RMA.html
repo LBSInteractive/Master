@@ -1,0 +1,91 @@
+<template>
+    <lightning-quick-action-panel header="Crear RMA">        
+        <lightning-card title="Datos Creación RMA">   
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+                </lightning-spinner>
+            </template>   
+            
+            <template if:true={isShowModal}>
+                <c-a-L-K-_address-Srch address-lst={addressLst} options-state={optionsState} id-number={idNumber} onhidemodal={hideModal} ongetaddress={getaddress}></c-a-L-K-_address-Srch>     
+            </template>     
+            <lightning-record-edit-form object-api-name="Case" onload={handleOnLoad}>
+                <div class="slds-grid slds-wrap slds-gutters">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" name="name" read-only='true' label="Nombre" value={name}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="text" name="idNumber" read-only='true'  label="Identificación"  value={idNumber}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 ">
+                        <lightning-input type="text" name="address" read-only='true' label="Dirección" value={address} required></lightning-input>
+                        <lightning-button variant="base" label="Buscar Dirección" title="Buscar Dirección" icon-name="standard:address" class="slds-m-left_x-small" onclick={handleSrchAddress}></lightning-button>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="email" name="email" required label="Correo"  value={email} onchange={emlChange}></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 ">
+                        <lightning-input type="text" name="invoiceNumber" read-only='true' label="No de Factura" value={invoiceNumber} ></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 ">
+                        <lightning-input type="text" name="EAN" label="EAN" read-only='true' value={EAN} ></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="number" name="quantity" required max={quantityInit} label="Cantidad"  value={quantity} onchange={qtyChange} ></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 ">
+                        <lightning-input type="text" name="noPedido" read-only='true' label="No de Pedido" value={noPedido} ></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-combobox
+                        name="uCollect"
+                        label="Unidad Recoge"
+                        value={uCollect}
+                        placeholder="Seleccione unidad..."
+                        options={optionsLoc}
+                        onchange={uniChange}
+                        required
+                ></lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 ">
+                        <lightning-input type="text" name="saleStore" read-only='true' label="Almacén venta" value={saleStore} ></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input type="date" name="dateSchColl" label="Fecha programación de la recogida" value={dateSchColl} onchange={dtChange} required></lightning-input> 
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 ">
+                        <lightning-combobox
+                        name="reasonPickup"
+                        label="Motivo de la recogida"
+                        value={reasonPickup}
+                        placeholder="Seleccione el Motivo de la recogida..."
+                        options={optionsRePick}
+                        onchange={rePickChange}
+                        required>
+                        </lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-combobox
+                        name="conveyor"
+                        label="Transportador"
+                        value={conveyor}
+                        placeholder="Seleccione Transportador..."
+                        options={optionsConv}
+                        onchange={convChange}
+                        required>
+                        </lightning-combobox>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 ">
+                        <lightning-input type="text" name="typeMngmt" read-only='true' label="Tipo de gestión" value={typeMngmt} ></lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_2-of-2 ">
+                        <lightning-textarea name="observation" value={observation} required label="Observaciones de la Recogida" maxlength="254"  onchange={obsChange}></lightning-textarea>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+            <div slot="footer">
+                <lightning-button variant="success" disabled={createRMAdisabled} label="Crear RMA" title="Crear RMA" icon-name="action:approval" icon-position="rigth" onclick={createRMA} class="slds-var-m-left_x-small"></lightning-button>
+            </div>
+        </lightning-card>
+    </lightning-quick-action-panel>
+</template>

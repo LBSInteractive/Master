@@ -1,0 +1,53 @@
+{
+  "appPageId" : "0301749a-1d44-41ec-b919-146234eef013",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "cf833d21-c8bf-4583-a970-3b51781358aa",
+  "label" : "User Settings",
+  "regions" : [ {
+    "id" : "722b8dfd-8946-4d59-8ed9-6aa17e43485b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "accountSectionTitle" : "Cuenta",
+        "accountTabName" : "Gestión de Cuentas",
+        "connectedSourcesTabName" : "Connected Sources",
+        "deleteAccountButtonTitle" : "Deactivate My Account",
+        "deleteAccountConfirmationPopupBody" : "After you deactivate your account, you'll lose access to this site.",
+        "deleteAccountConfirmationPopupButtonTitle" : "Got It",
+        "deleteAccountConfirmationPopupTitle" : "Deactivate your Account?",
+        "deleteAccountErrorMessage" : "Something went wrong, contact your site administrator.",
+        "deleteAccountSectionTitle" : "Deactivate Account",
+        "emailNotificationsTitle" : "Notificaciones por Correo Electrónico",
+        "emailSectionDescText" : "Cuando las notificaciones por correo electrónico estén habilitadas, envíeme un correo electrónico cuando alguien:",
+        "hideAccountDeleteSection" : true,
+        "hideChatterNotificationSettings" : false,
+        "hideConnectedSources" : true,
+        "hideEmailNotificationSettings" : false,
+        "hideProfileVisibilitySettings" : true,
+        "id" : "{!recordId}",
+        "locationTitle" : "Ubicación",
+        "profileSectionDescText" : "Personaliza quién puede ver qué en tu página de perfil",
+        "profileSectionToolTipText" : "Restricted: Visible to the employees of the company that created the site. Members: Visible to logged-in members. Public: Visible to anyone viewing pages that don't require login.",
+        "profileVisibilityTitle" : "Visibilidad del Perfil",
+        "settingsPageTitle" : "Mi Configuración"
+      },
+      "componentName" : "forceCommunity:userSettingsCustomizable",
+      "id" : "7b82da3a-8b4e-45bd-a8a3-76d328eca885",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "da8572e5-d7fc-4c44-9658-4620d6fea072",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4f8f9ae4-54da-4f9b-a3e7-789f28500af7",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "usersettings"
+}

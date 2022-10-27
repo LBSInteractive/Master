@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Inconvenientes con la Activación</name>
+    <style>freeForm</style>
+    <subject>Inconvenientes con la Activación</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+Te Agradecemos el tiempo que tomaste para hacernos llegar tu novedad presentada con la activación de tu PIN, a continuación, encontrarás un video instructivo que te ayudará a guiarte para activarlo.
+
+Hoy nuestro compromiso hacia ti continúa más firme que nunca ya que queremos contar contigo siempre.
+
+Queremos recordarte que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti.
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

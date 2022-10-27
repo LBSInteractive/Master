@@ -1,0 +1,47 @@
+{
+  "appPageId" : "0301749a-1d44-41ec-b919-146234eef013",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "id" : "6b639287-247b-4e9d-ab48-8bee1715bd64",
+  "label" : "Search",
+  "regions" : [ {
+    "id" : "2e5b9672-84ab-4eb3-9666-7ca4e457df39",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "scopes" : [ {
+          "isPublic" : false,
+          "name" : "Account"
+        }, {
+          "isPublic" : false,
+          "name" : "WorkOrder"
+        }, {
+          "isPublic" : false,
+          "name" : "ServiceAppointment"
+        }, {
+          "isPublic" : false,
+          "name" : "ContentDocument"
+        } ],
+        "searchResultFiltering" : true,
+        "searchTerm" : "{!term}",
+        "showTopResults" : true
+      },
+      "componentName" : "forceCommunity:search",
+      "id" : "71a41212-8e5a-4b0a-8366-bce0bde95579",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "7b522236-a61b-486e-8d0e-9744981dcfbf",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "629fad38-28c6-4947-9721-3d00dbe9ce23",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "global-search"
+}

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Če je ta možnost označena, bo polje Najmanjša velikost moštva v delovnem nalogu primerjano z dejanskimi člani moštva storitve.
+V nasprotnem primeru pa bo Najmanjša velikost moštva primerjana s poklje Velikost moštva v nastavitvi Storitveno moštvo.</help>
+    <label></label>
+    <name>FSL__Crew_Resources_Availability__c</name>
+</CustomFieldTranslation>

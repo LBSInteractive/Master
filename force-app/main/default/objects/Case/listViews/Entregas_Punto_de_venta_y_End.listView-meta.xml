@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Entregas_Punto_de_venta_y_End</fullName>
+    <booleanFilter>1 AND 2 AND (3 OR 7) AND (4 OR (5 AND 6))AND 8</booleanFilter>
+    <columns>ALK_Factura__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>ALK_Clase__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>ALK_Unidad_Despacho__c</columns>
+    <columns>ALK_No_de_Despacho__c</columns>
+    <columns>ALK_Almacen__c</columns>
+    <columns>ALK_Flag_SLA__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>ALK_Reapertura__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.ALK_QUEJA,Case.ALK_SOLICITUD</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>COMPRA,ENTREGA,RECOGE EN TIENDA</value>
+    </filters>
+    <filters>
+        <field>ALK_Clase__c</field>
+        <operation>equals</operation>
+        <value>DEMORA EN LA RECOGIDA DEL PRODUCTO,DOBLE ENTREGA,ENTREGA INCOMPLETA,FALSA ENTREGA,INCUMPLIMIENTO,MERCANCÍA NO HAY,NO LLEGO CORREO O MENSAJE DE CONFIRMACIÓN,NO SALIÓ A RUTA,PRODUCTO TROCADO</value>
+    </filters>
+    <filters>
+        <field>ALK_Unidad_Despacho__c</field>
+        <operation>equals</operation>
+        <value>AKVIL,KTJUL,AKB30,AK170,AKCAL,KTARK,AKEDE,AKPER,KTFUS,AKB68,AKBAR,AKFLO,AKCEP,ALCUC,AKSIN,AKYOP,KTMAN,KTCHI,KTPOB,KTAME,KTUNO,KTTES,KTTUN,AKCEV,AKVEN,ALNUE,KTBUC,KTMOS,KTTIT,KTSAL,KTSOA,KTVIL,KTSBA,KTCAL,KTINT,KTB94,ALKUN,KTMAY,ALMOL</value>
+    </filters>
+    <filters>
+        <field>ALK_Unidad_Despacho__c</field>
+        <operation>equals</operation>
+        <value>AKCED</value>
+    </filters>
+    <filters>
+        <field>ALK_No_de_Despacho__c</field>
+        <operation>contains</operation>
+        <value>END</value>
+    </filters>
+    <filters>
+        <field>ALK_Clase__c</field>
+        <operation>equals</operation>
+        <value>ACTUALIZACIÓN DE DATOS,CAMBIO DE DIRECCIÓN DE DESPACHO,CAMBIO DE PRODUCTO NO ENTREGADO,CAMBIO FECHA DE DESPACHO,CANCELACIÓN DEL DESPACHO</value>
+    </filters>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed</value>
+    </filters>
+    <label>Entregas Punto de venta y End</label>
+    <queue>ALK_Entregas</queue>
+    <sharedTo>
+        <group>ENTREGAS_PUNTO_DE_VENTA_Y_END</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Entregas_Case</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>ALK_Unidad_Despacho__c</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>ALK_Clase__c</columns>
+    <columns>ALK_Factura__c</columns>
+    <columns>NAME</columns>
+    <columns>CASES.SUBJECT</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>ALK_Flag_SLA__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,Cerrado</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.ALK_QUEJA,Case.ALK_SOLICITUD</value>
+    </filters>
+    <label>Entregas</label>
+    <queue>ALK_Entregas</queue>
+    <sharedTo>
+        <group>ALK_Entregas</group>
+    </sharedTo>
+</ListView>

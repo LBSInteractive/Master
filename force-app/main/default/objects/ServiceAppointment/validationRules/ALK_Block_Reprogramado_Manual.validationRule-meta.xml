@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Block_Reprogramado_Manual</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND (
+NOT (ISCHANGED(ALK_Delete_Entity_Subscription__c)), 
+NOT (ISCHANGED(ALK_Process_Notification__c)),
+
+OR(
+AND(ISCHANGED (Status), 
+ISPICKVAL(Status,&quot;Reprogramada&quot;),
+ISPICKVAL(ALK_Work_Order__r.Status, &quot;Incompleta&quot;)
+)
+)
+)</errorConditionFormula>
+    <errorMessage>El usuario no puede cambiar el Estado a Reprogramada.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Ако е с поставена отметка, се сравнява полето „Минимален размер на екипа“ на работната поръчка с действителната наличност на членове на екипи за обслужване. 
+В противен случай се сравнява полето „Минимален размер на екипа“ с полето „Размер на екипа“ в „Екип за обслужване“.</help>
+    <label></label>
+    <name>FSL__Crew_Resources_Availability__c</name>
+</CustomFieldTranslation>

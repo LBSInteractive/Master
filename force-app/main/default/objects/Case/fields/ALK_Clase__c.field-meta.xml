@@ -1,0 +1,808 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Clase__c</fullName>
+    <externalId>false</externalId>
+    <label>Clase</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Type</controllingField>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>ACCIDENTE CON PRODUCTO</fullName>
+                <default>false</default>
+                <label>ACCIDENTE CON PRODUCTO</label>
+            </value>
+            <value>
+                <fullName>ACCIDENTE EN LA TIENDA</fullName>
+                <default>false</default>
+                <label>ACCIDENTE EN LA TIENDA</label>
+            </value>
+            <value>
+                <fullName>ACTUALIZACIÓN DE DATOS</fullName>
+                <default>false</default>
+                <label>ACTUALIZACIÓN DE DATOS</label>
+            </value>
+            <value>
+                <fullName>ALKOSTO- INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA</fullName>
+                <default>false</default>
+                <label>ALKOSTO- INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA</label>
+            </value>
+            <value>
+                <fullName>APROBACIÓN PAK</fullName>
+                <default>false</default>
+                <label>APROBACIÓN PAK</label>
+            </value>
+            <value>
+                <fullName>ASESORÍA Y ATENCIÓN AL CLIENTE</fullName>
+                <default>false</default>
+                <label>ASESORÍA Y ATENCIÓN AL CLIENTE</label>
+            </value>
+            <value>
+                <fullName>BENEFICIOS TRIBUTARIOS</fullName>
+                <default>false</default>
+                <label>BENEFICIOS TRIBUTARIOS</label>
+            </value>
+            <value>
+                <fullName>CALIDAD PRODUCTO</fullName>
+                <default>false</default>
+                <label>CALIDAD PRODUCTO</label>
+            </value>
+            <value>
+                <fullName>CAMBIO DE DIRECCIÓN DE DESPACHO</fullName>
+                <default>false</default>
+                <label>CAMBIO DE DIRECCIÓN DE DESPACHO</label>
+            </value>
+            <value>
+                <fullName>CAMBIO DE DIRECCIÓN DE LA RECOGIDA</fullName>
+                <default>false</default>
+                <label>CAMBIO DE DIRECCIÓN DE LA RECOGIDA</label>
+            </value>
+            <value>
+                <fullName>CAMBIO DE FECHA DE LA RECOGIDA</fullName>
+                <default>false</default>
+                <label>CAMBIO DE FECHA DE LA RECOGIDA</label>
+            </value>
+            <value>
+                <fullName>CAMBIO DE PRODUCTO NO ENTREGADO</fullName>
+                <default>false</default>
+                <label>CAMBIO DE PRODUCTO NO ENTREGADO</label>
+            </value>
+            <value>
+                <fullName>CAMBIO FECHA DE DESPACHO</fullName>
+                <default>false</default>
+                <label>CAMBIO FECHA DE DESPACHO</label>
+            </value>
+            <value>
+                <fullName>CAMBIO POR INSATISFACCIÓN MERCADO</fullName>
+                <default>false</default>
+                <label>CAMBIO POR INSATISFACCIÓN MERCADO</label>
+            </value>
+            <value>
+                <fullName>CANCELACIÓN DE LA RECOGIDA</fullName>
+                <default>false</default>
+                <label>CANCELACIÓN DE LA RECOGIDA</label>
+            </value>
+            <value>
+                <fullName>CANCELACIÓN DEL DESPACHO</fullName>
+                <default>false</default>
+                <label>CANCELACIÓN DEL DESPACHO</label>
+            </value>
+            <value>
+                <fullName>CANCELACIÓN DEL SERVICIO</fullName>
+                <default>false</default>
+                <label>CANCELACIÓN DEL SERVICIO</label>
+            </value>
+            <value>
+                <fullName>CANCELACIÓN SUSCRIPCIÓN ENVIO PROMOCIONES</fullName>
+                <default>false</default>
+                <label>CANCELACIÓN SUSCRIPCIÓN ENVIO PROMOCIONES</label>
+            </value>
+            <value>
+                <fullName>CANCELACIÓN TRANSACCIÓN</fullName>
+                <default>false</default>
+                <label>CANCELACIÓN TRANSACCIÓN</label>
+            </value>
+            <value>
+                <fullName>COBRO DE INTERESES CRÉDITO 20 MINUTOS</fullName>
+                <default>false</default>
+                <label>COBRO DE INTERESES CRÉDITO 20 MINUTOS</label>
+            </value>
+            <value>
+                <fullName>COBRO DE INTERESES TARJETA ALKOSTO</fullName>
+                <default>false</default>
+                <label>COBRO DE INTERESES TARJETA ALKOSTO</label>
+            </value>
+            <value>
+                <fullName>DEMORA EN LA RECOGIDA DEL PRODUCTO</fullName>
+                <default>false</default>
+                <label>DEMORA EN LA RECOGIDA DEL PRODUCTO</label>
+            </value>
+            <value>
+                <fullName>DEMORA EN SERVICIO</fullName>
+                <default>false</default>
+                <label>DEMORA EN SERVICIO</label>
+            </value>
+            <value>
+                <fullName>DEMORAS EN EXTRACTOS</fullName>
+                <default>false</default>
+                <label>DEMORAS EN EXTRACTOS</label>
+            </value>
+            <value>
+                <fullName>DESMONTE DE PUERTAS</fullName>
+                <default>false</default>
+                <label>DESMONTE DE PUERTAS</label>
+            </value>
+            <value>
+                <fullName>DETERIORADO</fullName>
+                <default>false</default>
+                <label>DETERIORADO</label>
+            </value>
+            <value>
+                <fullName>DEVOLUCIÓN DE CHEQUE</fullName>
+                <default>false</default>
+                <label>DEVOLUCIÓN DE CHEQUE</label>
+            </value>
+            <value>
+                <fullName>DOBLE COBRO DE TRANSACCIÓN</fullName>
+                <default>false</default>
+                <label>DOBLE COBRO DE TRANSACCIÓN</label>
+            </value>
+            <value>
+                <fullName>DOBLE ENTREGA</fullName>
+                <default>false</default>
+                <label>DOBLE ENTREGA</label>
+            </value>
+            <value>
+                <fullName>DOCUMENTOS</fullName>
+                <default>false</default>
+                <label>DOCUMENTOS</label>
+            </value>
+            <value>
+                <fullName>ENTREGA INADECUADA TRANSPORTADOR</fullName>
+                <default>false</default>
+                <label>ENTREGA INADECUADA TRANSPORTADOR</label>
+            </value>
+            <value>
+                <fullName>ENTREGA INCOMPLETA</fullName>
+                <default>false</default>
+                <label>ENTREGA INCOMPLETA</label>
+            </value>
+            <value>
+                <fullName>ERROR EN VUELTAS</fullName>
+                <default>false</default>
+                <label>ERROR EN VUELTAS</label>
+            </value>
+            <value>
+                <fullName>ESTADO DE LA ORDEN DE SERVICIO</fullName>
+                <default>false</default>
+                <label>ESTADO DE LA ORDEN DE SERVICIO</label>
+            </value>
+            <value>
+                <fullName>EXENCIÓN IVA NO APLICADO</fullName>
+                <default>false</default>
+                <label>EXENCIÓN IVA NO APLICADO</label>
+            </value>
+            <value>
+                <fullName>FACTURA</fullName>
+                <default>false</default>
+                <label>FACTURA</label>
+            </value>
+            <value>
+                <fullName>FACTURA DE COMPRA NO REALIZADA</fullName>
+                <default>false</default>
+                <label>FACTURA DE COMPRA NO REALIZADA</label>
+            </value>
+            <value>
+                <fullName>FACTURA ELECTRONICA</fullName>
+                <default>false</default>
+                <label>FACTURA ELECTRONICA</label>
+            </value>
+            <value>
+                <fullName>FALLA DEL OBSEQUIO</fullName>
+                <default>false</default>
+                <label>FALLA DEL OBSEQUIO</label>
+            </value>
+            <value>
+                <fullName>FALLA EN LA MOTO</fullName>
+                <default>false</default>
+                <label>FALLA EN LA MOTO</label>
+            </value>
+            <value>
+                <fullName>FALLA TECNICA/CALIDAD MENOR A 30 DÍAS</fullName>
+                <default>false</default>
+                <label>FALLA TECNICA/CALIDAD MENOR A 30 DÍAS</label>
+            </value>
+            <value>
+                <fullName>FALSA ENTREGA</fullName>
+                <default>false</default>
+                <label>FALSA ENTREGA</label>
+            </value>
+            <value>
+                <fullName>GARANTÍA POR PRIMERA VEZ</fullName>
+                <default>false</default>
+                <label>GARANTÍA POR PRIMERA VEZ</label>
+            </value>
+            <value>
+                <fullName>HURTO/DAÑO</fullName>
+                <default>false</default>
+                <label>HURTO/DAÑO</label>
+            </value>
+            <value>
+                <fullName>HURTO/DAÑO TRANSPORTADOR</fullName>
+                <default>false</default>
+                <label>HURTO/DAÑO TRANSPORTADOR</label>
+            </value>
+            <value>
+                <fullName>INCOMPLETO</fullName>
+                <default>false</default>
+                <label>INCOMPLETO</label>
+            </value>
+            <value>
+                <fullName>INCONFORMIDAD PAGO ( FECHA-CUOTAS-MONTO-VALOR) CRÉDITO 20 MINUTOS</fullName>
+                <default>false</default>
+                <label>INCONFORMIDAD PAGO ( FECHA-CUOTAS-MONTO-VALOR) CRÉDITO 20 MINUTOS</label>
+            </value>
+            <value>
+                <fullName>INCONFORMIDAD PAGO ( FECHA-CUOTAS-MONTO-VALOR) TARJETA ALKOSTO</fullName>
+                <default>false</default>
+                <label>INCONFORMIDAD PAGO ( FECHA-CUOTAS-MONTO-VALOR) TARJETA ALKOSTO</label>
+            </value>
+            <value>
+                <fullName>INCONSISTENCIA EN CARACTERÍSTICAS</fullName>
+                <default>false</default>
+                <label>INCONSISTENCIA EN CARACTERÍSTICAS</label>
+            </value>
+            <value>
+                <fullName>INCONSISTENCIA EN PRECIOS</fullName>
+                <default>false</default>
+                <label>INCONSISTENCIA EN PRECIOS</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES AVANCES</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES AVANCES</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES CON EL TRÁMITE CRÉDITO 20 MINUTOS</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES CON EL TRÁMITE CRÉDITO 20 MINUTOS</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES CON EL TRÁMITE TARJETA ALKOSTO</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES CON EL TRÁMITE TARJETA ALKOSTO</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES CON LA ACTIVACIÓN POSSA/PIN/OFFICE</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES CON LA ACTIVACIÓN POSSA/PIN/OFFICE</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES CON LA INSTALACIÓN MARCA</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES CON LA INSTALACIÓN MARCA</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES CON LA INSTALACIÓN PROPIO</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES CON LA INSTALACIÓN PROPIO</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES CON OTRAS ACTIVACIONES</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES CON OTRAS ACTIVACIONES</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES EN EL PEDIDO INTERNET</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES EN EL PEDIDO INTERNET</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES EN EL PROCESO DE COMPRA INTERNET</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES EN EL PROCESO DE COMPRA INTERNET</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES ENTREGAS SIM CARD</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES ENTREGAS SIM CARD</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES IMEI</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES IMEI</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES RECAUDOS</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES RECAUDOS</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES REGISTRO EN LA PÁGINA</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES REGISTRO EN LA PÁGINA</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES SEGURO CELULAR</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES SEGURO CELULAR</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES SEGURO GARANTÍA EXTENDIDA</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES SEGURO GARANTÍA EXTENDIDA</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES SEGURO PERSONAL</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES SEGURO PERSONAL</label>
+            </value>
+            <value>
+                <fullName>INCONVENIENTES SEGURO SOAT</fullName>
+                <default>false</default>
+                <label>INCONVENIENTES SEGURO SOAT</label>
+            </value>
+            <value>
+                <fullName>INCUMPLIMIENTO</fullName>
+                <default>false</default>
+                <label>INCUMPLIMIENTO</label>
+            </value>
+            <value>
+                <fullName>INGRESO PARA TRÁMITE DE GARANTÍA</fullName>
+                <default>false</default>
+                <label>INGRESO PARA TRÁMITE DE GARANTÍA</label>
+            </value>
+            <value>
+                <fullName>INSATISFACCIÓN</fullName>
+                <default>false</default>
+                <label>INSATISFACCIÓN</label>
+            </value>
+            <value>
+                <fullName>INSTALACIÓN</fullName>
+                <default>false</default>
+                <label>INSTALACIÓN</label>
+            </value>
+            <value>
+                <fullName>MARCA INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA</fullName>
+                <default>false</default>
+                <label>MARCA INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA</label>
+            </value>
+            <value>
+                <fullName>MERCANCÍA NO HAY</fullName>
+                <default>false</default>
+                <label>MERCANCÍA NO HAY</label>
+            </value>
+            <value>
+                <fullName>NO LLEGO CORREO O MENSAJE DE CONFIRMACIÓN</fullName>
+                <default>false</default>
+                <label>NO LLEGO CORREO O MENSAJE DE CONFIRMACIÓN</label>
+            </value>
+            <value>
+                <fullName>NO SALIÓ A RUTA</fullName>
+                <default>false</default>
+                <label>NO SALIÓ A RUTA</label>
+            </value>
+            <value>
+                <fullName>OTROS BONOS</fullName>
+                <default>false</default>
+                <label>OTROS BONOS</label>
+            </value>
+            <value>
+                <fullName>PRODUCTO TROCADO</fullName>
+                <default>false</default>
+                <label>PRODUCTO TROCADO</label>
+            </value>
+            <value>
+                <fullName>PROMOCIÓN NO APLICADA</fullName>
+                <default>false</default>
+                <label>PROMOCIÓN NO APLICADA</label>
+            </value>
+            <value>
+                <fullName>RECHAZO CAMBIO</fullName>
+                <default>false</default>
+                <label>RECHAZO CAMBIO</label>
+            </value>
+            <value>
+                <fullName>REPORTE EN CENTRALES DE RIESGO CRÉDITO 20 MINUTOS</fullName>
+                <default>false</default>
+                <label>REPORTE EN CENTRALES DE RIESGO CRÉDITO 20 MINUTOS</label>
+            </value>
+            <value>
+                <fullName>REPORTE EN CENTRALES DE RIESGO TARJETA ALKOSTO</fullName>
+                <default>false</default>
+                <label>REPORTE EN CENTRALES DE RIESGO TARJETA ALKOSTO</label>
+            </value>
+            <value>
+                <fullName>REVERSIÓN CUPO</fullName>
+                <default>false</default>
+                <label>REVERSIÓN CUPO</label>
+            </value>
+            <value>
+                <fullName>TRÁMITE BONO 50%</fullName>
+                <default>false</default>
+                <label>TRÁMITE BONO 50%</label>
+            </value>
+            <value>
+                <fullName>TRÁMITE BONO CAMBIO</fullName>
+                <default>false</default>
+                <label>TRÁMITE BONO CAMBIO</label>
+            </value>
+            <value>
+                <fullName>TRANSACCIONES FRAUDULENTAS</fullName>
+                <default>false</default>
+                <label>TRANSACCIONES FRAUDULENTAS</label>
+            </value>
+            <value>
+                <fullName>TRANSPORTADOR NO ALCANZA A TERMINAR RUTA</fullName>
+                <default>false</default>
+                <label>TRANSPORTADOR NO ALCANZA A TERMINAR RUTA</label>
+            </value>
+            <value>
+                <fullName>VENTA PROHIBIDA TRANSPORTADOR</fullName>
+                <default>false</default>
+                <label>VENTA PROHIBIDA TRANSPORTADOR</label>
+            </value>
+            <value>
+                <fullName>YA ESTUVO EN GARANTÍA</fullName>
+                <default>false</default>
+                <label>YA ESTUVO EN GARANTÍA</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>PRODUCTOS INTANGIBLES</controllingFieldValue>
+            <valueName>CANCELACIÓN DEL SERVICIO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRODUCTOS INTANGIBLES</controllingFieldValue>
+            <valueName>INCONVENIENTES CON LA INSTALACIÓN MARCA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRODUCTOS INTANGIBLES</controllingFieldValue>
+            <valueName>INCONVENIENTES CON LA INSTALACIÓN PROPIO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRODUCTOS INTANGIBLES</controllingFieldValue>
+            <valueName>INCONVENIENTES ENTREGAS SIM CARD</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRODUCTOS INTANGIBLES</controllingFieldValue>
+            <valueName>INCONVENIENTES SEGURO CELULAR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRODUCTOS INTANGIBLES</controllingFieldValue>
+            <valueName>INCONVENIENTES SEGURO GARANTÍA EXTENDIDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRODUCTOS INTANGIBLES</controllingFieldValue>
+            <valueName>INCONVENIENTES SEGURO PERSONAL</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRODUCTOS INTANGIBLES</controllingFieldValue>
+            <valueName>INCONVENIENTES SEGURO SOAT</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PRODUCTOS INTANGIBLES</controllingFieldValue>
+            <valueName>INSTALACIÓN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RECOGIDA</controllingFieldValue>
+            <valueName>CAMBIO DE DIRECCIÓN DE LA RECOGIDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RECOGIDA</controllingFieldValue>
+            <valueName>CAMBIO DE FECHA DE LA RECOGIDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RECOGIDA</controllingFieldValue>
+            <valueName>CANCELACIÓN DE LA RECOGIDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>SEGURIDAD</controllingFieldValue>
+            <valueName>HURTO/DAÑO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TRANSPORTES</controllingFieldValue>
+            <valueName>DESMONTE DE PUERTAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TRANSPORTES</controllingFieldValue>
+            <valueName>ENTREGA INADECUADA TRANSPORTADOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TRANSPORTES</controllingFieldValue>
+            <valueName>HURTO/DAÑO TRANSPORTADOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>TRANSPORTES</controllingFieldValue>
+            <valueName>VENTA PROHIBIDA TRANSPORTADOR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>RECOGE EN TIENDA</controllingFieldValue>
+            <valueName>NO LLEGO CORREO O MENSAJE DE CONFIRMACIÓN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPAÑÍA</controllingFieldValue>
+            <valueName>ACCIDENTE CON PRODUCTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPAÑÍA</controllingFieldValue>
+            <valueName>ACCIDENTE EN LA TIENDA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPAÑÍA</controllingFieldValue>
+            <valueName>ASESORÍA Y ATENCIÓN AL CLIENTE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPAÑÍA</controllingFieldValue>
+            <valueName>BENEFICIOS TRIBUTARIOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPAÑÍA</controllingFieldValue>
+            <valueName>CANCELACIÓN SUSCRIPCIÓN ENVIO PROMOCIONES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPAÑÍA</controllingFieldValue>
+            <valueName>DOCUMENTOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPRA</controllingFieldValue>
+            <valueName>ACTUALIZACIÓN DE DATOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPRA</controllingFieldValue>
+            <valueName>FACTURA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPRA</controllingFieldValue>
+            <valueName>FACTURA DE COMPRA NO REALIZADA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPRA</controllingFieldValue>
+            <valueName>FACTURA ELECTRONICA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPRA</controllingFieldValue>
+            <valueName>INCONSISTENCIA EN PRECIOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPRA</controllingFieldValue>
+            <valueName>INCONVENIENTES EN EL PEDIDO INTERNET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPRA</controllingFieldValue>
+            <valueName>INCONVENIENTES EN EL PROCESO DE COMPRA INTERNET</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>COMPRA</controllingFieldValue>
+            <valueName>INCONVENIENTES REGISTRO EN LA PÁGINA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONCESIONES</controllingFieldValue>
+            <valueName>CALIDAD PRODUCTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>CONCESIONES</controllingFieldValue>
+            <valueName>DEMORA EN SERVICIO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>CAMBIO DE DIRECCIÓN DE DESPACHO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>CAMBIO DE PRODUCTO NO ENTREGADO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>CAMBIO FECHA DE DESPACHO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>CANCELACIÓN DEL DESPACHO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>DEMORA EN LA RECOGIDA DEL PRODUCTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>DOBLE ENTREGA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>ENTREGA INCOMPLETA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>FALSA ENTREGA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>INCUMPLIMIENTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>MERCANCÍA NO HAY</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>NO SALIÓ A RUTA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>PRODUCTO TROCADO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>ENTREGA</controllingFieldValue>
+            <valueName>TRANSPORTADOR NO ALCANZA A TERMINAR RUTA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>ALKOSTO- INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>APROBACIÓN PAK</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>CAMBIO POR INSATISFACCIÓN MERCADO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>DETERIORADO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>ESTADO DE LA ORDEN DE SERVICIO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>FALLA DEL OBSEQUIO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>FALLA EN LA MOTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>FALLA TECNICA/CALIDAD MENOR A 30 DÍAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>GARANTÍA POR PRIMERA VEZ</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>INCOMPLETO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>INCONSISTENCIA EN CARACTERÍSTICAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>INCONVENIENTES CON LA ACTIVACIÓN POSSA/PIN/OFFICE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>INCONVENIENTES CON OTRAS ACTIVACIONES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>INCONVENIENTES IMEI</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>INGRESO PARA TRÁMITE DE GARANTÍA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>INSATISFACCIÓN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>MARCA INCONVENIENTE CON EL TRÁMITE DE LA GARANTÍA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>RECHAZO CAMBIO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>POSVENTA</controllingFieldValue>
+            <valueName>YA ESTUVO EN GARANTÍA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>CANCELACIÓN TRANSACCIÓN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>COBRO DE INTERESES CRÉDITO 20 MINUTOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>COBRO DE INTERESES TARJETA ALKOSTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>DEMORAS EN EXTRACTOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>DEVOLUCIÓN DE CHEQUE</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>DOBLE COBRO DE TRANSACCIÓN</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>ERROR EN VUELTAS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>EXENCIÓN IVA NO APLICADO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>INCONFORMIDAD PAGO ( FECHA-CUOTAS-MONTO-VALOR) CRÉDITO 20 MINUTOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>INCONFORMIDAD PAGO ( FECHA-CUOTAS-MONTO-VALOR) TARJETA ALKOSTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>INCONVENIENTES AVANCES</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>INCONVENIENTES CON EL TRÁMITE CRÉDITO 20 MINUTOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>INCONVENIENTES CON EL TRÁMITE TARJETA ALKOSTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>INCONVENIENTES RECAUDOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>OTROS BONOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>PROMOCIÓN NO APLICADA</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>REPORTE EN CENTRALES DE RIESGO CRÉDITO 20 MINUTOS</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>REPORTE EN CENTRALES DE RIESGO TARJETA ALKOSTO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>REVERSIÓN CUPO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>TRÁMITE BONO 50%</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>TRÁMITE BONO CAMBIO</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>PROCESO PAGO</controllingFieldValue>
+            <valueName>TRANSACCIONES FRAUDULENTAS</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

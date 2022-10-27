@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Brand_List_View__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(OR(ISPICKVAL(ALK_Clase__c,&apos;CAMBIO DE DIRECCIÓN DE LA RECOGIDA&apos;), ISPICKVAL(ALK_Clase__c,&apos;CAMBIO DE FECHA DE LA RECOGIDA&apos;), ISPICKVAL(ALK_Clase__c,&apos;CANCELACIÓN DE LA RECOGIDA&apos;)),
+FALSE,
+IF(  (ALK_Provider__c = &apos;Samsung Electronics Colombia S.A.&apos;  || ALK_Provider__c = &apos;Industria De Electrodomesticos S.A.S&apos;) &amp;&amp;  (ALK_Brand__c = &apos;SAMSUNG&apos; || ALK_Brand__c = &apos;ABBA&apos;),
+ TRUE, 
+ IF ((ALK_Provider__c = &apos;HP COLOMBIA SAS&apos;  || ALK_Provider__c = &apos;INDUSTRIAS HACEB S.A&apos;) &amp;&amp;  (ALK_Brand__c = &apos;HP&apos; || ALK_Brand__c = &apos;HACEB&apos;), 
+ TRUE, 
+ IF ( (ALK_Provider__c = &apos;KALLEY&apos;  || ALK_Provider__c = &apos;IMPORTADORA Y EXPORTADORA NEW WORLD SAS&apos; || ALK_Provider__c = &apos;IMPRESISTEM SAS&apos; ) &amp;&amp;  (ALK_Brand__c = &apos;KALLEY&apos; || ALK_Brand__c = &apos;XIAOMI&apos;),
+ TRUE,
+ IF ( (ALK_Provider__c = &apos;WHIRLPOOL COLOMBIA SAS&apos;  || ALK_Provider__c = &apos;HMD GLOBAL FINLAND OY&apos;) &amp;&amp;  (ALK_Brand__c = &apos;ACROS&apos; || ALK_Brand__c = &apos;KITCHENAID&apos; || ALK_Brand__c = &apos;WHIRLPOOL&apos; || ALK_Brand__c = &apos;NOKIA&apos; ) ,
+ TRUE,
+ IF ( (ALK_Provider__c = &apos;NEXSYS DE COLOMBIA S.A.S&apos;  || ALK_Provider__c = &apos;Challenger S.A.S.&apos;) &amp;&amp;  (ALK_Brand__c = &apos;HUAWEI&apos; || ALK_Brand__c = &apos;CHALLENGER&apos;),
+ TRUE,
+ IF ( (ALK_Provider__c = &apos;MABE COLOMBIA S.A.S&apos;  || ALK_Provider__c = &apos;L.G. Electronics Colombia Ltda.&apos;) &amp;&amp;  (ALK_Brand__c = &apos;CENTRALES&apos; || ALK_Brand__c = &apos;GE&apos; || ALK_Brand__c = &apos;MABE&apos; || ALK_Brand__c = &apos;LG&apos;),
+ TRUE,
+ IF ( (ALK_Provider__c = &apos;Motorola Mobility LLC&apos;  &amp;&amp;  ALK_Brand__c = &apos;MOTOROLA&apos;),
+ TRUE,
+ FALSE
+)
+)
+)
+)
+)
+)
+)
+)</formula>
+    <label>Listado Marca</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

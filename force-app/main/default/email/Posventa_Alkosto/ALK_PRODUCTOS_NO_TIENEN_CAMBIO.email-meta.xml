@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Productos que no Tienen Cambio</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Productos que no Tienen Cambio</name>
+    <style>freeForm</style>
+    <subject>Productos que no Tienen Cambio</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+En respuesta a tu solicitud, de cambio de tu xxxxxx nos permitimos informarte que en nuestra política de cambios se encuentran productos que no proceden para el cambio, los cuales son:
+
+“Accesorios, audífonos, consolas de video juegos, videojuegos, software, impresoras, tintas, tóner, colchones, sofás, muebles para armar, baterías de autos,
+
+Motos, llantas, licores, productos perecederos, recargas de tiempo al aire, celulares, phablets y tablets con IMEI, Artículos de uso personal como afeitadoras, ropa interior, gimnasia pasiva, Productos de marca Apple, almohadas, juegos de peluquería, masajeadores; y Tarjetas de contenido como Netflix, Facebook, Xbox, Kplay.”
+
+De acuerdo a lo anterior tu solicitud de cambio no es procedente.
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

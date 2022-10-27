@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Sub_Estado__c</fullName>
+    <externalId>false</externalId>
+    <label>Sub-Estado</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>true</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <controllingField>Status</controllingField>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Almacenado en tienda</fullName>
+                <default>false</default>
+                <label>Almacenado en tienda</label>
+            </value>
+            <value>
+                <fullName>Carta enviada</fullName>
+                <default>false</default>
+                <label>Carta enviada</label>
+            </value>
+            <value>
+                <fullName>Carta no entregada</fullName>
+                <default>false</default>
+                <label>Carta no entregada</label>
+            </value>
+            <value>
+                <fullName>Cliente no contactado</fullName>
+                <default>false</default>
+                <label>Cliente no contactado</label>
+            </value>
+            <value>
+                <fullName>Cliente no recibe</fullName>
+                <default>false</default>
+                <label>Cliente no recibe</label>
+            </value>
+            <value>
+                <fullName>Cliente no recoge</fullName>
+                <default>false</default>
+                <label>Cliente no recoge</label>
+            </value>
+            <value>
+                <fullName>Cte Contactado Pte Recogida</fullName>
+                <default>false</default>
+                <label>Cte Contactado Pte Recogida</label>
+            </value>
+            <value>
+                <fullName>Destrucción</fullName>
+                <default>false</default>
+                <label>Destrucción</label>
+            </value>
+            <value>
+                <fullName>Entregado Cliente</fullName>
+                <default>false</default>
+                <label>Entregado Cliente</label>
+            </value>
+            <value>
+                <fullName>Enviado a CENTR</fullName>
+                <default>false</default>
+                <label>Enviado a CENTR</label>
+            </value>
+            <value>
+                <fullName>Enviado a Cliente</fullName>
+                <default>false</default>
+                <label>Enviado a Cliente</label>
+            </value>
+            <value>
+                <fullName>Recibido en CENTR</fullName>
+                <default>false</default>
+                <label>Recibido en CENTR</label>
+            </value>
+            <value>
+                <fullName>Retornado a Tienda</fullName>
+                <default>false</default>
+                <label>Retornado a Tienda</label>
+            </value>
+            <value>
+                <fullName>Pendiente envío a CENTR</fullName>
+                <default>false</default>
+                <label>Pendiente envío a CENTR</label>
+            </value>
+            <value>
+                <fullName>Caso SIC</fullName>
+                <default>false</default>
+                <label>Caso SIC</label>
+            </value>
+            <value>
+                <fullName>En espera de Respuesta</fullName>
+                <default>false</default>
+                <label>En espera de Respuesta</label>
+            </value>
+            <value>
+                <fullName>Cliente Informado</fullName>
+                <default>false</default>
+                <label>Cliente Informado</label>
+            </value>
+            <value>
+                <fullName>Alkosto</fullName>
+                <default>false</default>
+                <label>Alkosto</label>
+            </value>
+            <value>
+                <fullName>Marca</fullName>
+                <default>false</default>
+                <label>Marca</label>
+            </value>
+            <value>
+                <fullName>Producto Entregado</fullName>
+                <default>false</default>
+                <label>Producto Entregado</label>
+            </value>
+            <value>
+                <fullName>Entregado Bono Cambio</fullName>
+                <default>false</default>
+                <label>Entregado Bono Cambio</label>
+            </value>
+            <value>
+                <fullName>Entregado a Centro Servicio en Tienda</fullName>
+                <default>false</default>
+                <label>Entregado a Centro Servicio en Tienda</label>
+            </value>
+            <value>
+                <fullName>Entregado a Centro Servicio en CENTR</fullName>
+                <default>false</default>
+                <label>Entregado a Centro Servicio en CENTR</label>
+            </value>
+            <value>
+                <fullName>Recibo/Entrega - Falla</fullName>
+                <default>false</default>
+                <label>Recibo/Entrega - Falla</label>
+            </value>
+            <value>
+                <fullName>Recibo/Entrega - Deteriorado/cosmetico</fullName>
+                <default>false</default>
+                <label>Recibo/Entrega - Deteriorado/cosmetico</label>
+            </value>
+            <value>
+                <fullName>Recibo/Entrega - Incompleto</fullName>
+                <default>false</default>
+                <label>Recibo/Entrega - Incompleto</label>
+            </value>
+            <value>
+                <fullName>No Entregado</fullName>
+                <default>false</default>
+                <label>No Entregado</label>
+            </value>
+            <value>
+                <fullName>Enviado a Tienda</fullName>
+                <default>false</default>
+                <label>Enviado a Tienda</label>
+            </value>
+            <value>
+                <fullName>En CENTR de tienda</fullName>
+                <default>false</default>
+                <label>En CENTR de tienda</label>
+            </value>
+            <value>
+                <fullName>En muelle CAS pte validacion</fullName>
+                <default>false</default>
+                <label>En muelle CAS pte validacion</label>
+            </value>
+            <value>
+                <fullName>En muelle Tienda pte validacion</fullName>
+                <default>false</default>
+                <label>En muelle Tienda pte validacion</label>
+            </value>
+            <value>
+                <fullName>Del CAS - No presenta Falla</fullName>
+                <default>false</default>
+                <label>Del CAS - No presenta Falla</label>
+            </value>
+            <value>
+                <fullName>Del CAS - Producto Nuevo</fullName>
+                <default>false</default>
+                <label>Del CAS - Producto Nuevo</label>
+            </value>
+            <value>
+                <fullName>Del CAS - Rechazado</fullName>
+                <default>false</default>
+                <label>Del CAS - Rechazado</label>
+            </value>
+            <value>
+                <fullName>Del CAS - Reparado</fullName>
+                <default>false</default>
+                <label>Del CAS - Reparado</label>
+            </value>
+            <value>
+                <fullName>Novedad en Recibo</fullName>
+                <default>false</default>
+                <label>Novedad en Recibo</label>
+            </value>
+            <value>
+                <fullName>Tiempos proximos a vencer</fullName>
+                <default>false</default>
+                <label>Tiempos proximos a vencer</label>
+            </value>
+            <value>
+                <fullName>En Recolección</fullName>
+                <default>false</default>
+                <label>En Recolección</label>
+            </value>
+            <value>
+                <fullName>Novedad en entrega</fullName>
+                <default>false</default>
+                <label>Novedad en entrega</label>
+            </value>
+            <value>
+                <fullName>Demoras en tiempo tramite de garantia</fullName>
+                <default>false</default>
+                <label>Demoras en tiempo tramite de garantia</label>
+            </value>
+            <value>
+                <fullName>Tramite de garantia</fullName>
+                <default>false</default>
+                <label>Tramite de garantia</label>
+            </value>
+            <value>
+                <fullName>En devolución dinero/cupo</fullName>
+                <default>false</default>
+                <label>En devolución dinero/cupo</label>
+            </value>
+            <value>
+                <fullName>Envió de bono virtual</fullName>
+                <default>false</default>
+                <label>Envió de bono virtual</label>
+            </value>
+            <value>
+                <fullName>Escalado jefatura</fullName>
+                <default>false</default>
+                <label>Escalado jefatura</label>
+            </value>
+            <value>
+                <fullName>Respuesta formal</fullName>
+                <default>false</default>
+                <label>Respuesta formal</label>
+            </value>
+            <value>
+                <fullName>En gestión (predeterminado) o vació</fullName>
+                <default>false</default>
+                <label>En gestión (predeterminado) o vació</label>
+            </value>
+            <value>
+                <fullName>Escalado otras áreas</fullName>
+                <default>false</default>
+                <label>Escalado otras áreas</label>
+            </value>
+            <value>
+                <fullName>En recolección marca</fullName>
+                <default>false</default>
+                <label>En recolección marca</label>
+            </value>
+            <value>
+                <fullName>En reparación marca</fullName>
+                <default>false</default>
+                <label>En reparación marca</label>
+            </value>
+            <value>
+                <fullName>Pendiente autorización cambio-devolución marca</fullName>
+                <default>false</default>
+                <label>Pendiente autorización cambio-devolución marca</label>
+            </value>
+            <value>
+                <fullName>Pendiente respuesta formal marca</fullName>
+                <default>false</default>
+                <label>Pendiente respuesta formal marca</label>
+            </value>
+            <value>
+                <fullName>En visita evaluativa csa aliado</fullName>
+                <default>false</default>
+                <label>En visita evaluativa csa aliado</label>
+            </value>
+            <value>
+                <fullName>En instalación / desinstalación por servicio</fullName>
+                <default>false</default>
+                <label>En instalación / desinstalación por servicio</label>
+            </value>
+            <value>
+                <fullName>En proceso de compra y entrega de accesorio</fullName>
+                <default>false</default>
+                <label>En proceso de compra y entrega de accesorio</label>
+            </value>
+            <value>
+                <fullName>Contacto fallido</fullName>
+                <default>false</default>
+                <label>Contacto fallido</label>
+            </value>
+            <value>
+                <fullName>Pendiente envió de evidencias</fullName>
+                <default>false</default>
+                <label>Pendiente envió de evidencias</label>
+            </value>
+        </valueSetDefinition>
+        <valueSettings>
+            <controllingFieldValue>Escalado a proveedor</controllingFieldValue>
+            <valueName>Novedad en entrega</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Escalado a proveedor</controllingFieldValue>
+            <valueName>Demoras en tiempo tramite de garantia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Escalado a proveedor</controllingFieldValue>
+            <valueName>Tramite de garantia</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En Proceso</controllingFieldValue>
+            <valueName>En Recolección</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En Proceso</controllingFieldValue>
+            <valueName>En devolución dinero/cupo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En Proceso</controllingFieldValue>
+            <valueName>Envió de bono virtual</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En Proceso</controllingFieldValue>
+            <valueName>Escalado jefatura</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En Proceso</controllingFieldValue>
+            <valueName>Respuesta formal</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En Proceso</controllingFieldValue>
+            <valueName>En gestión (predeterminado) o vació</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En Proceso</controllingFieldValue>
+            <valueName>Escalado otras áreas</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Almacenado en tienda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Carta enviada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Carta no entregada</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Cliente no contactado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Cliente no recibe</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Cliente no recoge</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Cte Contactado Pte Recogida</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Destrucción</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Entregado Cliente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <controllingFieldValue>En Transporte</controllingFieldValue>
+            <valueName>Enviado a CENTR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <controllingFieldValue>En Transporte</controllingFieldValue>
+            <valueName>Enviado a Cliente</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <controllingFieldValue>Novedad</controllingFieldValue>
+            <valueName>Recibido en CENTR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Retornado a Tienda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Pendiente envío a CENTR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Abandono Cliente</controllingFieldValue>
+            <valueName>Caso SIC</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Almacenado en Tienda</controllingFieldValue>
+            <valueName>En espera de Respuesta</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cambio Aprobado</controllingFieldValue>
+            <valueName>Cliente Informado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cambio Aprobado</controllingFieldValue>
+            <valueName>Alkosto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Cambio Aprobado</controllingFieldValue>
+            <valueName>Marca</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solución al Cliente</controllingFieldValue>
+            <valueName>Producto Entregado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Solución al Cliente</controllingFieldValue>
+            <valueName>Entregado Bono Cambio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entregado a Proveedor</controllingFieldValue>
+            <valueName>Entregado a Centro Servicio en Tienda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Entregado a Proveedor</controllingFieldValue>
+            <valueName>Entregado a Centro Servicio en CENTR</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Novedad</controllingFieldValue>
+            <valueName>Recibo/Entrega - Falla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Novedad</controllingFieldValue>
+            <valueName>Recibo/Entrega - Deteriorado/cosmetico</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Novedad</controllingFieldValue>
+            <valueName>Recibo/Entrega - Incompleto</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En Transporte</controllingFieldValue>
+            <valueName>No Entregado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En Transporte</controllingFieldValue>
+            <valueName>Enviado a Tienda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En espera del cliente</controllingFieldValue>
+            <valueName>Contacto fallido</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En espera del cliente</controllingFieldValue>
+            <valueName>Pendiente envió de evidencias</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En espera del Proveedor</controllingFieldValue>
+            <valueName>En recolección marca</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En espera del Proveedor</controllingFieldValue>
+            <valueName>En reparación marca</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En espera del Proveedor</controllingFieldValue>
+            <valueName>Pendiente autorización cambio-devolución marca</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En espera del Proveedor</controllingFieldValue>
+            <valueName>Pendiente respuesta formal marca</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En espera del Proveedor</controllingFieldValue>
+            <valueName>En visita evaluativa csa aliado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En espera del Proveedor</controllingFieldValue>
+            <valueName>En instalación / desinstalación por servicio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>En espera del Proveedor</controllingFieldValue>
+            <valueName>En proceso de compra y entrega de accesorio</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recibido</controllingFieldValue>
+            <valueName>En CENTR de tienda</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recibido</controllingFieldValue>
+            <valueName>En muelle CAS pte validacion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recibido</controllingFieldValue>
+            <valueName>En muelle Tienda pte validacion</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recibido</controllingFieldValue>
+            <valueName>Del CAS - No presenta Falla</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recibido</controllingFieldValue>
+            <valueName>Del CAS - Producto Nuevo</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recibido</controllingFieldValue>
+            <valueName>Del CAS - Rechazado</valueName>
+        </valueSettings>
+        <valueSettings>
+            <controllingFieldValue>Recibido</controllingFieldValue>
+            <valueName>Del CAS - Reparado</valueName>
+        </valueSettings>
+    </valueSet>
+</CustomField>

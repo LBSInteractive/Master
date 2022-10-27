@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DelegateGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <groups>FIELD_SERVICE_Default</groups>
+    <groups>AK170 ODS</groups>
+    <groups>AKB30 ODS</groups>
+    <groups>AKB68 ODS</groups>
+    <groups>AKBAR ODS</groups>
+    <groups>AKCAL ODS</groups>
+    <groups>AKEDE ODS</groups>
+    <groups>AKFLO ODS</groups>
+    <groups>AKPER ODS</groups>
+    <groups>AKSIN ODS</groups>
+    <groups>AKVEN ODS</groups>
+    <groups>AKVIL ODS</groups>
+    <groups>AKYOP ODS</groups>
+    <groups>ALKOSTO 170</groups>
+    <groups>ALKOSTO 68</groups>
+    <groups>ALKOSTO BARRANQUILLA</groups>
+    <groups>ALKOSTO CALI</groups>
+    <groups>ALKOSTO EDEN</groups>
+    <groups>ALKOSTO FLORIDA BLANCA</groups>
+    <groups>ALKOSTO KR 30</groups>
+    <groups>ALKOSTO PEREIRA</groups>
+    <groups>ALKOSTO SINCELEJO</groups>
+    <groups>ALKOSTO VENECIA</groups>
+    <groups>ALKOSTO VILLAVICENCIO</groups>
+    <groups>ALKOSTO YOPAL</groups>
+    <groups>Abandono</groups>
+    <groups>Caja General</groups>
+    <groups>ALK GESTION DE CASOS</groups>
+    <groups>Compartir con todos</groups>
+    <groups>Casos Hybris</groups>
+    <groups>Casos ODS</groups>
+    <groups>Casos PAK</groups>
+    <groups>COMPARTIR CON TEC CAMBIOS Y DEVOLUCIONS</groups>
+    <groups>CAJA GENERAL REDES</groups>
+    <groups>CAJA GENERAL REDES INTERNET</groups>
+    <groups>CAJA GENERAL CONCILIACION</groups>
+    <groups>CAJA GENERAL RECAUDO</groups>
+    <groups>Back Factura</groups>
+    <groups>AKT</groups>
+    <groups>ALKOMPRAR</groups>
+    <groups>COLA GENERAL</groups>
+    <groups>Cartera</groups>
+    <groups>Concesiones</groups>
+    <groups>Entregas</groups>
+    <groups>Intangibles</groups>
+    <groups>Medios de Pago</groups>
+    <groups>Posventa</groups>
+    <groups>Puntos de Venta</groups>
+    <groups>SIC DEMANDA</groups>
+    <groups>SIC FACILITA</groups>
+    <groups>Seguridad</groups>
+    <groups>Tarjeta Alkosto</groups>
+    <groups>Transportes</groups>
+    <groups>Cali</groups>
+    <groups>Barranquilla</groups>
+    <groups>Bogota</groups>
+    <groups>Bucaramanga</groups>
+    <groups>B/quilla Vid-Nev-LV-LP-Mue-Air</groups>
+    <groups>Cali Vid-Nev-LV-LP-Mue-Air-Gas</groups>
+    <groups>Bucarm Vid-Nev-LV-LP-Mue-Air-Gas</groups>
+    <groups>Bog Vid-Nev-LV-Mue</groups>
+    <groups>Bog Lavaplatos-Gaso-Aires</groups>
+    <label>ALK Administrador Delegado</label>
+    <loginAccess>false</loginAccess>
+    <permissionSets>Field Service Dispatcher Permissions</permissionSets>
+    <permissionSets>Field Service Dispatcher License</permissionSets>
+    <permissionSets>Field Service Resource Permissions</permissionSets>
+    <permissionSets>Field Service Resource License</permissionSets>
+    <permissionSets>Field Service Mobile License</permissionSets>
+    <permissionSets>Field Service Agent Permissions</permissionSets>
+    <permissionSets>Field Service Self Service Permissions</permissionSets>
+    <permissionSets>Field Service Community Dispatcher Permissions</permissionSets>
+    <permissionSets>Field Service Community Dispatcher License</permissionSets>
+    <permissionSets>Aprobación PAK</permissionSets>
+    <permissionSets>Coordinadores</permissionSets>
+    <permissionSets>Gerentes, Directores y Jefes</permissionSets>
+    <permissionSets>Técnico de Cambios y Devoluciones</permissionSets>
+    <permissionSets>FieldServiceMobileStandardPermSet</permissionSets>
+    <permissionSets>Administrador de Field Service</permissionSets>
+    <permissionSets>Auxiliar Administrativo Interno</permissionSets>
+    <permissionSets>Data Loader</permissionSets>
+    <permissionSets>Permitir creación de Orden de Seguimiento Aliado</permissionSets>
+    <permissionSets>Permitir creación de Orden de Seguimiento Interno</permissionSets>
+    <permissionSets>Auxiliar Administrativo Aliado</permissionSets>
+    <permissionSets>Bloquea Creación de Órdenes de Trabajo</permissionSets>
+    <permissionSets>Líder de Call Center</permissionSets>
+    <permissionSets>Gestor de Casos</permissionSets>
+    <permissionSets>Coordinador/Jefe Posventa</permissionSets>
+    <permissionSets>Creador de Experiencia</permissionSets>
+    <permissionSets>Gestión Posventa</permissionSets>
+    <permissionSets>Usuario de Integración</permissionSets>
+    <permissionSets>Administrador del Área de Servicio</permissionSets>
+    <permissionSets>Técnico de Servicio</permissionSets>
+    <permissionSets>Servicio al Cliente (Tienda)</permissionSets>
+    <permissionSets>ALK_TRANSFERIR CASO</permissionSets>
+    <permissionSets>Técnico de Campo Externo</permissionSets>
+    <permissionSets>Técnico de Campo VIP</permissionSets>
+    <profiles>Coordinadores</profiles>
+    <profiles>Técnico de Cambios y Devoluciones</profiles>
+    <profiles>Administrador Field Service</profiles>
+    <profiles>Administrador del Área de Servicio</profiles>
+    <profiles>Auxiliar Administrativo Aliado</profiles>
+    <profiles>Auxiliar Administrativo Interno</profiles>
+    <profiles>Creador de Casos</profiles>
+    <profiles>Gestor de Casos</profiles>
+    <profiles>Líder de Call Center</profiles>
+    <profiles>Tecnico de campo Externo</profiles>
+    <profiles>Tecnico de campo VIP</profiles>
+    <profiles>Técnico de Servicio</profiles>
+    <profiles>Gestión Posventa</profiles>
+    <roles>GERENTES, DIRECTORES Y JEFES</roles>
+</DelegateGroup>

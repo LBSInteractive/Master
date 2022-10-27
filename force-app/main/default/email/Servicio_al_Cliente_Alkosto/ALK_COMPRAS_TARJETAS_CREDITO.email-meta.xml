@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Compras con Tarjetas de Crédito</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Compras con Tarjetas de Crédito</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+En respuesta a tu reclamación, referente al inconveniente presentado en nuestros puntos de pago al momento de cancelar con tarjeta de crédito donde se solicita verificar la cédula de ciudadanía, te informamos que:
+
+Para efectos de las operaciones que se realicen con tarjetas de Crédito, como comercio estamos obligados a verificar la firma y exigir la presentación del documento de identidad del cliente (cédula de ciudadanía), lo cual hace parte de los elementos requeridos en la seguridad con tarjetas, de acuerdo a lo estipulado en la Circular Externa 042 de 2012 la Superintendencia Financiera de Colombia, numeral 6.8.
+
+Adicionalmente, el comercio sigue las recomendaciones de INCOCREDITO en las medidas de seguridad cuando se van a efectuar operaciones con tarjetas:
+
+Solicitar y verificar el documento de identidad y la tarjeta de crédito antes de la transacción.
+Revisar las características de seguridad tanto del documento de identidad como de la tarjeta.
+Confrontar los datos del documento de identidad contra los de la tarjeta.
+
+
+Hoy nuestro compromiso hacia ti continúa más firme que nunca, seguiremos trabajando en la búsqueda constante de tu satisfacción para que esta sea cada vez mejor y podamos seguir contándote como nuestro cliente.
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+Anexo imagen con las normas de la superintendencia
+
+
+Cordialmente,
+
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

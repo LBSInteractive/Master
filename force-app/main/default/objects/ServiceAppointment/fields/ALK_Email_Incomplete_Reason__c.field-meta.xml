@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Email_Incomplete_Reason__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( ISPICKVAL( ALK_Motivo_Incompletud__c , &quot;Otros&quot; ), ALK_Motivo_Incompletud_otros__c  ,  TEXT ( ALK_Motivo_Incompletud__c ))</formula>
+    <label>Motivo de Incompletitud Email</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

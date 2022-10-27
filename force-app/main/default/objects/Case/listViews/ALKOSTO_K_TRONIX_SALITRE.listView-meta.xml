@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALKOSTO_K_TRONIX_SALITRE</fullName>
+    <booleanFilter>(1 AND 2 AND 3 AND 4 AND 5) OR (3 AND 5 AND 6 AND 7 AND (8 OR 9))</booleanFilter>
+    <columns>ALK_Factura__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>ALK_Clase__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>ALK_Almacen__c</columns>
+    <columns>ALK_Flag_SLA__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>ALK_Reapertura__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.ALK_SOLICITUD</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>COMPAÑÍA,COMPRA,POSVENTA,PROCESO PAGO</value>
+    </filters>
+    <filters>
+        <field>ALK_Almacen__c</field>
+        <operation>equals</operation>
+        <value>K-TRONIX SALITRE</value>
+    </filters>
+    <filters>
+        <field>ALK_Clase__c</field>
+        <operation>equals</operation>
+        <value>ACTUALIZACIÓN DE DATOS,BENEFICIOS TRIBUTARIOS,CAMBIO POR INSATISFACCIÓN MERCADO,CANCELACIÓN TRANSACCIÓN,DOCUMENTOS,FACTURA,OTROS BONOS,TRÁMITE BONO 50%,TRÁMITE BONO CAMBIO</value>
+    </filters>
+    <filters>
+        <field>OWNER_NAME</field>
+        <operation>equals</operation>
+        <value>PUNTOS DE VENTA</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.ALK_QUEJA</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>COMPAÑÍA,COMPRA,PROCESO PAGO</value>
+    </filters>
+    <filters>
+        <field>ALK_Clase__c</field>
+        <operation>equals</operation>
+        <value>ACCIDENTE CON PRODUCTO,ACCIDENTE EN LA TIENDA,ASESORÍA Y ATENCIÓN AL CLIENTE</value>
+    </filters>
+    <filters>
+        <field>ALK_Clase__c</field>
+        <operation>equals</operation>
+        <value>EXENCIÓN IVA NO APLICADO,FACTURA,INCONSISTENCIA EN PRECIOS,INCONVENIENTES EN EL PEDIDO INTERNET,INCONVENIENTES EN EL PROCESO DE COMPRA INTERNET,INCONVENIENTES REGISTRO EN LA PÁGINA</value>
+    </filters>
+    <label>K-tronix Salitre</label>
+    <queue>ALK_Puntos_Venta</queue>
+    <sharedTo>
+        <group>K_TRONIX_SALITRE</group>
+    </sharedTo>
+</ListView>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Fill_Contact_Business_Account</fullName>
+    <active>true</active>
+    <errorConditionFormula>OR(AND (Account.RecordType.DeveloperName = &apos;Empresa&apos;,
+ ISBLANK(ContactId),
+ ALK_Massive_Load__c = false
+) , AND (NOT ISNEW(),
+ Account.RecordType.DeveloperName = &apos;Empresa&apos;,
+ ISBLANK(ContactId),
+ ALK_Massive_Load__c = true))</errorConditionFormula>
+    <errorDisplayField>ContactId</errorDisplayField>
+    <errorMessage>Completa el contacto de la empesa</errorMessage>
+</ValidationRule>

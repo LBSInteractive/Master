@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Avoid_Change_PAK_RT</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+
+(RecordType.DeveloperName = &apos;ALK_PAK&apos;),
+OR(ISCHANGED(RecordTypeId),ISCHANGED(Status)),OR(
+$Profile.Name = &quot;Gestión Posventa&quot;, $Profile.Name = &quot;Creador de Casos&quot;,$Profile.Name = &quot;Gestor de Casos&quot;,$Profile.Name = &quot;Líder de Call Center&quot;,$Profile.Name = &quot;Técnico de Servicio&quot;,$Profile.Name = &quot;Administrador del Área de Servicio&quot;,$Profile.Name = &quot;Coordinadores&quot;,$Profile.Name = &quot;Técnico de Cambios y Devoluciones&quot;)
+
+)</errorConditionFormula>
+    <errorMessage>No es posible cambiar la información de PAK, hable con el administrador.</errorMessage>
+</ValidationRule>

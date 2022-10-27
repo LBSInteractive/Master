@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "810a2a46-a2da-43c0-a58a-fd3fce5e413c",
+  "appPageId" : "0301749a-1d44-41ec-b919-146234eef013",
+  "configurationTags" : [ ],
+  "id" : "28f43c33-0a38-48fd-b5b3-20f1a2831beb",
+  "label" : "Monitoreo de Citas",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-monitoreo-de-citas",
+  "type" : "route",
+  "urlPrefix" : "monitoreo-de-citas"
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Accessories_Packaging__c</fullName>
+    <externalId>false</externalId>
+    <label>Accesorios y Empaques</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>MultiselectPicklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>true</sorted>
+            <value>
+                <fullName>Adaptador Corriente</fullName>
+                <default>false</default>
+                <label>Adaptador Corriente</label>
+            </value>
+            <value>
+                <fullName>Audifonos</fullName>
+                <default>false</default>
+                <label>Audifonos</label>
+            </value>
+            <value>
+                <fullName>Bases</fullName>
+                <default>false</default>
+                <label>Bases</label>
+            </value>
+            <value>
+                <fullName>Bateria/Pilas</fullName>
+                <default>false</default>
+                <label>Bateria/Pilas</label>
+            </value>
+            <value>
+                <fullName>Cable Poder</fullName>
+                <default>false</default>
+                <label>Cable Poder</label>
+            </value>
+            <value>
+                <fullName>Cable USB</fullName>
+                <default>false</default>
+                <label>Cable USB</label>
+            </value>
+            <value>
+                <fullName>Cartuchos</fullName>
+                <default>false</default>
+                <label>Cartuchos</label>
+            </value>
+            <value>
+                <fullName>CD Driver</fullName>
+                <default>false</default>
+                <label>CD Driver</label>
+            </value>
+            <value>
+                <fullName>Control Remoto</fullName>
+                <default>false</default>
+                <label>Control Remoto</label>
+            </value>
+            <value>
+                <fullName>Manual</fullName>
+                <default>false</default>
+                <label>Manual</label>
+            </value>
+            <value>
+                <fullName>Otros</fullName>
+                <default>false</default>
+                <label>Otros</label>
+            </value>
+            <value>
+                <fullName>Paquetes Tornillos</fullName>
+                <default>false</default>
+                <label>Paquetes Tornillos</label>
+            </value>
+            <value>
+                <fullName>Teclado inalámbrico</fullName>
+                <default>false</default>
+                <label>Teclado inalámbrico</label>
+            </value>
+            <value>
+                <fullName>Toner</fullName>
+                <default>false</default>
+                <label>Toner</label>
+            </value>
+            <value>
+                <fullName>USB Receptor</fullName>
+                <default>false</default>
+                <label>USB Receptor</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+    <visibleLines>5</visibleLines>
+</CustomField>

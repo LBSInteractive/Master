@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Seguridad_K_tronix</fullName>
+    <columns>ALK_Factura__c</columns>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>ACCOUNT.NAME</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.TYPE</columns>
+    <columns>ALK_Clase__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>ALK_Almacen__c</columns>
+    <columns>ALK_Flag_SLA__c</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>ALK_Reapertura__c</columns>
+    <filterScope>Queue</filterScope>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.ALK_QUEJA</value>
+    </filters>
+    <filters>
+        <field>CASES.TYPE</field>
+        <operation>equals</operation>
+        <value>SEGURIDAD</value>
+    </filters>
+    <filters>
+        <field>ALK_Clase__c</field>
+        <operation>equals</operation>
+        <value>HURTO/DAÑO</value>
+    </filters>
+    <filters>
+        <field>ALK_Almacen__c</field>
+        <operation>notEqual</operation>
+        <value>ALKOSTO KR 30,ALKOSTO 170,ALKOSTO EDEN,ALKOSTO 68,ALKOSTO VENECIA,ALKOSTO VILLAVICENCIO,ALKOSTO CALI,ALKOSTO PEREIRA,ALKOSTO BARRANQUILLA,ALKOSTO FLORIDA BLANCA,ALKOSTO SINCELEJO,ALKOSTO YOPAL</value>
+    </filters>
+    <label>Seguridad K-tronix</label>
+    <queue>ALK_Seguridad</queue>
+    <sharedTo>
+        <group>SEGURIDAD_K_TRONIX</group>
+    </sharedTo>
+</ListView>

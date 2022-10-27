@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Tarjeta Alkosto</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Tarjeta Alkosto</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+
+Se informa que su petición se remitió para validación y trámite al personal de Tarjeta de Crédito Alkosto (Tuya Compañía de Financiamiento S.A.) desde el día XXXXXXXX, en vista que ALKOSTO S.A.  y Tuya Compañía de Financiamiento S.A. son dos personas jurídicas diferentes e independiente.
+
+Tarjeta de crédito Alkosto es emitida directamente por Tuya S.A. Compañía de Financiamiento S.A.
+
+Lo anterior se
+
+
+
+
+
+puede constatar en la página web de Tarjeta de Crédito Alkosto: www.tarjetaalkosto.com.co donde se anuncia:
+
+Para cualquier inquietud relacionada con su petición puede comunicarse con Tarjeta de Crédito Alkosto a:
+
+Bogotá: (601) 482 48 07
+
+Cali: (602) 380 89 35
+
+Medellín: (604) 444 37 84
+
+Resto del país: 018000 915 555
+
+Queremos recordarte que estamos siempre a tu disposición para escucharte en los canales que hemos dispuesto para ti.
+
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

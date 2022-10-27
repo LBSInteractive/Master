@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Solicitud Soportes Posventa</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Solicitud Soportes Posventa</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>¡Hola! {!Case.Contact},
+
+Te saludamos desde el equipo de posventa.
+
+Para nosotros lo primordial es la experiencia que vivas con Alkosto y K-tronix, por esta razón y con el fin de continuar con tu caso 4247372, te agradecemos nos remitas las fotos o evidencias de tu producto así:
+
+✅ Identificación del producto: Busca la etiqueta del serial o modelo y lote. Si tu producto es un celular, Tablet, o reloj inteligente, busca el IMEI.
+
+En cualquiera de los casos lo podrás encontrar en la parte trasera de tu producto. Ej código de barras
+
+✅ Aspecto general del producto: Toma fotos donde alcancemos a ver todo tu producto, es decir, de la parte superior, inferior, frontal y trasera; adicionalmente fotos de los empaques. Si tu producto llego dañado o tiene algún imperfecto, asegúrate que se evidencien en las fotos. Ej. Rayones, sumido, hundido, pixeles, grietas, etc.
+
+✅ Accesorios del producto: Toma las fotos a los accesorios de tu producto. Ej Mangueras, cables, control remoto, bases, etc
+
+TEN PRESENTE
+
+Este link funciona una sola vez y desde un solo dispositivo. Si después de adjuntar tus fotos deseas reabrir para adjuntar mas evidencias, debes contactarnos para compartirte un nuevo link
+
+Para iniciar tu proceso de envío ingresa y sigue las instrucciones aquí</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

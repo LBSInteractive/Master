@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Time_Window__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF ( 
+				NOT(ISNULL(ArrivalWindowStartTime))   
+				&amp;&amp;  
+				NOT (ISNULL (ArrivalWindowEndTime )),
+				&quot;entre las &quot; +  LEFT (TEXT (TIMEVALUE( ArrivalWindowStartTime - 5/24 )),5) + &quot; - &quot;+ LEFT(TEXT( TIMEVALUE( ArrivalWindowEndTime - 5/24)),5),
+        IF(NOT(ISNULL( ALK_Related_Service_Appointment__r.Id 	)) 
+											&amp;&amp;
+											NOT(ISNULL(ALK_Related_Service_Appointment__r.ArrivalWindowStartTime ))    
+											&amp;&amp;  
+											NOT (ISNULL (ALK_Related_Service_Appointment__r.ArrivalWindowEndTime )), 
+																			
+												&quot;entre las &quot; + LEFT(TEXT (TIMEVALUE( ALK_Related_Service_Appointment__r.ArrivalWindowStartTime - 5/24 )),5) 
+												+ &quot; - &quot; + LEFT(TEXT( TIMEVALUE(ALK_Related_Service_Appointment__r.ArrivalWindowEndTime - 5/24)),5),
+																								
+												&quot;a las &quot; + LEFT(TEXT (TIMEVALUE( SchedStartTime - 5/24 ) ),5)
+												        ) )</formula>
+    <label>Rango de Horas</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

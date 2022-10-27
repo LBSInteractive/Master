@@ -1,0 +1,25 @@
+<template>
+    <lightning-card>
+        <lightning-record-edit-form object-api-name="Case" onload={handleOnLoad}>
+            <template if:true={isLoading}>
+                <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+                </lightning-spinner>
+            </template>
+            <template if:true={invoiceListHlp}>
+                <lightning-datatable key-field="rowIndex" data={invoiceList} columns={invoiceSearchColumns}
+                    hide-checkbox-column="true" onrowaction={handleRowAction}>
+                </lightning-datatable>
+            </template>
+            <template if:true={showProductDetail}>
+                <c-alk-_-product-_-details record-id={recordId} product-list-fnl={productListFnl}
+                    error-on-invoice-list-itm={errorOnInvoiceListItm}></c-alk-_-product-_-details>
+            </template>
+            <template if:true={errorOnInvoiceListSearch}>
+                <div>
+                    <lightning-formatted-text value={errorOnInvoiceListSearch.body.message}></lightning-formatted-text>
+                </div>
+            </template>
+            <br />
+        </lightning-record-edit-form>
+    </lightning-card>
+</template>

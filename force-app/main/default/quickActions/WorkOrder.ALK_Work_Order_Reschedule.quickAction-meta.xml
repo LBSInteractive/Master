@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <flowDefinition>ALK_Crear_Orden_de_Trabajo_Reprogramacion</flowDefinition>
+    <icon>FSL__fsl_wo_png</icon>
+    <label>Reprogramar Orden de Trabajo</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

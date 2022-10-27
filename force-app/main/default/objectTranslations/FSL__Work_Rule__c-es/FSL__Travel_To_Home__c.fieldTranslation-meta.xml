@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Determina la cantidad de minutos tras la finalización de la jornada del calendario del recurso que estará disponible para desplazamientos (a cuenta del recurso).
+Cuando está vacía, cualquier cantidad de desplazamiento tras la finalización de la jornada laboral es válida.</help>
+    <label></label>
+    <name>FSL__Travel_To_Home__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>При перевірці порівняйте поле мінімального розміру команди у робочому замовлення з доступними учасниками команди обслуговування.
+Інакше, порівняйте мінімальний розмір команди із полем розміру команди у команді обслуговування.</help>
+    <label></label>
+    <name>FSL__Crew_Resources_Availability__c</name>
+</CustomFieldTranslation>

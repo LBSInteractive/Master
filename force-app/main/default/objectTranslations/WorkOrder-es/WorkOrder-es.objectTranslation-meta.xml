@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>FSL__Emergency_Current_WorkORder_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <layouts>
+        <layout>ALK_Work_Order_Instalaciones</layout>
+        <sections>
+            <label></label>
+            <section>Custom links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Producto Instalado</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_Work_Order_Instalaciones_Aliados</layout>
+        <sections>
+            <label></label>
+            <section>Custom links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Producto Instalado</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_Work_Order_Instalaciones_Tecnicos</layout>
+        <sections>
+            <label></label>
+            <section>Custom links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Producto Instalado</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>System information</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_Work_Order_Visita_Garantia_Instalacion</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informaciones de Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Producto Instalado</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_Work_Order_Visita_Garantia_Instalacion_Aliados</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informaciones de Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Producto Instalado</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_Work_Order_Visita_Garantia_Instalacion_Tecnicos</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informaciones de Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Producto Instalado</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_Work_Order_Visita_Garantia_Producto</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informaciones de Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la Factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Producto Instalado</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_Work_Order_Visita_Garantia_Producto_Aliados</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informaciones de Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la Factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Producto Instalado</section>
+        </sections>
+    </layouts>
+    <layouts>
+        <layout>ALK_Work_Order_Visita_Garantia_Producto_Tecnicos</layout>
+        <sections>
+            <label></label>
+            <section>Custom Links</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Descripción</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Informaciones de Sistema</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información de la Factura</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Información del cliente</section>
+        </sections>
+        <sections>
+            <label></label>
+            <section>Producto Instalado</section>
+        </sections>
+    </layouts>
+    <quickActions>
+        <label></label>
+        <name>ALK_Update_SA_Date_Range</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>ALK_Work_Order_Reschedule</name>
+    </quickActions>
+    <quickActions>
+        <label></label>
+        <name>SendEmail</name>
+    </quickActions>
+    <recordTypes>
+        <label></label>
+        <name>ALK_Instalaciones</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ALK_Visita_Garantia_Instalacion</name>
+    </recordTypes>
+    <recordTypes>
+        <label></label>
+        <name>ALK_Visita_Garantia_Producto</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>ALK_Fill_Contact_Business_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Address_Mandatory</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage></errorMessage>
+        <name>Block_Work_Order_Creation</name>
+    </validationRules>
+</CustomObjectTranslation>

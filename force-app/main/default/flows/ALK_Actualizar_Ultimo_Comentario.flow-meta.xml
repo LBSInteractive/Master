@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <environments>Default</environments>
+    <formulas>
+        <name>ALK_Block_Closed_Case</name>
+        <dataType>Boolean</dataType>
+        <expression>AND(
+    Not( ISCHANGED({!$Record.Parent.ALK_Pak_Batch_Status__c}) ),
+    PRIORVALUE({!$Record.Parent.ALK_Closed_Case__c}) = true,
+    {!$Record.Parent.ALK_Closed_Case__c} = true,
+    OR($Profile.Name &lt;&gt; &quot;Administrador del sistema&quot;, $Profile.Name &lt;&gt; &quot;System Administrator&quot;)
+)</expression>
+    </formulas>
+    <interviewLabel>ALK Actualizar Ultimo Comentario {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ALK Actualizar Ultimo Comentario</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Actualizar_caso</name>
+        <label>Actualizar caso</label>
+        <locationX>776</locationX>
+        <locationY>415</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>$Record.ParentId</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>ALK_Last_Comment__c</field>
+            <value>
+                <elementReference>$Record.CommentBody</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Case</object>
+    </recordUpdates>
+    <start>
+        <locationX>650</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Actualizar_caso</targetReference>
+        </connector>
+        <object>CaseComment</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

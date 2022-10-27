@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Carta no Presenta Falla Reiterada</name>
+    <style>freeForm</style>
+    <subject>Carta no Presenta Falla Reiterada</subject>
+    <textOnly>Bogotá D.C., día de mes del año
+
+Señor (a)
+
+XXXXXXXXX
+
+Referencia: Respuesta a Reclamación XXXXXXXXX
+
+Producto: XXXXXXXXXXXXXXXX
+
+Factura: XXXXXXXXXXXXXXXXXXXXXXXX
+
+
+Estimado(a) {!Case.Account}:
+
+Por medio de la presente nos permitimos dar respuesta a su reclamación. Analizando la trazabilidad de su garantía con la marca encontramos  el siguiente historial:
+
+“PRIMER INGRESO Orden de Servicio No. 62296, Señor usuario, se valida equipo con falla de micrófono, se detecta fallo en el micrófono principal, se realiza cambio del módulo de sub tarjeta y de los consumibles necesarios, se hace actualización de software, pruebas de operatividad, equipo reparado.“
+
+
+
+“SEGUNDO INGRESO Orden de Servicio No. 67389, Señor usuario se realiza la respectiva revisión del equipo, donde se verifica la tapa de la batería debido a que el usuario reportaba que se encontraba desajustada, se realizan pruebas y se compara con otro dispositivo de la misma referencia y el equipo se encuentra dentro de los parámetros establecidos por el fabricante. Adicional se informar que se realiza verificación de la novedad mencionada con relación a la cubierta donde se manifiesta que la unidad es retornada con las mismas certificaciones de resistencia con las que cuenta el dispositivo y se ajusta a las características establecidas por el fabricante, igualmente se realizan pruebas de resistencia al agua WRT en las que el dispositivo no presenta novedades. Se realizan pruebas de audio en llamadas por tiempos prolongados, igualmente se realizan pruebas de micrófono, altavoz y auriculares para determinar si la falla se replica en otro punto del dispositivo para ello se ingresa a la radio, al reproductor de música y a las pruebas dadas por el fabricante (Galaxy Diagnostic), en las cuales el teléfono no registro falla alguna u anomalía referente a temas de audio y sonido, se recomienda no dejar humedecer el dispositivo ya que esto no solo puede dañar la parte de audio del dispositivo, puede llegar a dañar otras partes de este, también se recomienda limpiar los orificios de carga, auricular y altavoz ya que pueden haber partículas externas que pueden ocasionar interferencias en este, de igual manera se realizan pruebas generales del dispositivo para detectar problemas adicionales donde se obtienen resultados satisfactorios. Como protocolo de servicio y análisis previo, el equipo es sometido a un escáner (Galaxy Diagnostic*) y como resultado se evidencia que no presenta ninguna falla de calidad, funcionamiento o idoneidad; por el contrario, se encuentra en perfectas condiciones de funcionamiento. Sin embargo, se actualiza a la última versión de Android para asegurar que continúe el desempeño optimo del teléfono, esto no implica una reparación y es con fines preventivos. * Galaxy Diagnostic*: Es una herramienta de software (No física) para diagnóstico, que permite realizar pruebas funcionales con una exactitud muy alta dado que escanea el equipo en su totalidad y encuentra posibles causas raíces de las novedades, este método consiste en conectar el celular al Software para que este ejecute la lectura precisa y el autodiagnóstico del equipo.”
+
+
+
+Se confirma que el proceso de garantía de su equipo fue realizado bajo los parámetros de ley, dando cumplimiento a lo establecido en los términos de la garantía del Estatuto de protección al consumidor ley 1480 de 2011.
+
+“Basados en el estatuto del consumidor Ley 1480 de 2011. Art. 11 Lit 2. Que indica que En caso de repetirse la falla y atendiendo a la naturaleza del bien y a las características del defecto, a elección del consumidor, se procederá a una nueva reparación, devolución…”
+
+
+
+Teniendo en cuenta lo anterior su pretensión de cambio y/o devolución de dinero no fue aprobada ya que la unidad no presento falla reiterada. Es evidente que la garantía ha sido atendida en debida y oportuna forma, al amparo de la normatividad vigente.
+
+
+
+“Es así que lo requerimos para que se acerque al almacén (K tonix Chipichape) a retirar su artículo, para esto cuenta con 60 días de acuerdo a lo establecido en: “ARTÍCULO 18. PRESTACIÓN DE SERVICIOS QUE SUPONEN LA ENTREGA DE UN BIEN. PARÁGRAFO. Pasado un (1) mes a partir de la fecha prevista para la devolución o a la fecha en que el consumidor debía aceptar o rechazar expresamente el servicio, de conformidad con lo previsto en el numeral 1 anterior sin que el consumidor acuda a retirar el bien, el prestador del servicio lo requerirá para que lo retire dentro de los dos (2) meses siguientes a la remisión de la comunicación. Si el consumidor no lo retira se entenderá por ley que abandona el bien y el prestador del servicio deberá disponer del mismo conforme con la reglamentación que expida el Gobierno Nacional para el efecto.”
+
+
+
+Estamos atentos a escucharlo a través de nuestra línea de servicio al cliente número 4073033 en Bogotá y 018000111448 en el resto del país, o a través de nuestro correo sugerencias@alkosto.com.co.
+
+
+
+Cordialmente,
+
+
+Auxiliar Administrativo Posventa</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Ordenes_de_Garantia</fullName>
+    <columns>Name</columns>
+    <columns>Account</columns>
+    <columns>WorkType</columns>
+    <columns>Status</columns>
+    <columns>CreatedDate</columns>
+    <columns>RecordType</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>RecordType</field>
+        <operation>equals</operation>
+        <value>WorkOrder.ALK_Visita_Garantia_Producto</value>
+    </filters>
+    <label>[ALK/KTR] Ordenes Garantía de Producto</label>
+</ListView>

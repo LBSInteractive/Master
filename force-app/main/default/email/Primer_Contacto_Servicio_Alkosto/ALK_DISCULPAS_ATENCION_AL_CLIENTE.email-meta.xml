@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Disculpas Atención al Cliente</name>
+    <style>freeForm</style>
+    <subject>Tu Caso Alkosto/K-tronix No. {!Case.CaseNumber}</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+Alkosto día a día se caracteriza por avanzar en un alto nivel de servicio y calidad para nuestros clientes, lo más valioso para nosotros es la experiencia que vivas, por esta razón es de suma importancia la información que nos brindas.
+
+Lamentamos lo sucedido con la atención prestada por parte de la persona en el área de despachos, se tomarán los correctivos necesarios para que estas situaciones no se repitan. En consecuencia a esto queremos extenderte nuestras más sinceras disculpas y te agradecemos el habernos contado lo vivido.
+
+Hoy nuestro compromiso hacia ti continúa más firme que nunca, seguiremos trabajando en la búsqueda constante de tu satisfacción para que esta sea cada vez mejor y podamos seguir contando contigo como nuestro cliente.
+
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

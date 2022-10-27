@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso_ODS</letterhead>
+    <name>Plantilla Imprimir ODS</name>
+    <style>freeForm</style>
+    <subject>Orden de Servicio No. {!ALK_Invoice__c.ALK_Case__c}</subject>
+    <textOnly>NÚMERO ODS: {!ALK_Invoice__c.ALK_Case__c}
+
+DATOS DE LA FACTURA
+Fecha de Factura: {!ALK_Invoice__c.ALK_Invoice_Date__c}
+Fecha de Recepción: {!ALK_Invoice__c.CreatedDate}
+Almacen de Compra: {!ALK_Invoice__c.ALK_Warehouse__c}
+Almacen de Ingreso: {!ALK_Invoice__c.ALK_Entry_Warehouse_ODS_Case__c}
+
+DATOS DEL CLIENTE
+Documento: {!ALK_Invoice__c.ALK_NIT_Purchaser__c}
+Nombre: {!ALK_Invoice__c.ALK_Purchaser_Name__c}
+Teléfono: {!ALK_Invoice__c.ALK_Purchaser_Phone__c}
+Correo: {!ALK_Invoice__c.ALK_Correo_Comprador__c}
+Dirección: {!ALK_Invoice__c.ALK_Direccion_Comprador__c}
+
+DATOS DE QUIEN TRAE EL PRODUCTO
+Documento: {!ALK_Invoice__c.ALK_Deliverer_Document_ODS_Case__c}
+Nombre: {!ALK_Invoice__c.ALK_Deliverer_Name_ODS_Case__c}
+Celular: {!ALK_Invoice__c.ALK_Deliverer_Mobile_ODS_Case__c}
+Correo: {!ALK_Invoice__c.ALK_Deliverer_Email_ODS_Case__c}
+Dirección: {!ALK_Invoice__c.ALK_Deliverer_Address_ODS_Case__c}
+Ciudad: {!ALK_Invoice__c.ALK_Deliverer_City_ODS_Case__c}
+
+DATOS DEL PRODUCTO
+Dirección Entrega: {!ALK_Invoice__c.ALK_ODS_Delivery_Address__c}
+Serial: {!ALK_Invoice__c.ALK_Serial_ODS_Case__c}
+IMEI: {!ALK_Invoice__c.ALK_IMEI_ODS_Case__c}
+Nº Factura: {!ALK_Invoice__c.Name}
+EAN: {!ALK_Invoice__c.ALK_EAN__c}
+Cantidad: {!ALK_Invoice__c.ALK_Quantity__c}
+Marca: {!ALK_Invoice__c.ALK_Brand__c}
+Producto: {!ALK_Invoice__c.ALK_Description__c}
+Descripción de la Falla Reportada:
+{!ALK_Invoice__c.ALK_Problem_Description_ODS_Case__c}
+
+ESTADO DEL PRODUCTO
+Accesorios y Empaques Ingresados:
+{!ALK_Invoice__c.ALK_Accessories_Packaging_ODS_Case__c}
+Estados del Producto: 
+{!ALK_Invoice__c.ALK_Product_Status_ODS_Case__c}
+Observaciones del Caso:
+{!ALK_Invoice__c.ALK_Observations_ODS_Case__c}
+
+_________________________________________________________
+Autorización para el Tratamiento de Datos Personales y Aviso de Privacidad - Duración Tramite Garantía
+
+Para reclamar tu producto deberás presentar el documento original de la Orden de Servicio. En caso de pérdida o robo de esta, deberás formular denuncio penal ante la autoridad competente, solo te entregaremos el producto con el denuncio y si eres el titular de la orden de servicio. El producto(s) y/o accesorio(s) están sujetos a verificación técnica para establecer si cumple o no con las políticas de garantía establecidas por los fabricantes. Si cumple, la reparación no tendrá ningún costo. La política de garantía del producto(s) y/o accesorio(s) no cubre daños por maltrato, golpes, humedad, la intervención por parte de terceros, ni que exceda el periodo de tiempo de la garantía legal o alguna otra descrita en el manual del producto(s). Estimado(a) cliente vía telefónica y/o escrita  te informaremos cuando tu producto(s) esté listo para ser entregado en el lugar donde nos indicaste; a partir de esa fecha contaras con 60 días calendario para retirarlo, si al finalizar este término no retiras tu producto(s) lo entenderemos como abandonado y daremos tramite según el decreto 1413 de 2018 del Ministerio de Comercio. Te recomendamos hacer una copia (backup) de la información contenida en tu dispositivo(s) electrónico(s) antes de ingresar tu producto(s) a servicio técnico, teniendo en cuenta que la información contenida en éste es confidencial y de tu propiedad, toda la información (directorio telefónico y contenidos multimedia) será borrada. Colombiana de comercio, no se hace responsable por la pérdida o deterioro de complementos cosméticos tales como protectores de pantalla, calcomanías, anti espías, vidrios, templados soportes, entre otros. Los días para la reparación estarán establecidos dentro del marco legal de la ley 1480. Recuerda que al ingresar tu producto(s) se podrán tomar evidencias digitales que validaran el estado físico en el que nos lo entregas. Conforme a la Ley 1581 del 17 de 2012; “por la cual se dictan disposiciones generales para la protección de datos personales”, se requiere de tu autorización para el tratamiento de tus datos personales, así mismo el compartir tu información con terceros y colaboradores con fines exclusivamente del servicio, según lo dispone el artículo 9° de dicha Ley, los cuales deben ser incorporados a la base de datos de la cual es responsable Colombiana de comercio. Adicionalmente, podrás ejercer tus derechos de conocer, actualizar, rectificar y solicitar la supresión de tus datos personales e informarse sobre la Política a través de los canales de atención al cliente de nuestra compañía. Esta información es y será utilizada solo en el desarrollo de las funciones propias de la empresa. Según el Decreto 1076 de 2015 Titulo 6, del Ministerio de Ambiente, los repuestos dañados deben tener una disposición final adecuada, para evitar la contaminación y daños a la salud humana y al medioambiente, por este motivo no se restituirán al usuario, repuestos, accesorios ni baterías que hayan sido reemplazadas. Autorizo el envío de mensajes al número de contacto celular registrado en la orden de servicio, informando la disponibilidad para recolección del producto(s) ingresado a revisión.
+_________________________________________________________
+
+Para Constancia se Firma a los_____días del mes_____del Año________
+
+Técnico de Cambios y Devoluciones:_________________________________________
+
+Nombre del Cliente:_______________________________________________________
+
+Firma: ________________________CC: ______________________________________
+_________________________________________________________
+
+Producto Reparado:_______________________________________________________
+
+Firma Cliente Recibido a Satisfacción:________________________________________
+
+Fecha: _______________________
+
+ESTIMADO CLIENTE: El recibo de su reclamación se realiza para estudio del caso. No implica que ALKOSTO S.A acepta el cambio del producto o la devolución de su dinero. Le recordamos que el tiempo para la solución de una garantía empieza a contar desde la fecha de ingreso al centro de servicio autorizado.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>İşaretlendiğinde, İş Siparişindeki Minimum Ekip Boyu alanını gerçekte bulunan Hizmet Ekibi Üyeleriyle karşılaştırır.
+Aksi takdirde, Minimum Ekip Boyunu Hizmet Ekibindeki Ekip Boyu alanıyla karşılaştırır.</help>
+    <label></label>
+    <name>FSL__Crew_Resources_Availability__c</name>
+</CustomFieldTranslation>

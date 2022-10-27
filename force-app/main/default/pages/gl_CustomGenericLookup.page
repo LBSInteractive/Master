@@ -1,0 +1,114 @@
+<apex:page controller="gl_CustomGenericLookupController"
+  title="Search" 
+  showHeader="true" 
+  sideBar="true" 
+  id="pg">
+  
+    <apex:includeScript value="/support/console/44.0/integration.js"/>
+  
+  
+    <script type="text/javascript"
+        src="/soap/ajax/26.0/connection.js"></script> 
+        
+   <script type="text/javascript">
+	function colorPageBlock(pageblock, color) {
+		if (pageblock != null) pageblock.firstChild.style.cssText = "background-color: " + color + ";";
+		}
+      
+    function ctiMessage() {
+            this.action = 'ObjectSelected',
+            this.id = '',
+            this.interactionId = ''
+    }
+
+    function refreshPage(objId)
+    {
+        //Commented a single line for avoiding Reflected XSS warning on checkmarx on 15/04/20 -- var iD = '{ ! ixnId}' ;
+        //console.log("refreshPage for objId="+objId+" and ixnId="+iD);
+        
+            if(typeof(Storage) !== "undefined" && window!=null && window.sessionStorage!=null){
+				//window.sessionStorage.setItem("Genesys_sfdc_interactionId", iD);
+				//window.sessionStorage.setItem("Genesys_sfdc_objectId", objId);
+				window.sessionStorage.setItem("Genesys_search_completed", "true");
+				sforce.one.navigateToSObject(objId, "related"); 
+			}              
+    }
+    
+   </script>   
+  <apex:pageBlock title="Search" id="block">    
+  <apex:form >
+  <apex:outputPanel id="page" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+              
+            <apex:actionRegion >  
+                  <!-- <apex:outputPanel id="top" layout="block" style="margin:5px;padding:10px;padding-top:2px;">
+                    <apex:outputLabel value="Phone Number" style="font-weight:Bold;padding-right:10px;" for="txtSearch"/>
+                    <apex:inputText id="txtSearch" value="{!searchString}" />
+                    <apex:outputLabel value="First Name" style="font-weight:Bold;padding-right:10px;" for="txtFirstName"/>
+                    <apex:inputText id="txtFirstName" value="{!firstName}" />
+                    <apex:outputLabel value="Last Name" style="font-weight:Bold;padding-right:10px;" for="txtLastName"/>
+                    <apex:inputText id="txtLastName" value="{!lastName}" />
+                    <apex:outputLabel value="Email" style="font-weight:Bold;padding-right:10px;" for="txtEmail"/>
+                    <apex:inputText id="txtEmail" value="{!email}" />
+                      <span style="padding-left:5px"><apex:commandButton id="btnGo" value="Search" action="{!Search}" rerender="pnlSearchResults"></apex:commandButton></span>
+                  </apex:outputPanel>-->
+					
+                    
+                <apex:outputPanel id="pnlSearchResults" style="margin:10px;height:auto;overflow-Y:auto;" layout="block">
+              <!--   <apex:repeat value="{!sf_types}" var="type">   -->
+                  <style type="text/css">
+    					.empty-column-content {
+        				display: none;
+    				}
+    				
+    				.category_table tr:first-child td {
+    					background: #f2f3f3;
+    					border-width: 0 0 1px 1px;
+    					border-color: #e0e3e5;
+    					color: #000;
+   						font-size: .9em;
+    					font-weight: bold;
+    					padding: 5px 2px 4px 5px;
+    					  	pointer-events: none;
+  							cursor: default;
+  							text-decoration: none!important;
+					}
+  				  </style> 			
+				<apex:repeat value="{!lookupMap}" var="type">
+				<apex:pageBlock id="block3">
+				 <apex:pageBlockSection title="{!type}" id="Section" columns="1" >
+				 <script>colorPageBlock(document.getElementById("{!$Component.Section}"), "darkgrey");</script>    
+    				<apex:pageBlockTable id="table2" var="sf" value="{!lookupMap[type]}" styleClass="category_table">   				    
+       					<apex:repeat var="field" value="{!sf.sfFields}">
+            				<apex:column headerValue="{!field}" >
+                				<apex:outputLink value="" onclick="refreshPage('{!sf.id}');" rendered="{!NOT(ISNULL(sf.id))}">{!sf.m1[field]}</apex:outputLink>
+            				</apex:column>
+        				</apex:repeat>        			
+    				</apex:pageBlockTable>
+    				</apex:pageBlockSection>  
+				</apex:pageBlock>
+				</apex:repeat> 
+				
+            <!--     <apex:pageBlock id="searchResultsA">    
+                    <apex:pageBlockSection title="{!type}" columns="1">            
+                      <apex:pageBlockTable value="{!sf_objects}" var="sf" id="tblResults">                 
+                        <apex:repeat value="{!sf.sfFields}" var="field" >                          
+                        	<apex:column headerValue="{!field}" rendered="{!sf.sfType==type}">  
+                         <!-- 		<apex:facet name="header">
+                          				<apex:outputPanel >{!field}</apex:outputPanel> 
+                          			</apex:facet>                                            		                    
+							  <apex:outputLink value="" onclick="refreshPage('{!sf.id}');" rendered="{!NOT(ISNULL(sf.id))}">{!sf.sfObject[field]}</apex:outputLink>
+                        	</apex:column> 
+                          </apex:repeat>    
+                          <apex:repeat var="header" value="{!sf.sfFields}" rendered="{!sf.sfType==type}">
+           					 <apex:column headerValue="{!header}" styleClass="empty-column-content" />
+        				</apex:repeat>                
+                       </apex:pageBlockTable> 
+                      </apex:pageBlockSection>  
+                    </apex:pageBlock>  -->
+            <!--       </apex:repeat> -->
+                </apex:outputPanel>
+            </apex:actionRegion>    
+  </apex:outputPanel>
+  </apex:form>
+      </apex:pageblock>
+</apex:page>

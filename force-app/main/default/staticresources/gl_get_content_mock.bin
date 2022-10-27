@@ -1,0 +1,3 @@
+[{"errorMsg":null,"label":"Search Results","limitRows":25,"objectType":"Account",
+"searchColumns":[{"field":"Account.Name","format":null,"label":"Account Name","name":"Name"},
+{"field":"Account.Phone","format":null,"label":"Phone","name":"Phone"}]}]

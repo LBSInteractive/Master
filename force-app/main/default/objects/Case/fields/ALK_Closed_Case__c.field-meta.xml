@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Closed_Case__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF(ISPICKVAL(Status,&apos;Closed&apos;), true,
+			IF(ISPICKVAL(Status,&apos;Cambio Evitado Gestión Técnico&apos;), true,
+						IF(ISPICKVAL(Status,&apos;Solución al Cliente&apos;), true,
+												IF(ISPICKVAL(Status,&apos;Solicitud Finalizada con devolución&apos;), true,
+															IF(ISPICKVAL(Status,&apos;No hay solicitudes pendientes&apos;), true, 
+																		false)))))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Closed Case</label>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>

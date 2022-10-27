@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Identification_Type__c</fullName>
+    <externalId>false</externalId>
+    <label>Tipo identificación</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Cedula de ciudadanía</fullName>
+                <default>false</default>
+                <label>Cedula de ciudadanía</label>
+            </value>
+            <value>
+                <fullName>Cedula de Extranjería</fullName>
+                <default>false</default>
+                <label>Cedula de Extranjería</label>
+            </value>
+            <value>
+                <fullName>Pasaporte</fullName>
+                <default>false</default>
+                <label>Pasaporte</label>
+            </value>
+            <value>
+                <fullName>Tarjeta de identidad</fullName>
+                <default>false</default>
+                <label>Tarjeta de identidad</label>
+            </value>
+            <value>
+                <fullName>NIT</fullName>
+                <default>false</default>
+                <label>NIT</label>
+            </value>
+            <value>
+                <fullName>RUT</fullName>
+                <default>false</default>
+                <label>RUT</label>
+            </value>
+            <value>
+                <fullName>PE</fullName>
+                <default>false</default>
+                <label>PE</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

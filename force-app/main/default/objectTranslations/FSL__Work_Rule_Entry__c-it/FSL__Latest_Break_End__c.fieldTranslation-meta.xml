@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Numero di minuti dall&apos;inizio della disponibilità della risorsa di servizio all&apos;ora di fine dell&apos;ultima pausa consentita. Ad esempio, immettere 300 per pianificare una pausa pranzo che termini non oltre cinque ore dopo l&apos;inizio della giornata.</help>
+    <label></label>
+    <name>FSL__Latest_Break_End__c</name>
+</CustomFieldTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>MyCases</fullName>
+    <columns>CASES.CASE_NUMBER</columns>
+    <columns>CASES.CREATED_DATE</columns>
+    <columns>NAME</columns>
+    <columns>CASES.RECORDTYPE</columns>
+    <columns>ALK_Factura__c</columns>
+    <columns>ALK_Unidad_Despacho__c</columns>
+    <columns>ALK_Almacen__c</columns>
+    <columns>CASES.STATUS</columns>
+    <columns>Sub_Estado__c</columns>
+    <columns>CASES.PRIORITY</columns>
+    <columns>CASES.ORIGIN</columns>
+    <columns>CASES.LAST_UPDATE_DATE_ONLY</columns>
+    <columns>ALK_Flag_SLA__c</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>CASES.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed,Cerrado</value>
+    </filters>
+    <filters>
+        <field>CASES.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Case.ALK_QUEJA,Case.ALK_SOLICITUD</value>
+    </filters>
+    <label>Mis casos</label>
+</ListView>

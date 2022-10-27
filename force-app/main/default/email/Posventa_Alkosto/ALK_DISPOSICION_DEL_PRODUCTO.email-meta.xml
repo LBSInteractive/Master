@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Disposición del Producto</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Disposición del Producto</name>
+    <style>freeForm</style>
+    <subject>Disposición del Producto</subject>
+    <textOnly>Bogotá D.C., día de mes del año
+
+Señor (a)
+
+XXXXXXXXX
+
+Referencia: Respuesta a Reclamación XXXXXXXXX
+
+Producto: XXXXXXXXXXXXXXXX
+
+Factura: XXXXXXXXXXXXXXXXXXXXXXXX
+
+Estimado(a) {!Case.Account}:
+
+Por medio de la presente nos permitimos dar respuesta a su reclamación.
+
+La ley 1480 de 2011 de protección al consumidor establece: ARTÍCULO 11. ASPECTOS INCLUIDOS EN LA GARANTÍA LEGAL. Corresponden a la garantía legal las siguientes obligaciones: “Como regla general, reparación totalmente gratuita de los defectos del bien, así como su transporte, de ser necesario, y el suministro oportuno de los repuestos. Si el bien no admite reparación, se procederá a su reposición o a la devolución del dinero”.
+
+Artículo 2°. Solicitud de la efectividad de la garantía legal. Para solicitar la efectividad de la garantía legal, el consumidor estará obligado a informar el daño que tiene el producto, ponerlo a disposición del expendedor en el mismo sitio en el que le fue entregado al adqui­rirlo o en los puntos de atención dispuestos para el efecto, a elección del consumidor……
+
+En ese caso y teniendo en cuenta el artículo de ley ya mencionado, por medio de la presente le realizamos requerimiento para completar el servicio técnico, para ello lo invitamos a poner en disposición el articulo con la marca al número XXXXXXX   Dirección (XXXXXXXXXXXXXX) o a través de nuestras tiendas.
+
+Teniendo en cuenta lo anterior su pretensión de cambio y/o devolución de dinero no fue aprobada teniendo en cuenta que legalmente la unidad debe estar a disposición, de acuerdo al artículo mencionado anteriormente.
+
+No desconocemos nuestra responsabilidad y obligación frente al cubrimiento de la Garantía posventa. Al amparo de la normatividad vigente lo invitamos a realizar el proceso de garantía respectivo y poder dar solución a su caso.
+
+Estamos atentos a escucharlo a través de nuestra línea de servicio al cliente número 4073033 en Bogotá y 018000111448 en el resto del país, o a través de nuestro correo sugerencias@alkosto.com.co.
+
+
+
+Cordialmente,
+
+Auxiliar Administrativo Posventa</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Negativa Compra Persona Jurídica Día Sin IVA</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Negativa Compra Persona Jurídica Día Sin IVA</name>
+    <style>freeForm</style>
+    <subject>Negativa Compra Persona Jurídica Día Sin IVA</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+
+
+
+Dando respuesta a tu reclamación, respecto  a la devolución correspondiente al IVA,  te informamos  que como lo específica el oficio 47195 del 2014 de la Dirección de Impuestos y Aduanas Nacionales –DIAN, se lee de manera restrictiva:
+
+“Téngase presente que, la exclusión de bienes y/o servicios con destino al territorio del archipiélago, conforme al artículo 22 de la ley 47 de 1993, se cumple en la medida que la operación se realice en forma directa entre vendedor y comprador o consignatario ubicado en el archipiélago o que hallándose este en el territorio continental sea quien directamente figura en los documentos de transporte, guía aérea o conocimiento de embarque; luego la venta en territorio nacional con la finalidad de ser enajenado, aun cuando sea al Archipiélago, de tratarse de bienes gravados causan el impuesto a las ventas”.
+
+Por tal razón y de acuerdo a lo interior, nos permitimos aclarar que en tu caso como los documentos de transporte del destinatario no corresponden al titular de la compra, tu solicitud no es procedente.
+
+Hoy nuestro compromiso hacia ti continúa más firme que nunca, seguiremos trabajando en la búsqueda constante de la mejora de su experiencia para poder seguir contando con usted como nuestro cliente
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

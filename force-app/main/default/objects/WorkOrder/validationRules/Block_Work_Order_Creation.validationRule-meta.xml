@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Block_Work_Order_Creation</fullName>
+    <active>true</active>
+    <description>Bloquea la creación de órdenes de trabajo por usuarios que no tienen autorización.</description>
+    <errorConditionFormula>AND (
+ ISNEW(),
+ ALK_FollowUp_WO__c = false,
+ $Permission.ALK_Block_Work_Order_Creation
+)</errorConditionFormula>
+    <errorMessage>Usuario no autorizado para crear órdenes de trabajo</errorMessage>
+</ValidationRule>

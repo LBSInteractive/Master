@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CallCenter xmlns="http://soap.sforce.com/2006/04/metadata">
+    <adapterUrl>/apex/gl_WorkspaceConnector</adapterUrl>
+    <customSettings>{&quot;reqSoftphoneHeight&quot;:&quot;240&quot;,&quot;reqUseApi&quot;:&quot;true&quot;,&quot;reqSoftphoneWidth&quot;:&quot;240&quot;,&quot;reqSalesforceCompatibilityMode&quot;:&quot;Lightning&quot;}</customSettings>
+    <displayName>Workspace CTI Connector Lightning</displayName>
+    <displayNameLabel>Display Name</displayNameLabel>
+    <internalNameLabel>Internal Name</internalNameLabel>
+    <sections>
+        <items>
+            <label>Description</label>
+            <name>reqDescription</name>
+            <value>Workspace CTI Connector Lightning</value>
+        </items>
+        <items>
+            <label>Version</label>
+            <name>reqVersion</name>
+            <value>1.0</value>
+        </items>
+        <items>
+            <label>ProgId</label>
+            <name>reqUseApi</name>
+            <value>true</value>
+        </items>
+        <items>
+            <label>CTI Adapter URL</label>
+            <name>reqAdapterUrl</name>
+            <value>/apex/gl_WorkspaceConnector</value>
+        </items>
+        <items>
+            <label>Softphone Height</label>
+            <name>reqSoftphoneHeight</name>
+            <value>240</value>
+        </items>
+        <items>
+            <label>Softphone Width</label>
+            <name>reqSoftphoneWidth</name>
+            <value>240</value>
+        </items>
+        <items>
+            <label>Salesforce Compatibility Mode</label>
+            <name>reqSalesforceCompatibilityMode</name>
+            <value>Lightning</value>
+        </items>
+        <label>General Information</label>
+        <name>reqGeneralInfo</name>
+    </sections>
+    <sections>
+        <items>
+            <label>Poll Port</label>
+            <name>PollPort</name>
+            <value>5050</value>
+        </items>
+        <items>
+            <label>Request Timeout</label>
+            <name>RequestTimeout</name>
+            <value>5000</value>
+        </items>
+        <items>
+            <label>Poll Queue Timeout</label>
+            <name>PollQueueTimeout</name>
+            <value>100</value>
+        </items>
+        <items>
+            <label>Use localhost</label>
+            <name>UseLocalHost</name>
+            <value>false</value>
+        </items>
+        <items>
+            <label>Use HTTPS</label>
+            <name>SecureConnection</name>
+            <value>false</value>
+        </items>
+        <items>
+            <label>Use WebSockets</label>
+            <name>UseWebSockets</name>
+            <value>false</value>
+        </items>
+        <label>Interaction Workspace Configuration</label>
+        <name>WorkspaceOptions</name>
+    </sections>
+    <version>1</version>
+</CallCenter>

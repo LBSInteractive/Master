@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>No Aplica Exención IVA</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>No Aplica Exención IVA</name>
+    <style>freeForm</style>
+    <subject>No Aplica Exención IVA</subject>
+    <textOnly>Hola {!Case.Contact},
+
+
+Dando respuesta a tu reclamación, con respecto al precio de venta del producto xxxxxxx, te informamos que de conformidad con el Estatuto Tributario Nacional, los xxxxxxx cuyo precio de venta es inferior a $xxxxx son excluidos de IVA, lo que implica que para el día (xx) del mes (xx), de (xxxx) no te aplica la exención de IVA.
+
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+Cordialmente,
+
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Negativa Limite de Compras día SIN IVA</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>ALK_Caso</letterhead>
+    <name>Negativa Limite de Compras día SIN IVA</name>
+    <style>freeForm</style>
+    <subject>Negativa Limite de Compras día SIN IVA</subject>
+    <textOnly>Hola {!Case.Account},
+
+
+
+
+
+
+
+
+
+
+Dando respuesta a tu reclamación referente a la exención de Iva no aplicada en tu compra realizada el día (xx) de mes (xx) de (xxxx), te informamos que como lo específica ley 2155 del 2021 y se lee de manera restrictiva:
+
+“Límite de unidades. El consumidor final puede adquirir hasta tres (3) unidades del mismo bien cubierto y enajenado por el mismo responsable. Son unidades de un mismo bien cubierto aquellas que pertenecen al mismo género. Cuando los bienes cubiertos se venden normalmente en pares, se entenderá que dicho par corresponde a una unidad”.
+
+
+De acuerdo a lo anterior es importante resaltar que tú mediante factura xxxxxxx adquiriste 3 unidades del producto xxxxx a los cuales se les aplicó dicho descuento, por tal razón con la compra del xxxxxx supera el máximo de unidades permitidas por la ley establecida por el gobierno nacional, motivo por el cual su solicitud no es procedente.
+
+
+Recuerda que estamos atentos a escucharte a través de nuestras líneas de atención al cliente.
+
+
+
+
+
+
+
+
+
+
+Cordialmente,
+
+Equipo Servicio al cliente
+
+ALKOSTO – K-TRONIX</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

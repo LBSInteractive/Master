@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Factura_CL</fullName>
+    <fields>Name</fields>
+    <fields>ALK_Purchaser_Name__c</fields>
+    <fields>ALK_Purchaser_Phone__c</fields>
+    <fields>ALK_Order_Number__c</fields>
+    <fields>ALK_Invoice_Date__c</fields>
+    <fields>ALK_Devolution_Reason__c</fields>
+    <label>Factura Compact Layout</label>
+</CompactLayout>

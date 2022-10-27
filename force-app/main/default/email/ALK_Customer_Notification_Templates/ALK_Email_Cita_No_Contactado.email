@@ -1,0 +1,10 @@
+Hola {!ServiceAppointment.ALK_Customer_Name__c}
+
+Te contamos que no te hemos podido contactar para programar el servicio de {!ServiceAppointment.ALK_Work_Type_Name__c} con número de orden {!ServiceAppointment.ALK_Work_Order_Number__c}.
+
+Te solicitamos amablemente que te contactes con nosotros a la línea Alkosto en Bogotá (601) 4073033 o Nacional 018000111448.
+
+Cordialmente, 
+
+Equipo de instalaciones
+ALKOSTO - K-TRONIX

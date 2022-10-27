@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Identification_Type_Code__c</fullName>
+    <externalId>false</externalId>
+    <formula>CASE(ALK_Identification_Type__c, 
+&quot;Cedula de ciudadanía&quot;, &quot;C&quot;,
+&quot;Cedula de Extranjería&quot;, &quot;E&quot;,
+&quot;Pasaporte&quot;, &quot;PA&quot;,
+&quot;Tarjeta de identidad&quot;, &quot;TI&quot;,
+&quot;Nit&quot;, &quot;N&quot;,
+&quot;RUT&quot;, &quot;R&quot;,
+&quot;PE&quot;, &quot;V&quot;,
+&quot;&quot;)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Codigo do tipo de identificación</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

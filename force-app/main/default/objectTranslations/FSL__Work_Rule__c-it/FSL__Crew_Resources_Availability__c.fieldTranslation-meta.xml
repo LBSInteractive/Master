@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Quando è selezionata, confronta il campo Dimensione minima squadra sull&apos;ordine di lavoro con i membri della squadra di servizio effettivamente disponibili. 
+In caso contrario, confronta il campo Dimensione minima squadra con il campo Dimensione squadra sulla Squadra di servizio.</help>
+    <label></label>
+    <name>FSL__Crew_Resources_Availability__c</name>
+</CustomFieldTranslation>

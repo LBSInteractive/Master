@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>irosica@salesforce.com</contactEmail>
+    <label>Azure DevOps Pipeline</label>
+    <oauthConfig>
+        <callbackUrl>http://localhost:1717/OauthRedirect</callbackUrl>
+        <certificate>MIIC2jCCAcICCQC81WdbflOzgDANBgkqhkiG9w0BAQsFADAvMQswCQYDVQQGEwJCUjELMAkGA1UECAwCU1AxEzARBgNVBAoMClNhbGVzZm9yY2UwHhcNMjIwMzI1MTk0MjU0WhcNMjMwMzI1MTk0MjU0WjAvMQswCQYDVQQGEwJCUjELMAkGA1UECAwCU1AxEzARBgNVBAoMClNhbGVzZm9yY2UwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDWEASw0wLgYbijdssc+RUjHnzKFtc+MFKGobtbD6dnFQUVMlHwUqZ0ODvo1eRVmb8mKweEVicNBmNEj0BMX40lsvcwZremIForg5hJqp3zOXEFty+Rc+iMutzKaPwMU/XE+H8AKsynq6KSYF9wf0yZS/MCKarau1ehjumdjhYYuMTKCZmJge2fYKZHB9x68MO3nQm1wCtqgiGaOXXTJCnCdUTlyyZh9OdOMDXJfqeZ/GCyWDaZwaBTgWPzB6JqRkbk/q/kv4M3oWqtrJcZ26WF54eUiAMU6pZ5+kZINt7+Q5XA60hnyBwEJUTkJSJt0NizZ17SuI0WxUQOIGGDLHKHAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAA1QeRRnV7Mi/v0XHWH0l9mKLiIa1D5ZMUCuDAgMrBX+uoBcsl1umw6XgpIk4YpIyigHwFou57iErXijFRmAMGmZleKFRwDaKj7vn1sE+3x315hLjp0nsNAbEm+U8E2YOArUrR2Z5UUTA63OBhUWvLV6yM5Bc1jtOuzmNkNwrWCpoHlovosa2p6IBL8Xej8GR7IzSKWGXa0yk4mTIFhbOG6xhvZ3NM9aQ529l/iDHfaByB2bN5tTOyw2nh5jmi5qbOw0U/LgWX9TqFDng8NfzCHfLTVNZXm1vbDGrnuy4rJyxcaWeUPNBa6m2weg49OgHbF8YfAMrtwz5N5/A1XCH6o=</certificate>
+        <consumerKey>3MVG9riCAn8HHkYX8ixKsNXzIjFcbJZc2uaNHxiTjM4NtMhVertNyp55fASbACsvwyLyvkHvmn.cs6N5crUZV</consumerKey>
+        <isAdminApproved>true</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+    <profileName>System Administrator</profileName>
+</ConnectedApp>

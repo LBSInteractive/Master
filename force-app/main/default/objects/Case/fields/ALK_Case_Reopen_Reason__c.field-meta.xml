@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ALK_Case_Reopen_Reason__c</fullName>
+    <externalId>false</externalId>
+    <label>Motivo de Reapertura</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>No esta deacuerdo con la respuesta</fullName>
+                <default>false</default>
+                <label>No esta deacuerdo con la respuesta</label>
+            </value>
+            <value>
+                <fullName>Producto vuelve a presentar falla</fullName>
+                <default>false</default>
+                <label>Producto vuelve a presentar falla</label>
+            </value>
+            <value>
+                <fullName>Caso mal cerrado</fullName>
+                <default>false</default>
+                <label>Caso mal cerrado</label>
+            </value>
+            <value>
+                <fullName>Solicita la misma informacion</fullName>
+                <default>false</default>
+                <label>Solicita la misma informacion</label>
+            </value>
+            <value>
+                <fullName>Caso sin Factura</fullName>
+                <default>false</default>
+                <label>Caso sin Factura</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
